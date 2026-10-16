@@ -1,0 +1,329 @@
+{
+  "_readme": "Per-card copy, word for word from Sam's sheet: 'heading' and 'text' (text shown in sentence case when handwritten). 'accent' is the word set in the italic serif. 'layout' picks the template in build.mjs. No copy beyond Sam's is used.",
+  "TOFU": {
+    "Mortgage": [
+      {
+        "layout": "t1_problem",
+        "heading": "Handle Complex Splits",
+        "accent": "Splits",
+        "text": "Multiple Splits?"
+      },
+      {
+        "layout": "t2_automation",
+        "heading": "Reduce Manual Work",
+        "accent": "Work",
+        "text": "Fewer Spreadsheets"
+      },
+      {
+        "layout": "t3_statement",
+        "heading": "Make Commissions Clear",
+        "accent": "Clear",
+        "text": "Clearer Calculations"
+      },
+      {
+        "layout": "t4_phone",
+        "heading": "Improve Payout Visibility",
+        "accent": "Visibility",
+        "text": "Better Rep Visibility"
+      },
+      {
+        "layout": "t5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "Simplify Your Workflow"
+      }
+    ],
+    "Roofing": [
+      {
+        "layout": "t1_problem",
+        "heading": "Scale Beyond Spreadsheets",
+        "accent": "Spreadsheets",
+        "text": "Growing Team?"
+      },
+      {
+        "layout": "t2_automation",
+        "heading": "Automate Commissions",
+        "accent": "Commissions",
+        "text": "Less Manual Work"
+      },
+      {
+        "layout": "t3_statement",
+        "heading": "Make Payouts Clear",
+        "accent": "Clear",
+        "text": "Fewer Payout Questions"
+      },
+      {
+        "layout": "t4_phone",
+        "heading": "Keep Reps Informed",
+        "accent": "Informed",
+        "text": "Rep Earnings Visibility"
+      },
+      {
+        "layout": "t5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "Simplify Commission Work"
+      }
+    ],
+    "Fiber": [
+      {
+        "layout": "t1_problem",
+        "heading": "Simplify Fiber Commissions",
+        "accent": "Commissions",
+        "text": "Complex Compensation?"
+      },
+      {
+        "layout": "t2_automation",
+        "heading": "Streamline Calculations",
+        "accent": "Calculations",
+        "text": "Less Spreadsheet Work"
+      },
+      {
+        "layout": "t3_statement",
+        "heading": "Improve Payout Visibility",
+        "accent": "Visibility",
+        "text": "Clearer Payouts"
+      },
+      {
+        "layout": "t4_phone",
+        "heading": "Keep Reps Informed",
+        "accent": "Informed",
+        "text": "Better Rep Experience"
+      },
+      {
+        "layout": "t5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "One Clearer Workflow"
+      }
+    ],
+    "Solar": [
+      {
+        "layout": "t1_problem",
+        "heading": "Simplify Solar Commissions",
+        "accent": "Commissions",
+        "text": "Manual Reconciliation?"
+      },
+      {
+        "layout": "t2_automation",
+        "heading": "Automate Calculations",
+        "accent": "Calculations",
+        "text": "Less Spreadsheet Work"
+      },
+      {
+        "layout": "t3_statement",
+        "heading": "Clarify Payouts",
+        "accent": "Payouts",
+        "text": "Fewer Payout Questions"
+      },
+      {
+        "layout": "t4_phone",
+        "heading": "Improve Visibility",
+        "accent": "Visibility",
+        "text": "Clearer Rep Earnings"
+      },
+      {
+        "layout": "t5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "Streamline Your Workflow"
+      }
+    ]
+  },
+  "MOFU": {
+    "Mortgage": [
+      {
+        "layout": "m1_split",
+        "heading": "Handle Complex Splits",
+        "accent": "Splits",
+        "text": "Multiple Splits?"
+      },
+      {
+        "layout": "m2_flow",
+        "heading": "Simplify the Workflow",
+        "accent": "Workflow",
+        "text": "Reduce Manual Tasks"
+      },
+      {
+        "layout": "m3_dashboard",
+        "heading": "Improve Accuracy & Clarity",
+        "accent": "Clarity",
+        "text": "Clearer Commission Details"
+      },
+      {
+        "layout": "m4_phone",
+        "heading": "Keep Reps Informed",
+        "accent": "Informed",
+        "text": "Better Payout Visibility"
+      },
+      {
+        "layout": "m5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "See How It Works"
+      }
+    ],
+    "Roofing": [
+      {
+        "layout": "m1_split",
+        "heading": "Scale Beyond Spreadsheets",
+        "accent": "Spreadsheets",
+        "text": "Growing Team?"
+      },
+      {
+        "layout": "m2_flow",
+        "heading": "Simplify the Workflow",
+        "accent": "Workflow",
+        "text": "Reduce Manual Tasks"
+      },
+      {
+        "layout": "m3_dashboard",
+        "heading": "Improve Accuracy & Clarity",
+        "accent": "Clarity",
+        "text": "Clearer Commission Details"
+      },
+      {
+        "layout": "m4_phone",
+        "heading": "Keep Reps Informed",
+        "accent": "Informed",
+        "text": "Better Payout Visibility"
+      },
+      {
+        "layout": "m5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "See How It Works"
+      }
+    ],
+    "Fiber": [
+      {
+        "layout": "m1_split",
+        "heading": "Simplify Fiber Commissions",
+        "accent": "Commissions",
+        "text": "Complex Compensation?"
+      },
+      {
+        "layout": "m2_flow",
+        "heading": "Simplify the Workflow",
+        "accent": "Workflow",
+        "text": "Reduce Manual Tasks"
+      },
+      {
+        "layout": "m3_dashboard",
+        "heading": "Improve Accuracy & Clarity",
+        "accent": "Clarity",
+        "text": "Clearer Commission Details"
+      },
+      {
+        "layout": "m4_phone",
+        "heading": "Keep Reps Informed",
+        "accent": "Informed",
+        "text": "Better Payout Visibility"
+      },
+      {
+        "layout": "m5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "See How It Works"
+      }
+    ],
+    "Solar": [
+      {
+        "layout": "m1_split",
+        "heading": "Simplify Solar Commissions",
+        "accent": "Commissions",
+        "text": "Manual Reconciliation?"
+      },
+      {
+        "layout": "m2_flow",
+        "heading": "Simplify the Workflow",
+        "accent": "Workflow",
+        "text": "Reduce Manual Tasks"
+      },
+      {
+        "layout": "m3_dashboard",
+        "heading": "Improve Accuracy & Clarity",
+        "accent": "Clarity",
+        "text": "Clearer Commission Details"
+      },
+      {
+        "layout": "m4_phone",
+        "heading": "Keep Reps Informed",
+        "accent": "Informed",
+        "text": "Better Payout Visibility"
+      },
+      {
+        "layout": "m5_cta",
+        "heading": "Explore Sequifi",
+        "accent": "Sequifi",
+        "text": "See How It Works"
+      }
+    ]
+  },
+  "BOFU": {
+    "Mortgage": [
+      {
+        "layout": "b1_demo",
+        "heading": "Book a Personalized Demo",
+        "accent": "Demo",
+        "text": "See Sequifi in action",
+        "br": "Book a"
+      },
+      {
+        "layout": "b2_clarity",
+        "heading": "A Clearer Way to Manage Commissions",
+        "accent": "Clearer",
+        "text": "Simplify commissions and payouts",
+        "br": "Way to"
+      }
+    ],
+    "Roofing": [
+      {
+        "layout": "r1_sign",
+        "heading": "Book a Personalized Demo",
+        "accent": "Demo",
+        "text": "See Sequifi in action",
+        "br": "Book a"
+      },
+      {
+        "layout": "r2_storm",
+        "heading": "A Clearer Way to Manage Commissions",
+        "accent": "Clearer",
+        "text": "Simplify commissions and payouts",
+        "br": "Way to"
+      }
+    ],
+    "Fiber": [
+      {
+        "layout": "f1_map",
+        "heading": "Book a Personalized Demo",
+        "accent": "Demo",
+        "text": "See Sequifi in action",
+        "br": "Book a"
+      },
+      {
+        "layout": "f2_strands",
+        "heading": "A Clearer Way to Manage Commissions",
+        "accent": "Clearer",
+        "text": "Simplify commissions and payouts",
+        "br": "Way to"
+      }
+    ],
+    "Solar": [
+      {
+        "layout": "s1_phone",
+        "heading": "Book a Personalized Demo",
+        "accent": "Demo",
+        "text": "See Sequifi in action",
+        "br": "Book a"
+      },
+      {
+        "layout": "s2_arc",
+        "heading": "A Clearer Way to Manage Commissions",
+        "accent": "Clearer",
+        "text": "Simplify commissions and payouts",
+        "br": "Way to"
+      }
+    ]
+  }
+}

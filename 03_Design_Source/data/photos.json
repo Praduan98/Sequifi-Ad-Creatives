@@ -1,0 +1,496 @@
+{
+  "Mortgage": {
+    "T1": {
+      "file": "Mortgage_T1_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T1"
+      },
+      "tracked": true
+    },
+    "T2": {
+      "file": "Mortgage_T2_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T2"
+      },
+      "tracked": true
+    },
+    "T3": {
+      "file": "Mortgage_T3_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T3"
+      },
+      "tracked": true
+    },
+    "T4": {
+      "file": "Mortgage_T4_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T4"
+      },
+      "tracked": true
+    },
+    "T5": {
+      "file": "Mortgage_T5_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T5"
+      },
+      "tracked": true
+    },
+    "M2": {
+      "file": "Mortgage_M2.jpg",
+      "pos": "50% 35%",
+      "id": "Qzw2nMdXMMQ",
+      "author": "Vitaly Gariev",
+      "url": "https://unsplash.com/photos/three-professionals-discussing-documents-at-a-table-Qzw2nMdXMMQ",
+      "tracked": true
+    },
+    "M4": {
+      "file": "Mortgage_M4.jpg",
+      "pos": "40% 40%",
+      "id": "VpCJ42lG7sk",
+      "author": "Vitaly Gariev",
+      "url": "https://unsplash.com/photos/two-businessmen-talking-over-coffee-at-a-table-VpCJ42lG7sk",
+      "tracked": true
+    },
+    "M5": {
+      "file": "Mortgage_M5.jpg",
+      "pos": "50% 60%",
+      "id": "4vioYQ9Nn9Y",
+      "author": "Arthur BAUDRY",
+      "url": "https://unsplash.com/photos/modern-house-exterior-glows-with-lights-4vioYQ9Nn9Y",
+      "tracked": true
+    },
+    "M1": {
+      "file": "Mortgage_M1.jpg",
+      "pos": "50% 60%",
+      "id": "mmuGuSv208c",
+      "author": "Salman Saqib",
+      "url": "https://unsplash.com/photos/a-modern-house-with-a-walkway-leading-to-the-front-door-mmuGuSv208c",
+      "tracked": true
+    },
+    "M3": {
+      "file": "Mortgage_M3.jpg",
+      "pos": "55% 15%",
+      "zoom": 2,
+      "id": "0kWem6X0Mc8",
+      "author": "Vitaly Gariev",
+      "url": "https://unsplash.com/photos/three-professionals-discussing-charts-in-a-meeting-0kWem6X0Mc8",
+      "tracked": true
+    },
+    "B1": {
+      "file": "Mortgage_B1_generated.jpg",
+      "pos": "50% 30%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/B1"
+      },
+      "tracked": true
+    },
+    "B2": {
+      "file": "Mortgage_B2_generated.jpg",
+      "pos": "50% 50%",
+      "dy": 80,
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/B2"
+      },
+      "tracked": true
+    }
+  },
+  "Roofing": {
+    "T1": {
+      "file": "Roofing_T1_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T1"
+      },
+      "tracked": true
+    },
+    "T2": {
+      "file": "Roofing_T2_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T2"
+      },
+      "tracked": true
+    },
+    "T3": {
+      "file": "Roofing_T3_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T3"
+      },
+      "tracked": true
+    },
+    "T4": {
+      "file": "Roofing_T4_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T4"
+      },
+      "tracked": true
+    },
+    "T5": {
+      "file": "Roofing_T5_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T5"
+      },
+      "tracked": true
+    },
+    "M2": {
+      "file": "Roofing_M2.jpg",
+      "pos": "50% 30%",
+      "id": "MyBBMM317A4",
+      "author": "Raze Solar",
+      "url": "https://unsplash.com/photos/a-couple-of-people-that-are-on-a-roof-MyBBMM317A4",
+      "tracked": true
+    },
+    "M4": {
+      "file": "Roofing_M4.jpg",
+      "pos": "50% 30%",
+      "id": "eFOkg4ZMiBs",
+      "author": "Raze Solar",
+      "url": "https://unsplash.com/photos/a-man-in-a-yellow-shirt-is-working-on-a-roof-eFOkg4ZMiBs",
+      "tracked": true
+    },
+    "M5": {
+      "file": "Roofing_M5.jpg",
+      "pos": "50% 50%",
+      "id": "kcNB4_0HRLA",
+      "author": "Elijah Crouch",
+      "url": "https://unsplash.com/photos/a-large-white-house-with-black-shutters-and-windows-kcNB4_0HRLA",
+      "tracked": true
+    },
+    "M1": {
+      "file": "Roofing_M1.jpg",
+      "pos": "50% 40%",
+      "id": "eHSXVPHjNnE",
+      "author": "Koy Gregerson",
+      "url": "https://unsplash.com/photos/a-white-house-with-red-shutters-and-a-chimney-eHSXVPHjNnE",
+      "tracked": true
+    },
+    "M3": {
+      "file": "Roofing_M3.jpg",
+      "pos": "50% 22%",
+      "zoom": 2.2,
+      "id": "jG_Um-dhhEg",
+      "author": "Wright Building Center",
+      "url": "https://unsplash.com/photos/a-lumberyard-worker-smiles-while-looking-off-camera-jG_Um-dhhEg",
+      "tracked": true
+    },
+    "B1": {
+      "file": "Roofing_B1_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/B1"
+      },
+      "tracked": true
+    },
+    "B2": {
+      "file": "Roofing_B2_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/B2"
+      },
+      "tracked": true
+    }
+  },
+  "Fiber": {
+    "T1": {
+      "file": "Fiber_T1_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T1"
+      },
+      "tracked": true
+    },
+    "T2": {
+      "file": "Fiber_T2_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "style": "client creatives (golden-hour suburban field scene)"
+      },
+      "tracked": true
+    },
+    "T3": {
+      "file": "Fiber_T3_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T3"
+      },
+      "tracked": true
+    },
+    "T4": {
+      "file": "Fiber_T4_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T4"
+      },
+      "tracked": true
+    },
+    "T5": {
+      "file": "Fiber_T5_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T5"
+      },
+      "tracked": true
+    },
+    "M2": {
+      "file": "Fiber_M2.jpg",
+      "pos": "50% 40%",
+      "id": "UyqxlMS8X84",
+      "author": "Mario Spencer",
+      "url": "https://unsplash.com/photos/linemen-working-on-a-utility-pole-with-bucket-truck-UyqxlMS8X84",
+      "tracked": true
+    },
+    "M4": {
+      "file": "Fiber_M4.jpg",
+      "pos": "50% 30%",
+      "id": "x2uFyKJhDGE",
+      "author": "Sammyayot254",
+      "url": "https://unsplash.com/photos/man-in-blue-button-up-shirt-standing-near-white-wall-x2uFyKJhDGE",
+      "tracked": true
+    },
+    "M5": {
+      "file": "Fiber_M5.jpg",
+      "pos": "50% 50%",
+      "id": "1xIN4FMR78A",
+      "author": "John Adams",
+      "url": "https://unsplash.com/photos/a-large-display-of-blue-lights-in-a-dark-room-1xIN4FMR78A",
+      "tracked": true
+    },
+    "M1": {
+      "file": "Fiber_M1.jpg",
+      "pos": "50% 55%",
+      "id": "hXVVNB6Qctg",
+      "author": "Compare Fibre",
+      "url": "https://unsplash.com/photos/white-router-on-white-table-hXVVNB6Qctg",
+      "tracked": true
+    },
+    "M3": {
+      "file": "Fiber_M3.jpg",
+      "pos": "50% 12%",
+      "zoom": 1.45,
+      "id": "hSD_Igxu4r0",
+      "author": "Joseph Okon",
+      "url": "https://unsplash.com/photos/a-man-wearing-a-hard-hat-and-safety-gear-hSD_Igxu4r0",
+      "tracked": true
+    },
+    "B1": {
+      "file": "Fiber_B1_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/B1"
+      },
+      "tracked": true
+    },
+    "B2": {
+      "file": "Fiber_B2_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/B2"
+      },
+      "tracked": true
+    }
+  },
+  "Solar": {
+    "T1": {
+      "file": "Solar_T1_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T1"
+      },
+      "tracked": true
+    },
+    "T2": {
+      "file": "Solar_T2_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T2"
+      },
+      "tracked": true
+    },
+    "T3": {
+      "file": "Solar_T3_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T3"
+      },
+      "tracked": true
+    },
+    "T4": {
+      "file": "Solar_T4_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T4"
+      },
+      "tracked": true
+    },
+    "T5": {
+      "file": "Solar_T5_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T5"
+      },
+      "tracked": true
+    },
+    "M2": {
+      "file": "Solar_M2.jpg",
+      "pos": "50% 40%",
+      "id": "pIcseKMisrs",
+      "author": "Raze Solar",
+      "url": "https://unsplash.com/photos/men-on-top-of-a-roof-pIcseKMisrs",
+      "tracked": true
+    },
+    "M4": {
+      "file": "Solar_M4.jpg",
+      "pos": "50% 40%",
+      "id": "V5d265DTfsA",
+      "author": "Raze Solar",
+      "url": "https://unsplash.com/photos/a-man-on-a-ladder-V5d265DTfsA",
+      "tracked": true
+    },
+    "M5": {
+      "file": "Solar_M5.jpg",
+      "pos": "50% 40%",
+      "id": "_XxvXRdacDo",
+      "author": "Vivint Solar",
+      "url": "https://unsplash.com/photos/gray-concrete-house-_XxvXRdacDo",
+      "tracked": true
+    },
+    "M1": {
+      "file": "Solar_M1.jpg",
+      "pos": "50% 40%",
+      "id": "Ja8t8nJN2I4",
+      "author": "Watt A Lot",
+      "url": "https://unsplash.com/photos/a-house-with-solar-panels-Ja8t8nJN2I4",
+      "tracked": true
+    },
+    "M3": {
+      "file": "Solar_M3.jpg",
+      "pos": "45% 12%",
+      "zoom": 2.6,
+      "id": "D4EQxFz52YE",
+      "author": "Desmond Charles Mushi",
+      "url": "https://unsplash.com/photos/man-installing-lighting-on-ladder-D4EQxFz52YE",
+      "tracked": true
+    },
+    "B1": {
+      "file": "Solar_B1_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/B1"
+      },
+      "tracked": true
+    },
+    "B2": {
+      "file": "Solar_B2_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/B2"
+      },
+      "tracked": true
+    }
+  },
+  "Shared": {
+    "HOST": {
+      "file": "Shared_Host_generated.jpg",
+      "pos": "50% 28%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Shared/HOST"
+      },
+      "tracked": true
+    }
+  }
+}

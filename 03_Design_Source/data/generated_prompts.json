@@ -1,0 +1,128 @@
+{
+  "_readme": "Prompts for the AI-generated TOFU and BOFU photos (client style: warm golden-hour, realistic US industry scenes, like Sequifi_Meta_Ads_4x5_36_creatives). Generated with Figma AI, model gpt-image-2.5-sunburst. 'size' is the requested width x height. Each prompt = scene + composition (fitted to the card layout) + the shared style.",
+  "style": "Photorealistic commercial advertising photograph, warm golden-hour sunset light with soft rim light, realistic American suburban setting, authentic confident approachable people, natural skin tones, shallow depth of field, full-frame camera, rich but realistic color grading, high detail, editorial advertising quality. No text, no lettering, no signage, no logos, no brand names, no watermarks.",
+  "layouts": {
+    "T1": "Wide landscape frame. A spreadsheet overlay will cover the LOWER THIRD and lower-left of the photo, so keep the main subject and faces in the UPPER 60% of the frame, centered to right. Lower third can be simple foreground.",
+    "T2": "Near-square frame. A UI panel will cover the UPPER-RIGHT quarter, so place the main subject in the LEFT HALF and lower two-thirds; upper right is open soft-focus background. Lower-left foreground slightly darker and calm.",
+    "T3": "Tall portrait frame. A card overlay will cover the LEFT 45% across the middle of the photo, so place the main subject and faces on the RIGHT SIDE of the frame, full height. Left side is soft background.",
+    "T4": "Tall portrait frame. Main subject centered, face in the upper half; the lower-left corner is calm and slightly darker for a handwritten caption.",
+    "T5": "Tall 4:5 hero frame for a full-bleed ad. Main subject in the UPPER-MIDDLE of the frame (between 15% and 65% height); the LOWER THIRD is calm, simple and slightly darker (lawn, driveway or road) for a headline and button; the top-left corner is plain sky for a logo.",
+    "B1": "BOFU banner 1. Mortgage: tall portrait, owner on the LEFT watching a demo (call window covers the right). Roofing: blank white yard sign facing camera straight on in the lower-middle (the headline is printed onto it), new roof + crew above. Fiber: straight-down aerial of a suburban street running diagonally lower-left to upper-right. Solar: hand holding a phone straight-on with a blank black screen (the live app is placed into the screen), solar roof behind.",
+    "B2": "BOFU banner 2. Mortgage: rep slightly left of center (frosted scene, clear pane). Roofing: split-screen before/after of the same house, storm left / clear golden sky right, seam at the exact center. Fiber: macro of a cable entering from the left with color-coded strands fanning right across the middle band, dark empty top and bottom. Solar: home with panels in the lower-middle, vast clear sky, sun low at the far right.",
+    "HOST": "Square webcam-style tile: head and shoulders, face centered, looking at camera."
+  },
+  "images": {
+    "Mortgage/T1": {
+      "size": "1536x1024",
+      "scene": "A loan officer in a navy blazer at a desk in a bright, modern home-lending office by a window at golden hour, reviewing a stack of mortgage paperwork with a calculator, laptop and a small wooden house model on the desk; thoughtful, slightly concentrated expression."
+    },
+    "Mortgage/T2": {
+      "size": "1024x1024",
+      "scene": "A loan officer in a light blue shirt walking a smiling homebuyer couple through mortgage documents at a closing table in a warm, modern office; the couple signs with a pen while the loan officer points to the page; sunset light through the windows."
+    },
+    "Mortgage/T3": {
+      "size": "1024x1536",
+      "scene": "A happy young homebuyer couple standing on the front porch of their new two-story suburban home at golden hour, one of them holding up a set of house keys, both smiling."
+    },
+    "Mortgage/T4": {
+      "size": "1024x1536",
+      "scene": "A confident female loan officer in a tailored navy blazer standing on a suburban sidewalk in front of a beautiful home at golden hour, holding a tablet, warm genuine smile, looking slightly off camera."
+    },
+    "Mortgage/T5": {
+      "size": "1024x1536",
+      "scene": "Wide shot of an elegant two-story suburban family home with a front porch and manicured lawn at golden hour; on the porch a loan officer hands house keys to a smiling couple; mature trees, soft hills in the distance, warm sky."
+    },
+    "Roofing/T1": {
+      "size": "1536x1024",
+      "scene": "Wide shot from the street of a roofing crew of three in hard hats and safety harnesses re-roofing a two-story suburban house at golden hour, stacks of architectural shingle bundles on the roof, a ladder against the gutter."
+    },
+    "Roofing/T2": {
+      "size": "1024x1024",
+      "scene": "A roofer in a white hard hat, safety harness and work gloves kneeling on a pitched roof, nailing new charcoal architectural shingles with a pneumatic nail gun; focused expression; warm low sun."
+    },
+    "Roofing/T3": {
+      "size": "1024x1536",
+      "scene": "A roofing project manager in a navy polo shirt holding a tablet, smiling and talking with a homeowner in the driveway of a suburban house with a freshly installed new roof, golden hour."
+    },
+    "Roofing/T4": {
+      "size": "1024x1536",
+      "scene": "A smiling roofer in a white hard hat and hi-vis vest kneeling on a sunlit residential roof, holding a bundle of shingles on his shoulder, looking toward the camera, warm sky and treetops behind."
+    },
+    "Roofing/T5": {
+      "size": "1024x1536",
+      "scene": "A beautiful suburban two-story home with a brand-new dark architectural shingle roof at golden hour; two roofers in hard hats stand on the roof ridge finishing the job, warm sunset sky, trees and soft hills behind."
+    },
+    "Fiber/T1": {
+      "size": "1536x1024",
+      "scene": "Inside the open back of a fiber service van at dusk, a technician in a hi-vis vest uses a fusion splicer on a splice tray full of brightly colored fiber optic strands; warm work light on his face, organized tools and fiber cable reels around him."
+    },
+    "Fiber/T3": {
+      "size": "1024x1536",
+      "scene": "A fiber installation technician in a hi-vis yellow vest over a navy shirt and a navy cap, handing a new white fiber router to a smiling homeowner at the open front door of a suburban home at golden hour. BOTH people in the RIGHT HALF of the frame (homeowner in the doorway at the far right, technician just left of the door facing her); the left 45% is soft background only (porch railing, plants, lawn, sunset sky). (v2: regenerated so the technician's face clears the statement card)"
+    },
+    "Fiber/T4": {
+      "size": "1024x1536",
+      "scene": "A friendly door-to-door fiber internet sales rep in a plain navy polo shirt, holding a tablet, walking along a suburban sidewalk at golden hour, confident smile."
+    },
+    "Fiber/T5": {
+      "size": "1024x1536",
+      "scene": "A fiber crew with a white bucket truck stringing aerial fiber optic cable along utility poles on a tree-lined suburban street at golden hour; a lineman in a hard hat in the raised bucket; warm sunset sky, soft hills behind."
+    },
+    "Solar/T1": {
+      "size": "1536x1024",
+      "scene": "Wide shot of three solar installers in hard hats and harnesses mounting black solar panels on the roof of a suburban house at golden hour, panels and racking rails visible."
+    },
+    "Solar/T2": {
+      "size": "1024x1024",
+      "scene": "A solar installer in a white hard hat, hi-vis vest and gloves carrying a black solar panel across a shingled residential roof, mid-stride, focused; warm low sun."
+    },
+    "Solar/T3": {
+      "size": "1024x1536",
+      "scene": "A solar installer in a white hard hat, hi-vis vest and gloves commissioning a newly installed home battery and inverter on the exterior side wall of a suburban house, checking the system on a tablet; black solar panels on the roof edge above; plain unbranded equipment. Installer, battery and inverter in the RIGHT HALF; left 45% soft background (side yard, fence, sunset sky). (v2: replaced a sales-consultant scene that duplicated Roofing card 3; matches the statement's 'Battery & panel adders' line)"
+    },
+    "Solar/T4": {
+      "size": "1024x1536",
+      "scene": "A smiling solar installer in a hard hat and hi-vis vest standing on a residential roof beside a row of black solar panels, arms relaxed, warm sunset sky behind."
+    },
+    "Solar/T5": {
+      "size": "1024x1536",
+      "scene": "A modern suburban home with a full rooftop array of sleek black solar panels glowing in golden-hour light, mountains and a warm sunset sky behind, a clean driveway and lawn in front."
+    },
+    "Mortgage/B1": {
+      "size": "1024x1536",
+      "scene": "A mortgage brokerage owner, a man in his 50s with salt-and-pepper hair and a trimmed beard, in a navy suit with an open-collar light blue shirt, sitting relaxed at his desk in a modern glass corner office at golden hour, leaning back with a warm, interested smile, watching a video demo on his open laptop (screen not visible); a small wooden house model and a coffee cup on the desk. (v2: BOFU redo, prospect watching the demo)"
+    },
+    "Mortgage/B2": {
+      "size": "1024x1536",
+      "scene": "A confident young Black woman loan officer in her early 30s in a tailored camel blazer over a white top, standing in a bright modern home-lending office by a large window at golden hour, holding her smartphone and smiling with quiet satisfaction as she reads her commission payout (screen not visible). (v2: BOFU redo)"
+    },
+    "Shared/HOST": {
+      "size": "1024x1024",
+      "scene": "Head-and-shoulders portrait of a friendly software product specialist, a South Asian woman in her early 30s wearing a slim black wireless headset with a small boom microphone and a soft periwinkle-blue knit top, smiling warmly at the camera as if greeting someone on a video call; bright, softly blurred office background with warm daylight. Used as the demo host tile on every BOFU banner 1."
+    },
+    "Roofing/B1": {
+      "size": "1024x1536",
+      "scene": "A large blank white rectangular yard sign on a thin metal H-frame stake in the mowed front lawn of a two-story suburban home at golden hour, facing the camera straight on, completely blank; the home behind has a brand-new charcoal shingle roof with two roofers finishing on the ridge and a ladder at the gutter. (v2: per-industry BOFU concept, the headline is printed onto the sign)"
+    },
+    "Roofing/B2": {
+      "size": "1024x1536",
+      "scene": "Split-screen before-and-after of the same two-story suburban house from the same angle, divided at the vertical center: left under dark storm clouds and rain with a storm-damaged roof and blue tarp; right with a brand-new charcoal shingle roof under a clear golden sunset sky. (v2: per-industry BOFU concept)"
+    },
+    "Fiber/B1": {
+      "size": "1024x1536",
+      "scene": "Straight-down aerial drone photograph of a quiet suburban neighborhood at golden hour; one wide street runs in a straight diagonal from the lower-left to the upper-right, homes with dark roofs on both sides, long tree shadows, no vehicles. (v2: per-industry BOFU concept, fiber route and activated homes drawn over it)"
+    },
+    "Fiber/B2": {
+      "size": "1024x1536",
+      "scene": "Macro product photograph of a black fiber optic cable entering from the left, its color-coded strands (blue, orange, green, brown, slate, white, red, yellow, violet, aqua) fanning out to the right with softly glowing tips; deep navy background with bokeh. (v2: per-industry BOFU concept, each strand labelled with one commission line)"
+    },
+    "Solar/B1": {
+      "size": "1024x1536",
+      "scene": "Close-up of a solar rep's hand holding a smartphone upright, straight on, screen completely black and blank; soft-focus residential roof with black solar panels at golden hour behind, sun flare top right. (v2: per-industry BOFU concept, the Sequifi rep app is placed into the screen)"
+    },
+    "Solar/B2": {
+      "size": "1024x1536",
+      "scene": "Wide low-angle photograph of a modern single-story home with a full array of black solar panels at golden hour, the sun low at the far right, a vast clear warm gradient sky over the upper 58% of the frame. (v2: per-industry BOFU concept, the sun's path is drawn as the payout timeline)"
+    }
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "Mortgage": {
+    "T1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T1"
+      },
+      "file": "Mortgage_T1_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "8XrYtOYQDRU"
+    },
+    "T2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T2"
+      },
+      "file": "Mortgage_T2_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "Mqc-m8kgxkg"
+    },
+    "T3": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T3"
+      },
+      "file": "Mortgage_T3_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "1El98zbDWzA"
+    },
+    "T4": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T4"
+      },
+      "file": "Mortgage_T4_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "ryxUueL6ffY"
+    },
+    "T5": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/T5"
+      },
+      "file": "Mortgage_T5_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "JxicYOjeFFo"
+    },
+    "M2": {
+      "id": "Qzw2nMdXMMQ",
+      "pos": "50% 35%"
+    },
+    "M4": {
+      "id": "VpCJ42lG7sk",
+      "pos": "40% 40%"
+    },
+    "M5": {
+      "id": "4vioYQ9Nn9Y",
+      "pos": "50% 60%"
+    },
+    "M1": {
+      "id": "mmuGuSv208c",
+      "pos": "50% 60%"
+    },
+    "M3": {
+      "id": "0kWem6X0Mc8",
+      "pos": "55% 15%",
+      "zoom": 2.0
+    },
+    "B1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/B1"
+      },
+      "file": "Mortgage_B1_generated.jpg",
+      "pos": "50% 30%",
+      "replaces": "Mortgage_B1_generated_v1_video-call-desk.jpg (archived)"
+    },
+    "B2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Mortgage/B2"
+      },
+      "file": "Mortgage_B2_generated.jpg",
+      "dy": 80,
+      "replaces": "Mortgage_B2_generated_v1_team.jpg (archived)"
+    }
+  },
+  "Roofing": {
+    "T1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T1"
+      },
+      "file": "Roofing_T1_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "bquoYvs3KtQ"
+    },
+    "T2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T2"
+      },
+      "file": "Roofing_T2_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "3ejJfFaiLaU"
+    },
+    "T3": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T3"
+      },
+      "file": "Roofing_T3_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "ep99OyLRUd4"
+    },
+    "T4": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T4"
+      },
+      "file": "Roofing_T4_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "GXITWKvgm-k"
+    },
+    "T5": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/T5"
+      },
+      "file": "Roofing_T5_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "ltv2avwDkS0"
+    },
+    "M2": {
+      "id": "MyBBMM317A4",
+      "pos": "50% 30%"
+    },
+    "M4": {
+      "id": "eFOkg4ZMiBs",
+      "pos": "50% 30%"
+    },
+    "M5": {
+      "id": "kcNB4_0HRLA",
+      "pos": "50% 50%"
+    },
+    "M1": {
+      "id": "eHSXVPHjNnE",
+      "pos": "50% 40%"
+    },
+    "M3": {
+      "id": "jG_Um-dhhEg",
+      "pos": "50% 22%",
+      "zoom": 2.2
+    },
+    "B1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/B1"
+      },
+      "file": "Roofing_B1_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "Roofing_B1_generated_v1 (archived)"
+    },
+    "B2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Roofing/B2"
+      },
+      "file": "Roofing_B2_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "Roofing_B2_generated_v1 (archived)"
+    }
+  },
+  "Fiber": {
+    "T1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T1"
+      },
+      "file": "Fiber_T1_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "ohBcGYJ8brQ"
+    },
+    "T2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "style": "client creatives (golden-hour suburban field scene)"
+      },
+      "file": "Fiber_T2_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "buRbhjYpyoI"
+    },
+    "T3": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T3"
+      },
+      "file": "Fiber_T3_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "G8T0cZy1Qtg"
+    },
+    "T4": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T4"
+      },
+      "file": "Fiber_T4_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "aCW-gORWBLI"
+    },
+    "T5": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/T5"
+      },
+      "file": "Fiber_T5_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "crmZRo6HclQ"
+    },
+    "M2": {
+      "id": "UyqxlMS8X84",
+      "pos": "50% 40%"
+    },
+    "M4": {
+      "id": "x2uFyKJhDGE",
+      "pos": "50% 30%"
+    },
+    "M5": {
+      "id": "1xIN4FMR78A",
+      "pos": "50% 50%"
+    },
+    "M1": {
+      "id": "hXVVNB6Qctg",
+      "pos": "50% 55%"
+    },
+    "M3": {
+      "id": "hSD_Igxu4r0",
+      "pos": "50% 12%",
+      "zoom": 1.45
+    },
+    "B1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/B1"
+      },
+      "file": "Fiber_B1_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "Fiber_B1_generated_v1 (archived)"
+    },
+    "B2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Fiber/B2"
+      },
+      "file": "Fiber_B2_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "Fiber_B2_generated_v1 (archived)"
+    }
+  },
+  "Solar": {
+    "T1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T1"
+      },
+      "file": "Solar_T1_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "WNbTfLYmRf4"
+    },
+    "T2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T2"
+      },
+      "file": "Solar_T2_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "wmaP3Tl80ww"
+    },
+    "T3": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T3"
+      },
+      "file": "Solar_T3_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "AmdiSUONPms"
+    },
+    "T4": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T4"
+      },
+      "file": "Solar_T4_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "S2Jxs3DXpyA"
+    },
+    "T5": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/T5"
+      },
+      "file": "Solar_T5_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "cegR6cIqo_U"
+    },
+    "M2": {
+      "id": "pIcseKMisrs",
+      "pos": "50% 40%"
+    },
+    "M4": {
+      "id": "V5d265DTfsA",
+      "pos": "50% 40%"
+    },
+    "M5": {
+      "id": "_XxvXRdacDo",
+      "pos": "50% 40%"
+    },
+    "M1": {
+      "id": "Ja8t8nJN2I4",
+      "pos": "50% 40%"
+    },
+    "M3": {
+      "id": "D4EQxFz52YE",
+      "pos": "45% 12%",
+      "zoom": 2.6
+    },
+    "B1": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/B1"
+      },
+      "file": "Solar_B1_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "Solar_B1_generated_v1 (archived)"
+    },
+    "B2": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Solar/B2"
+      },
+      "file": "Solar_B2_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "Solar_B2_generated_v1 (archived)"
+    }
+  },
+  "Shared": {
+    "HOST": {
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-16",
+        "prompt": "data/generated_prompts.json#Shared/HOST"
+      },
+      "file": "Shared_Host_generated.jpg",
+      "pos": "50% 28%"
+    }
+  }
+}

@@ -1,0 +1,898 @@
+{
+  "Mortgage": {
+    "pill": "MORTGAGE",
+    "icon": "house",
+    "sheet": {
+      "file": "LO commissions · Q3.xlsx",
+      "cols": [
+        "Loan Officer",
+        "Branch",
+        "Loan Amount",
+        "Split",
+        "BPS",
+        "Commission"
+      ],
+      "rows": [
+        [
+          "A. Johnson",
+          "Austin",
+          "$425,000",
+          "70%",
+          "85",
+          "$2,528"
+        ],
+        [
+          "M. Carter",
+          "Dallas",
+          "$310,000",
+          "65%",
+          "90",
+          "$1,814"
+        ],
+        [
+          "S. Lee",
+          "Austin",
+          "$512,000",
+          "70%",
+          "80",
+          "$2,867"
+        ],
+        [
+          "R. Patel",
+          "Houston",
+          "$289,000",
+          "60%",
+          "95",
+          "$1,647"
+        ],
+        [
+          "D. Brooks",
+          "Dallas",
+          "$640,000",
+          "75%",
+          "75",
+          "#REF!"
+        ]
+      ]
+    },
+    "statement": {
+      "title": "Loan #48213",
+      "meta": "Funded · Sep 12",
+      "lines": [
+        [
+          "Loan amount",
+          "$425,000.00"
+        ],
+        [
+          "LO split · 70% of 85 bps",
+          "$2,528.75"
+        ],
+        [
+          "Tier 2 bonus",
+          "+$212.50"
+        ],
+        [
+          "Lender credit adjustment",
+          "−$150.00"
+        ]
+      ],
+      "totalLabel": "LO payout",
+      "total": "$2,591.25"
+    },
+    "phone": {
+      "total": "$12,650",
+      "cents": ".00",
+      "items": [
+        [
+          "Loan #48213",
+          "Funded",
+          "$2,591.25",
+          "Approved"
+        ],
+        [
+          "Loan #48190",
+          "Funded",
+          "$1,814.00",
+          "Approved"
+        ],
+        [
+          "Loan #48177",
+          "Clear to close",
+          "$2,240.00",
+          "Pending"
+        ]
+      ]
+    },
+    "fanout": {
+      "title": "Loan #48213",
+      "amount": "$425,000",
+      "status": "Funded",
+      "rows": [
+        [
+          "AJ",
+          "Loan Officer",
+          "70% split",
+          "$2,528.75"
+        ],
+        [
+          "BM",
+          "Branch Manager",
+          "10% override",
+          "$361.25"
+        ],
+        [
+          "RM",
+          "Regional Manager",
+          "5% override",
+          "$180.63"
+        ],
+        [
+          "PR",
+          "Processor",
+          "Flat bonus",
+          "$150.00"
+        ]
+      ]
+    },
+    "dash": {
+      "title": "LO Commissions",
+      "total": "$60,250.00",
+      "cols": [
+        "Loan Officer",
+        "Branch",
+        "Loans",
+        "Volume",
+        "Commission",
+        "Status"
+      ],
+      "rows": [
+        [
+          "A. Johnson",
+          "Austin",
+          "6",
+          "$2.48M",
+          "$15,240",
+          "Approved"
+        ],
+        [
+          "M. Carter",
+          "Dallas",
+          "4",
+          "$1.31M",
+          "$7,860",
+          "Approved"
+        ],
+        [
+          "S. Lee",
+          "Austin",
+          "7",
+          "$3.02M",
+          "$18,120",
+          "Approved"
+        ],
+        [
+          "R. Patel",
+          "Houston",
+          "3",
+          "$0.96M",
+          "$5,280",
+          "In review"
+        ],
+        [
+          "D. Brooks",
+          "Dallas",
+          "5",
+          "$2.20M",
+          "$13,750",
+          "Approved"
+        ]
+      ],
+      "profile": "Loan Officer · Austin"
+    },
+    "pipeline": {
+      "calculated": [
+        [
+          "Loan #48230",
+          "D. Brooks",
+          "$3,600.00"
+        ],
+        [
+          "Loan #48221",
+          "R. Patel",
+          "$1,647.30"
+        ]
+      ],
+      "approved": [
+        [
+          "Loan #48213",
+          "A. Johnson",
+          "$2,591.25"
+        ],
+        [
+          "Loan #48177",
+          "S. Lee",
+          "$2,240.00"
+        ]
+      ],
+      "paid": [
+        [
+          "Loan #48190",
+          "M. Carter",
+          "$1,814.00"
+        ]
+      ]
+    }
+  },
+  "Roofing": {
+    "pill": "ROOFING",
+    "icon": "roof",
+    "sheet": {
+      "file": "Roofing commissions · Q3.xlsx",
+      "cols": [
+        "Rep",
+        "Role",
+        "Jobs",
+        "Contract Value",
+        "Split",
+        "Commission"
+      ],
+      "rows": [
+        [
+          "T. Miller",
+          "Closer",
+          "12",
+          "$186,000",
+          "10%",
+          "$18,600"
+        ],
+        [
+          "J. Davis",
+          "Setter",
+          "28",
+          "$112,000",
+          "5%",
+          "$5,600"
+        ],
+        [
+          "R. Garcia",
+          "Closer",
+          "15",
+          "$240,000",
+          "10%",
+          "$24,000"
+        ],
+        [
+          "M. Smith",
+          "Team Lead",
+          "8",
+          "$120,000",
+          "3%",
+          "$3,600"
+        ],
+        [
+          "K. Brown",
+          "Setter",
+          "19",
+          "$95,000",
+          "5%",
+          "#REF!"
+        ]
+      ]
+    },
+    "statement": {
+      "title": "Job #2291",
+      "meta": "Roof replacement · Complete",
+      "lines": [
+        [
+          "Contract value",
+          "$18,400.00"
+        ],
+        [
+          "Closer commission · 10%",
+          "$1,840.00"
+        ],
+        [
+          "Storm-season SPIFF",
+          "+$250.00"
+        ],
+        [
+          "Material adjustment",
+          "−$120.00"
+        ]
+      ],
+      "totalLabel": "Rep payout",
+      "total": "$1,970.00"
+    },
+    "phone": {
+      "total": "$9,500",
+      "cents": ".00",
+      "items": [
+        [
+          "Job #2291",
+          "Install complete",
+          "$1,970.00",
+          "Approved"
+        ],
+        [
+          "Job #2287",
+          "Signed",
+          "$1,420.00",
+          "Pending"
+        ],
+        [
+          "Storm SPIFF",
+          "October",
+          "$250.00",
+          "Approved"
+        ]
+      ]
+    },
+    "fanout": {
+      "title": "Job #2291",
+      "amount": "$18,400",
+      "status": "Complete",
+      "rows": [
+        [
+          "TM",
+          "Closer",
+          "10% split",
+          "$1,840.00"
+        ],
+        [
+          "JD",
+          "Setter",
+          "5% split",
+          "$920.00"
+        ],
+        [
+          "MS",
+          "Team Lead",
+          "2% override",
+          "$368.00"
+        ],
+        [
+          "KB",
+          "Sales Manager",
+          "1% override",
+          "$184.00"
+        ]
+      ]
+    },
+    "dash": {
+      "title": "Rep Commissions",
+      "total": "$56,550.00",
+      "cols": [
+        "Rep",
+        "Role",
+        "Jobs",
+        "Revenue",
+        "Commission",
+        "Status"
+      ],
+      "rows": [
+        [
+          "T. Miller",
+          "Closer",
+          "12",
+          "$186,000",
+          "$18,600",
+          "Approved"
+        ],
+        [
+          "J. Davis",
+          "Setter",
+          "28",
+          "$112,000",
+          "$5,600",
+          "Approved"
+        ],
+        [
+          "R. Garcia",
+          "Closer",
+          "15",
+          "$240,000",
+          "$24,000",
+          "Approved"
+        ],
+        [
+          "M. Smith",
+          "Team Lead",
+          "8",
+          "$120,000",
+          "$3,600",
+          "In review"
+        ],
+        [
+          "K. Brown",
+          "Setter",
+          "19",
+          "$95,000",
+          "$4,750",
+          "Approved"
+        ]
+      ],
+      "profile": "Closer · 15 jobs"
+    },
+    "pipeline": {
+      "calculated": [
+        [
+          "Job #2295",
+          "K. Brown",
+          "$950.00"
+        ],
+        [
+          "Job #2293",
+          "M. Smith",
+          "$368.00"
+        ]
+      ],
+      "approved": [
+        [
+          "Job #2291",
+          "T. Miller",
+          "$1,970.00"
+        ],
+        [
+          "Job #2287",
+          "R. Garcia",
+          "$1,420.00"
+        ]
+      ],
+      "paid": [
+        [
+          "Job #2280",
+          "J. Davis",
+          "$920.00"
+        ]
+      ]
+    }
+  },
+  "Fiber": {
+    "pill": "FIBER",
+    "icon": "wifi",
+    "sheet": {
+      "file": "Fiber commissions · Q3.xlsx",
+      "cols": [
+        "Rep",
+        "Installs",
+        "MRC",
+        "Milestone",
+        "Override",
+        "Total"
+      ],
+      "rows": [
+        [
+          "A. Kim",
+          "25",
+          "$2,600",
+          "$500",
+          "$250",
+          "$3,350"
+        ],
+        [
+          "B. Lopez",
+          "32",
+          "$3,200",
+          "$750",
+          "$320",
+          "$4,270"
+        ],
+        [
+          "C. Nguyen",
+          "28",
+          "$2,800",
+          "$500",
+          "$280",
+          "$3,580"
+        ],
+        [
+          "D. Carter",
+          "18",
+          "$1,800",
+          "$250",
+          "$180",
+          "$2,230"
+        ],
+        [
+          "E. Ross",
+          "22",
+          "$2,200",
+          "$500",
+          "??",
+          "#REF!"
+        ]
+      ]
+    },
+    "statement": {
+      "title": "Install #8812",
+      "meta": "1 Gig fiber plan · Activated",
+      "lines": [
+        [
+          "Activation commission",
+          "$75.00"
+        ],
+        [
+          "90-day milestone bonus",
+          "+$50.00"
+        ],
+        [
+          "Equipment SPIFF",
+          "+$15.00"
+        ],
+        [
+          "Chargebacks",
+          "$0.00"
+        ]
+      ],
+      "totalLabel": "Rep payout",
+      "total": "$140.00"
+    },
+    "phone": {
+      "total": "$4,270",
+      "cents": ".00",
+      "items": [
+        [
+          "8 installs",
+          "This week",
+          "$600.00",
+          "Approved"
+        ],
+        [
+          "Milestone",
+          "25 installs",
+          "$500.00",
+          "Approved"
+        ],
+        [
+          "Team override",
+          "October",
+          "$320.00",
+          "Pending"
+        ]
+      ]
+    },
+    "fanout": {
+      "title": "Install #8812",
+      "amount": "1 Gig plan",
+      "status": "Activated",
+      "rows": [
+        [
+          "AK",
+          "Sales Rep",
+          "Activation",
+          "$75.00"
+        ],
+        [
+          "AK",
+          "Sales Rep",
+          "90-day milestone",
+          "$50.00"
+        ],
+        [
+          "BL",
+          "Team Lead",
+          "Override",
+          "$15.00"
+        ],
+        [
+          "DC",
+          "Market Manager",
+          "Override",
+          "$10.00"
+        ]
+      ]
+    },
+    "dash": {
+      "title": "Rep Commissions",
+      "total": "$16,350.00",
+      "cols": [
+        "Rep",
+        "Installs",
+        "MRC",
+        "Milestones",
+        "Total",
+        "Status"
+      ],
+      "rows": [
+        [
+          "A. Kim",
+          "25",
+          "$2,600",
+          "$500",
+          "$3,350",
+          "Approved"
+        ],
+        [
+          "B. Lopez",
+          "32",
+          "$3,200",
+          "$750",
+          "$4,270",
+          "Approved"
+        ],
+        [
+          "C. Nguyen",
+          "28",
+          "$2,800",
+          "$500",
+          "$3,580",
+          "Approved"
+        ],
+        [
+          "D. Carter",
+          "18",
+          "$1,800",
+          "$250",
+          "$2,230",
+          "In review"
+        ],
+        [
+          "E. Ross",
+          "22",
+          "$2,200",
+          "$500",
+          "$2,920",
+          "Approved"
+        ]
+      ],
+      "profile": "Sales Rep · 32 installs"
+    },
+    "pipeline": {
+      "calculated": [
+        [
+          "Install #8820",
+          "E. Ross",
+          "$75.00"
+        ],
+        [
+          "Install #8817",
+          "D. Carter",
+          "$125.00"
+        ]
+      ],
+      "approved": [
+        [
+          "Install #8812",
+          "A. Kim",
+          "$140.00"
+        ],
+        [
+          "Install #8809",
+          "C. Nguyen",
+          "$125.00"
+        ]
+      ],
+      "paid": [
+        [
+          "Install #8801",
+          "B. Lopez",
+          "$140.00"
+        ]
+      ]
+    }
+  },
+  "Solar": {
+    "pill": "SOLAR",
+    "icon": "sun",
+    "sheet": {
+      "file": "Solar commissions · Q3.xlsx",
+      "cols": [
+        "Rep",
+        "kW",
+        "PPW",
+        "Adders",
+        "Clawback",
+        "Commission"
+      ],
+      "rows": [
+        [
+          "E. Adams",
+          "48.0",
+          "$3.10",
+          "$720",
+          "—",
+          "$10,320"
+        ],
+        [
+          "L. Park",
+          "36.2",
+          "$2.95",
+          "$540",
+          "−$480",
+          "$7,300"
+        ],
+        [
+          "M. Rivera",
+          "52.6",
+          "$3.05",
+          "$1,040",
+          "—",
+          "$11,560"
+        ],
+        [
+          "B. Hall",
+          "28.4",
+          "$3.20",
+          "$280",
+          "−$960",
+          "$5,000"
+        ],
+        [
+          "J. Ortiz",
+          "41.0",
+          "$3.00",
+          "$610",
+          "—",
+          "#REF!"
+        ]
+      ]
+    },
+    "statement": {
+      "title": "Deal #5521",
+      "meta": "8.4 kW system · $3.10 / W",
+      "lines": [
+        [
+          "Base commission · 8.4 kW",
+          "$2,100.00"
+        ],
+        [
+          "Battery & panel adders",
+          "+$350.00"
+        ],
+        [
+          "Paid at M1 · 50%",
+          "$1,225.00"
+        ],
+        [
+          "Due at M2 · 50%",
+          "$1,225.00"
+        ]
+      ],
+      "totalLabel": "Total commission",
+      "total": "$2,450.00"
+    },
+    "phone": {
+      "total": "$11,960",
+      "cents": ".00",
+      "items": [
+        [
+          "Deal #5521",
+          "M1 paid",
+          "$1,225.00",
+          "Paid"
+        ],
+        [
+          "Deal #5518",
+          "M2 due",
+          "$1,410.00",
+          "Pending"
+        ],
+        [
+          "Battery adder",
+          "Deal #5521",
+          "$350.00",
+          "Approved"
+        ]
+      ]
+    },
+    "fanout": {
+      "title": "Deal #5521",
+      "amount": "8.4 kW",
+      "status": "Installed",
+      "rows": [
+        [
+          "EA",
+          "Closer",
+          "$0.25 / W",
+          "$2,100.00"
+        ],
+        [
+          "LP",
+          "Setter",
+          "$0.10 / W",
+          "$840.00"
+        ],
+        [
+          "EA",
+          "Adders",
+          "Battery & panels",
+          "$350.00"
+        ],
+        [
+          "MR",
+          "Manager",
+          "Override",
+          "$252.00"
+        ]
+      ]
+    },
+    "dash": {
+      "title": "Rep Commissions",
+      "total": "$42,990.00",
+      "cols": [
+        "Rep",
+        "Deals",
+        "kW",
+        "Adders",
+        "Total",
+        "Status"
+      ],
+      "rows": [
+        [
+          "E. Adams",
+          "6",
+          "48.0",
+          "$720",
+          "$10,320",
+          "Approved"
+        ],
+        [
+          "L. Park",
+          "4",
+          "36.2",
+          "$540",
+          "$7,300",
+          "Approved"
+        ],
+        [
+          "M. Rivera",
+          "7",
+          "52.6",
+          "$1,040",
+          "$11,560",
+          "Approved"
+        ],
+        [
+          "B. Hall",
+          "3",
+          "28.4",
+          "$280",
+          "$5,000",
+          "In review"
+        ],
+        [
+          "J. Ortiz",
+          "5",
+          "41.0",
+          "$610",
+          "$8,810",
+          "Approved"
+        ]
+      ],
+      "profile": "Closer · 7 deals"
+    },
+    "pipeline": {
+      "calculated": [
+        [
+          "Deal #5530",
+          "J. Ortiz",
+          "$1,025.00"
+        ],
+        [
+          "Deal #5526",
+          "B. Hall",
+          "$710.00"
+        ]
+      ],
+      "approved": [
+        [
+          "Deal #5521",
+          "E. Adams",
+          "$1,225.00"
+        ],
+        [
+          "Deal #5518",
+          "L. Park",
+          "$1,410.00"
+        ]
+      ],
+      "paid": [
+        [
+          "Deal #5512",
+          "M. Rivera",
+          "$1,315.00"
+        ]
+      ]
+    }
+  }
+}

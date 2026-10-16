@@ -1,0 +1,442 @@
+{
+  "Mortgage": {
+    "TOFU": {
+      "ad_set": "TOFU | Mortgage",
+      "format": "5 carousel cards per industry",
+      "primary_text": "Complex splits, overrides and adjustments make mortgage commissions hard to track. Simplify commission calculations, payout workflows and earnings visibility. Discover a simpler way with Sequifi.",
+      "description": "Simplify commission work. Improve payout clarity.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Multiple Splits?",
+          "heading": "Handle Complex Splits"
+        },
+        {
+          "card": 2,
+          "text": "Fewer Spreadsheets",
+          "heading": "Reduce Manual Work"
+        },
+        {
+          "card": 3,
+          "text": "Clearer Calculations",
+          "heading": "Make Commissions Clear"
+        },
+        {
+          "card": 4,
+          "text": "Better Rep Visibility",
+          "heading": "Improve Payout Visibility"
+        },
+        {
+          "card": 5,
+          "text": "Simplify Your Workflow",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: one short problem/benefit per card; use concise, readable text.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/industries/mortgage-lpv",
+      "lp_hero": "Complex mortgage compensation shouldn't require manual calculations. Simplify commissions, payouts and payroll-connected workflows.",
+      "lp_cta": "See Sequifi in Action"
+    },
+    "MOFU": {
+      "ad_set": "MOFU | Mortgage",
+      "format": "5 carousel cards per industry",
+      "primary_text": "Looking for a clearer commission process? Bring mortgage commissions and payouts into one clearer workflow. See how Sequifi can help your team reduce manual work and improve payout visibility.",
+      "description": "See how mortgage teams reduce manual work and make commissions easier to explain.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Multiple Splits?",
+          "heading": "Handle Complex Splits"
+        },
+        {
+          "card": 2,
+          "text": "Reduce Manual Tasks",
+          "heading": "Simplify the Workflow"
+        },
+        {
+          "card": 3,
+          "text": "Clearer Commission Details",
+          "heading": "Improve Accuracy & Clarity"
+        },
+        {
+          "card": 4,
+          "text": "Better Payout Visibility",
+          "heading": "Keep Reps Informed"
+        },
+        {
+          "card": 5,
+          "text": "See How It Works",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: show the challenge, workflow benefits and a final next step.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": null,
+      "lp_hero": null,
+      "lp_cta": null
+    },
+    "BOFU": {
+      "ad_set": "BOFU | Mortgage",
+      "format": "2 single-image banners per industry",
+      "primary_text": "See how Sequifi can simplify your mortgage commission workflow. See how commission calculations, payout workflows and rep visibility could work for your team.",
+      "description": "Book a demo to explore a simpler commission workflow.",
+      "cta_button": "Book Now",
+      "cards": [
+        {
+          "card": 1,
+          "text": "See Sequifi in action",
+          "heading": "Book a Personalized Demo"
+        },
+        {
+          "card": 2,
+          "text": "Simplify commissions and payouts",
+          "heading": "A Clearer Way to Manage Commissions"
+        }
+      ],
+      "notes": "2 single-image banners only. Keep the message benefit-led and use a clear demo CTA.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/meeting-lpv",
+      "lp_hero": "Ready to simplify commission operations? See Sequifi in action and explore your compensation workflow.",
+      "lp_cta": "Book a Demo"
+    }
+  },
+  "Roofing": {
+    "TOFU": {
+      "ad_set": "TOFU | Roofing",
+      "format": "5 carousel cards per industry",
+      "primary_text": "As roofing teams grow, commission spreadsheets and payout tracking get harder to manage. Automate commission calculations and give reps clearer payout visibility. Discover a simpler way with Sequifi.",
+      "description": "Simplify commission work. Improve payout clarity.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Growing Team?",
+          "heading": "Scale Beyond Spreadsheets"
+        },
+        {
+          "card": 2,
+          "text": "Less Manual Work",
+          "heading": "Automate Commissions"
+        },
+        {
+          "card": 3,
+          "text": "Fewer Payout Questions",
+          "heading": "Make Payouts Clear"
+        },
+        {
+          "card": 4,
+          "text": "Rep Earnings Visibility",
+          "heading": "Keep Reps Informed"
+        },
+        {
+          "card": 5,
+          "text": "Simplify Commission Work",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: one short problem/benefit per card; use concise, readable text.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/industries/roofing-lpv",
+      "lp_hero": "Your roofing team is growing. Your commission spreadsheets shouldn't. Simplify commissions and rep payouts.",
+      "lp_cta": "See How It Works"
+    },
+    "MOFU": {
+      "ad_set": "MOFU | Roofing",
+      "format": "5 carousel cards per industry",
+      "primary_text": "Looking for a clearer commission process? Manage roofing commissions and rep payouts in a simpler workflow. See how Sequifi can help your team reduce manual work and improve payout visibility.",
+      "description": "See how growing roofing teams can spend less time on manual commission work.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Growing Team?",
+          "heading": "Scale Beyond Spreadsheets"
+        },
+        {
+          "card": 2,
+          "text": "Reduce Manual Tasks",
+          "heading": "Simplify the Workflow"
+        },
+        {
+          "card": 3,
+          "text": "Clearer Commission Details",
+          "heading": "Improve Accuracy & Clarity"
+        },
+        {
+          "card": 4,
+          "text": "Better Payout Visibility",
+          "heading": "Keep Reps Informed"
+        },
+        {
+          "card": 5,
+          "text": "See How It Works",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: show the challenge, workflow benefits and a final next step.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": null,
+      "lp_hero": null,
+      "lp_cta": null
+    },
+    "BOFU": {
+      "ad_set": "BOFU | Roofing",
+      "format": "2 single-image banners per industry",
+      "primary_text": "See how Sequifi can simplify commissions for your roofing team. See how commission calculations, payout workflows and rep visibility could work for your team.",
+      "description": "Book a demo to explore a simpler commission workflow.",
+      "cta_button": "Book Now",
+      "cards": [
+        {
+          "card": 1,
+          "text": "See Sequifi in action",
+          "heading": "Book a Personalized Demo"
+        },
+        {
+          "card": 2,
+          "text": "Simplify commissions and payouts",
+          "heading": "A Clearer Way to Manage Commissions"
+        }
+      ],
+      "notes": "2 single-image banners only. Keep the message benefit-led and use a clear demo CTA.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/meeting-lpv",
+      "lp_hero": "Ready to simplify commission operations? See Sequifi in action and explore your compensation workflow.",
+      "lp_cta": "Book a Demo"
+    }
+  },
+  "Fiber / Telecom": {
+    "TOFU": {
+      "ad_set": "TOFU | Fiber / Telecom",
+      "format": "5 carousel cards per industry",
+      "primary_text": "Complex fiber sales compensation can make calculations, adjustments and payouts difficult. Simplify commission calculations and improve payout visibility for sales reps. Discover a simpler way with Sequifi.",
+      "description": "Simplify commission work. Improve payout clarity.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Complex Compensation?",
+          "heading": "Simplify Fiber Commissions"
+        },
+        {
+          "card": 2,
+          "text": "Less Spreadsheet Work",
+          "heading": "Streamline Calculations"
+        },
+        {
+          "card": 3,
+          "text": "Clearer Payouts",
+          "heading": "Improve Payout Visibility"
+        },
+        {
+          "card": 4,
+          "text": "Better Rep Experience",
+          "heading": "Keep Reps Informed"
+        },
+        {
+          "card": 5,
+          "text": "One Clearer Workflow",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: one short problem/benefit per card; use concise, readable text.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/industries/fiber-lpv",
+      "lp_hero": "Complex fiber sales compensation shouldn't require complex spreadsheets. Simplify commissions, rep payouts and payout visibility.",
+      "lp_cta": "See Sequifi in Action"
+    },
+    "MOFU": {
+      "ad_set": "MOFU | Fiber / Telecom",
+      "format": "5 carousel cards per industry",
+      "primary_text": "Looking for a clearer commission process? Connect fiber commissions, rep visibility and payout workflows. See how Sequifi can help your team reduce manual work and improve payout visibility.",
+      "description": "See how Sequifi can make complex sales compensation easier to manage.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Complex Compensation?",
+          "heading": "Simplify Fiber Commissions"
+        },
+        {
+          "card": 2,
+          "text": "Reduce Manual Tasks",
+          "heading": "Simplify the Workflow"
+        },
+        {
+          "card": 3,
+          "text": "Clearer Commission Details",
+          "heading": "Improve Accuracy & Clarity"
+        },
+        {
+          "card": 4,
+          "text": "Better Payout Visibility",
+          "heading": "Keep Reps Informed"
+        },
+        {
+          "card": 5,
+          "text": "See How It Works",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: show the challenge, workflow benefits and a final next step.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": null,
+      "lp_hero": null,
+      "lp_cta": null
+    },
+    "BOFU": {
+      "ad_set": "BOFU | Fiber / Telecom",
+      "format": "2 single-image banners per industry",
+      "primary_text": "See how Sequifi can simplify fiber sales compensation. See how commission calculations, payout workflows and rep visibility could work for your team.",
+      "description": "Book a demo to explore a simpler commission workflow.",
+      "cta_button": "Book Now",
+      "cards": [
+        {
+          "card": 1,
+          "text": "See Sequifi in action",
+          "heading": "Book a Personalized Demo"
+        },
+        {
+          "card": 2,
+          "text": "Simplify commissions and payouts",
+          "heading": "A Clearer Way to Manage Commissions"
+        }
+      ],
+      "notes": "2 single-image banners only. Keep the message benefit-led and use a clear demo CTA.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/meeting-lpv",
+      "lp_hero": "Ready to simplify commission operations? See Sequifi in action and explore your compensation workflow.",
+      "lp_cta": "Book a Demo"
+    }
+  },
+  "Solar": {
+    "TOFU": {
+      "ad_set": "TOFU | Solar",
+      "format": "5 carousel cards per industry",
+      "primary_text": "Manual solar commission calculations and reconciliation can slow down payouts. Automate commission workflows and give reps clearer earnings visibility. Discover a simpler way with Sequifi.",
+      "description": "Simplify commission work. Improve payout clarity.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Manual Reconciliation?",
+          "heading": "Simplify Solar Commissions"
+        },
+        {
+          "card": 2,
+          "text": "Less Spreadsheet Work",
+          "heading": "Automate Calculations"
+        },
+        {
+          "card": 3,
+          "text": "Fewer Payout Questions",
+          "heading": "Clarify Payouts"
+        },
+        {
+          "card": 4,
+          "text": "Clearer Rep Earnings",
+          "heading": "Improve Visibility"
+        },
+        {
+          "card": 5,
+          "text": "Streamline Your Workflow",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: one short problem/benefit per card; use concise, readable text.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/industries/solar-lpv",
+      "lp_hero": "Still reconciling solar commissions manually? Automate the workflow from calculation to payout and improve rep visibility.",
+      "lp_cta": "See How It Works"
+    },
+    "MOFU": {
+      "ad_set": "MOFU | Solar",
+      "format": "5 carousel cards per industry",
+      "primary_text": "Looking for a clearer commission process? Make solar commission calculations, reconciliation and payouts easier to manage. See how Sequifi can help your team reduce manual work and improve payout visibility.",
+      "description": "See how Sequifi can help solar teams reduce manual commission work.",
+      "cta_button": "Learn More",
+      "cards": [
+        {
+          "card": 1,
+          "text": "Manual Reconciliation?",
+          "heading": "Simplify Solar Commissions"
+        },
+        {
+          "card": 2,
+          "text": "Reduce Manual Tasks",
+          "heading": "Simplify the Workflow"
+        },
+        {
+          "card": 3,
+          "text": "Clearer Commission Details",
+          "heading": "Improve Accuracy & Clarity"
+        },
+        {
+          "card": 4,
+          "text": "Better Payout Visibility",
+          "heading": "Keep Reps Informed"
+        },
+        {
+          "card": 5,
+          "text": "See How It Works",
+          "heading": "Explore Sequifi"
+        }
+      ],
+      "notes": "5-card carousel: show the challenge, workflow benefits and a final next step.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": null,
+      "lp_hero": null,
+      "lp_cta": null
+    },
+    "BOFU": {
+      "ad_set": "BOFU | Solar",
+      "format": "2 single-image banners per industry",
+      "primary_text": "See how Sequifi can simplify solar commissions and payouts. See how commission calculations, payout workflows and rep visibility could work for your team.",
+      "description": "Book a demo to explore a simpler commission workflow.",
+      "cta_button": "Book Now",
+      "cards": [
+        {
+          "card": 1,
+          "text": "See Sequifi in action",
+          "heading": "Book a Personalized Demo"
+        },
+        {
+          "card": 2,
+          "text": "Simplify commissions and payouts",
+          "heading": "A Clearer Way to Manage Commissions"
+        }
+      ],
+      "notes": "2 single-image banners only. Keep the message benefit-led and use a clear demo CTA.",
+      "status": "Not started",
+      "sheet_landing_page": "",
+      "design_team_link": "",
+      "lp_from_lp_table": "https://sequifi.com/meeting-lpv",
+      "lp_hero": "Ready to simplify commission operations? See Sequifi in action and explore your compensation workflow.",
+      "lp_cta": "Book a Demo"
+    }
+  }
+}

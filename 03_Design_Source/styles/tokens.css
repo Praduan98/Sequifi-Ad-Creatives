@@ -1,0 +1,58 @@
+/* Sequifi carousel design tokens
+   Blend of sequifi.com (fonts, color variables, button gradient)
+   and the client's approved Meta ads (layout, accent serif, handwriting). */
+
+/* Website fonts */
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-800-normal.ttf"); font-weight: 800; }
+@font-face { font-family: "Inter"; src: url("../../02_Brand_Assets/fonts/website_Inter/Inter-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("../../02_Brand_Assets/fonts/website_Inter/Inter-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("../../02_Brand_Assets/fonts/website_Inter/Inter-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("../../02_Brand_Assets/fonts/website_Inter/Inter-700-normal.ttf"); font-weight: 700; }
+
+/* Ad creative fonts */
+@font-face { font-family: "DM Sans"; src: url("../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "DM Sans"; src: url("../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "DM Sans"; src: url("../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Instrument Serif"; src: url("../../02_Brand_Assets/fonts/creatives_InstrumentSerif/InstrumentSerif-400-italic.ttf"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Caveat"; src: url("../../02_Brand_Assets/fonts/creatives_Caveat/Caveat-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Caveat"; src: url("../../02_Brand_Assets/fonts/creatives_Caveat/Caveat-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Space Mono"; src: url("../../02_Brand_Assets/fonts/creatives_SpaceMono/SpaceMono-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Space Mono"; src: url("../../02_Brand_Assets/fonts/creatives_SpaceMono/SpaceMono-700-normal.ttf"); font-weight: 700; }
+
+:root {
+  /* sequifi.com --hv-* variables */
+  --accent: #6078EC;
+  --accent-soft: #8FA0F5;
+  --accent-deep: #4A5BD0;
+  --accent-tint: #EEF1FE;
+  --ink: #0D1020;
+  --night-950: #03050F;
+  --night-900: #050817;
+  --night-800: #080B1D;
+
+  /* Measured from the client's ads */
+  --ink-ad: #1C1C2C;
+  --body: #4C4C64;
+  --label: #8C8CA4;
+  --green: #2BB594;
+  --red: #D4243C;
+  --lavender: #DCE1FA;
+  --line: #E6E9F2;
+
+  /* Type */
+  --f-display: "Schibsted Grotesk", system-ui, sans-serif;
+  --f-accent: "Instrument Serif", Georgia, serif;
+  --f-body: "DM Sans", system-ui, sans-serif;
+  --f-ui: "Inter", system-ui, sans-serif;
+  --f-hand: "Caveat", cursive;
+  --f-mono: "Space Mono", ui-monospace, monospace;
+
+  /* Canvas + safe area (from the ads) */
+  --W: 1080px;
+  --H: 1350px;
+  --m: 66px;
+}

@@ -1,0 +1,12 @@
+# Secrets: the Unsplash API key lives here and must never be committed
+.env
+.env.*
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node
+node_modules/
