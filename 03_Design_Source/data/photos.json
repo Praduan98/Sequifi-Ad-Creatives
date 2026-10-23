@@ -297,44 +297,65 @@
       "tracked": true
     },
     "M2": {
-      "file": "Fiber_M2.jpg",
-      "pos": "50% 40%",
-      "id": "UyqxlMS8X84",
-      "author": "Mario Spencer",
-      "url": "https://unsplash.com/photos/linemen-working-on-a-utility-pole-with-bucket-truck-UyqxlMS8X84",
+      "file": "Fiber_M2_generated.jpg",
+      "pos": "50% 0%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M2",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=10-2"
+      },
       "tracked": true
     },
     "M4": {
-      "file": "Fiber_M4.jpg",
-      "pos": "50% 30%",
-      "id": "x2uFyKJhDGE",
-      "author": "Sammyayot254",
-      "url": "https://unsplash.com/photos/man-in-blue-button-up-shirt-standing-near-white-wall-x2uFyKJhDGE",
+      "file": "Fiber_M4_generated.jpg",
+      "pos": "50% 50%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M4",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=5-2"
+      },
       "tracked": true
     },
     "M5": {
-      "file": "Fiber_M5.jpg",
-      "pos": "50% 50%",
-      "id": "1xIN4FMR78A",
-      "author": "John Adams",
-      "url": "https://unsplash.com/photos/a-large-display-of-blue-lights-in-a-dark-room-1xIN4FMR78A",
+      "file": "Fiber_M5_generated.jpg",
+      "pos": "50% 0%",
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M5",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=7-2"
+      },
       "tracked": true
     },
     "M1": {
-      "file": "Fiber_M1.jpg",
-      "pos": "50% 55%",
-      "id": "hXVVNB6Qctg",
-      "author": "Compare Fibre",
-      "url": "https://unsplash.com/photos/white-router-on-white-table-hXVVNB6Qctg",
+      "file": "Fiber_M1_generated.jpg",
+      "pos": "50% 18%",
+      "zoom": 1.6,
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M1",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=1-2"
+      },
       "tracked": true
     },
     "M3": {
-      "file": "Fiber_M3.jpg",
-      "pos": "50% 12%",
-      "zoom": 1.45,
-      "id": "hSD_Igxu4r0",
-      "author": "Joseph Okon",
-      "url": "https://unsplash.com/photos/a-man-wearing-a-hard-hat-and-safety-gear-hSD_Igxu4r0",
+      "file": "Fiber_M3_generated.jpg",
+      "pos": "50% 8%",
+      "zoom": 1.6,
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M3",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=4-2"
+      },
       "tracked": true
     },
     "B1": {

@@ -7,13 +7,17 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { spawn } from "node:child_process";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const SRC = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(SRC, "..");
 const ASSETS = path.join(ROOT, "02_Brand_Assets");
 const EXPORTS = path.join(ROOT, "04_Final_Exports");
-const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+// Chrome: $CHROME if set, else the standard install path for this OS
+const CHROME = process.env.CHROME || {
+  win32: path.join(process.env.PROGRAMFILES || "C:\\Program Files", "Google/Chrome/Application/chrome.exe"),
+  linux: "/usr/bin/google-chrome",
+}[process.platform] || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/, "").split("=")).map(([k, v]) => [k, v ?? true]));
 const IND = JSON.parse(fs.readFileSync(path.join(SRC, "data/industries.json"), "utf8"));
@@ -478,7 +482,7 @@ if (!args["no-export"]) {
     const profile = fs.mkdtempSync(path.join(os.tmpdir(), "sqf-"));
     const p = spawn(CHROME, ["--headless=new", "--disable-gpu", "--hide-scrollbars", "--allow-file-access-from-files",
       "--force-device-scale-factor=1", "--window-size=1080,1350", "--virtual-time-budget=8000", `--user-data-dir=${profile}`,
-      `--screenshot=${png}`, "file://" + htmlFile], { stdio: "ignore" });
+      `--screenshot=${png}`, pathToFileURL(htmlFile).href], { stdio: "ignore" });
     const timer = setTimeout(() => p.kill("SIGKILL"), 90000); // a stuck render must not stall the whole build
     p.on("exit", (code, sig) => { clearTimeout(timer); fs.rmSync(profile, { recursive: true, force: true });
       code === 0 && fs.existsSync(png) ? res() : rej(new Error(`export ${sig === "SIGKILL" ? "timed out" : "failed"}: ${htmlFile}`)); });
@@ -493,7 +497,7 @@ if (!args["no-qa"]) {
     const profile = fs.mkdtempSync(path.join(os.tmpdir(), "sqf-"));
     let out = "";
     const p = spawn(CHROME, ["--headless=new", "--disable-gpu", "--allow-file-access-from-files", "--window-size=1080,1350",
-      "--virtual-time-budget=8000", `--user-data-dir=${profile}`, "--dump-dom", "file://" + htmlFile], { stdio: ["ignore", "pipe", "ignore"] });
+      "--virtual-time-budget=8000", `--user-data-dir=${profile}`, "--dump-dom", pathToFileURL(htmlFile).href], { stdio: ["ignore", "pipe", "ignore"] });
     const timer = setTimeout(() => p.kill("SIGKILL"), 60000); // Chrome occasionally hangs; never let one card stall the build
     p.stdout.on("data", (b) => (out += b));
     p.on("exit", () => {

@@ -256,25 +256,66 @@
       "replaces": "crmZRo6HclQ"
     },
     "M2": {
-      "id": "UyqxlMS8X84",
-      "pos": "50% 40%"
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M2",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=10-2"
+      },
+      "file": "Fiber_M2_generated.jpg",
+      "pos": "50% 0%",
+      "replaces": "UyqxlMS8X84"
     },
     "M4": {
-      "id": "x2uFyKJhDGE",
-      "pos": "50% 30%"
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M4",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=5-2"
+      },
+      "file": "Fiber_M4_generated.jpg",
+      "pos": "50% 50%",
+      "replaces": "x2uFyKJhDGE"
     },
     "M5": {
-      "id": "1xIN4FMR78A",
-      "pos": "50% 50%"
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M5",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=7-2"
+      },
+      "file": "Fiber_M5_generated.jpg",
+      "pos": "50% 0%",
+      "replaces": "1xIN4FMR78A"
     },
     "M1": {
-      "id": "hXVVNB6Qctg",
-      "pos": "50% 55%"
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M1",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=1-2"
+      },
+      "file": "Fiber_M1_generated.jpg",
+      "pos": "50% 18%",
+      "zoom": 1.6,
+      "replaces": "hXVVNB6Qctg"
     },
     "M3": {
-      "id": "hSD_Igxu4r0",
-      "pos": "50% 12%",
-      "zoom": 1.45
+      "generated": {
+        "tool": "Figma AI",
+        "model": "gpt-image-2.5-sunburst",
+        "date": "2026-10-22",
+        "prompt": "data/generated_prompts.json#Fiber/M3",
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=4-2"
+      },
+      "file": "Fiber_M3_generated.jpg",
+      "pos": "50% 8%",
+      "zoom": 1.6,
+      "replaces": "hSD_Igxu4r0"
     },
     "B1": {
       "generated": {

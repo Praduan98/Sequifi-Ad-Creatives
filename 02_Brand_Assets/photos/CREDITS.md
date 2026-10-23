@@ -33,11 +33,11 @@ Photos are from [Unsplash](https://unsplash.com/license) (free for commercial us
 | Fiber | T3 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |
 | Fiber | T4 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |
 | Fiber | T5 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |
-| Fiber | M2 | [Mario Spencer](https://unsplash.com/@spencphoto) | [UyqxlMS8X84](https://unsplash.com/photos/linemen-working-on-a-utility-pole-with-bucket-truck-UyqxlMS8X84) |
-| Fiber | M4 | [Sammyayot254](https://unsplash.com/@superadmins) | [x2uFyKJhDGE](https://unsplash.com/photos/man-in-blue-button-up-shirt-standing-near-white-wall-x2uFyKJhDGE) |
-| Fiber | M5 | [John Adams](https://unsplash.com/@johnladams) | [1xIN4FMR78A](https://unsplash.com/photos/a-large-display-of-blue-lights-in-a-dark-room-1xIN4FMR78A) |
-| Fiber | M1 | [Compare Fibre](https://unsplash.com/@comparefibre) | [hXVVNB6Qctg](https://unsplash.com/photos/white-router-on-white-table-hXVVNB6Qctg) |
-| Fiber | M3 | [Joseph Okon](https://unsplash.com/@joecreativestudio) | [hSD_Igxu4r0](https://unsplash.com/photos/a-man-wearing-a-hard-hat-and-safety-gear-hSD_Igxu4r0) |
+| Fiber | M2 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
+| Fiber | M4 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
+| Fiber | M5 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
+| Fiber | M1 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
+| Fiber | M3 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
 | Fiber | B1 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |
 | Fiber | B2 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |
 | Solar | T1 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |
