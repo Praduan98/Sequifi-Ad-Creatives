@@ -35,7 +35,7 @@ Photos are from [Unsplash](https://unsplash.com/license) (free for commercial us
 | Fiber | T5 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |
 | Fiber | M2 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
 | Fiber | M4 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
-| Fiber | M5 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
+| Fiber | M5 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-23 |
 | Fiber | M1 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
 | Fiber | M3 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-22 |
 | Fiber | B1 | Generated with Figma AI (gpt-image-2.5-sunburst) | 2026-10-16 |

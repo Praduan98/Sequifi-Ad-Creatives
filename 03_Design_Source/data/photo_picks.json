@@ -283,9 +283,9 @@
       "generated": {
         "tool": "Figma AI",
         "model": "gpt-image-2.5-sunburst",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "prompt": "data/generated_prompts.json#Fiber/M5",
-        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=7-2"
+        "figma": "https://www.figma.com/design/lUJhonGIKABZ6TxI8nt2Hi?node-id=29-2"
       },
       "file": "Fiber_M5_generated.jpg",
       "pos": "50% 0%",
