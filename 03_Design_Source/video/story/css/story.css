@@ -1,0 +1,115 @@
+/* Sequifi brand story — 1920 × 1080. Kinetic type (DM Sans, from the brand's creative fonts), a travelling Sequifi-mark
+   "spark", line art, ribbons and doodles over dark navy / light ice scenes in the Sequifi palette. */
+@font-face { font-family: "DM Sans"; src: url("/02_Brand_Assets/fonts/creatives_DMSans/DMSans-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("/02_Brand_Assets/fonts/creatives_DMSans/DMSans-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "DM Sans"; src: url("/02_Brand_Assets/fonts/creatives_DMSans/DMSans-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "DM Sans"; src: url("/02_Brand_Assets/fonts/creatives_DMSans/DMSans-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("/02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-800-normal.ttf"); font-weight: 800; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-700-normal.ttf"); font-weight: 700; }
+
+:root {
+  --navy: #050817; --navy2: #0B1130; --ink: #0D1020; --ink2: #262D5C;
+  --peri: #6078EC; --peri-soft: #8FA0F5; --peri-deep: #4A5BD0; --peri-light: #B9C4FF; --peri-pale: #DDE3FF;
+  --mint: #2BB594; --teal: #40BC9E; --mint-light: #8FE8C8;
+  --cream: #EEF1FF; --ice: #F5F7FF;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--navy); }
+body { font-family: "DM Sans", sans-serif; color: var(--cream); -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+#stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--navy); }
+#bg { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+#pback, #pfront { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; }
+#world { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 50% 50%; }
+.abs { position: absolute; left: 0; top: 0; transform-origin: 50% 50%; }
+svg.ico { flex: none; }
+
+/* ---------- kinetic lines ---------- */
+.kl { position: absolute; left: 0; top: 0; white-space: nowrap; font-family: "DM Sans"; font-weight: 400; letter-spacing: -0.025em; line-height: 1.12; }
+.kl .w { display: inline-block; position: relative; isolation: isolate; transform-origin: 50% 70%; }
+.kl .w.b { font-weight: 700; letter-spacing: -0.03em; }
+.kl .c { display: inline-block; transform-origin: 50% 80%; }
+.kl .sp { display: inline-block; width: 0.27em; }
+.kl .w.has-sel { margin: 0 0.1em 0 0.14em; }   /* room for the selection box and highlight so they never touch the next word */
+.kl .w.has-hl { margin: 0 0.06em 0 0.1em; }
+.kl .hl { position: absolute; left: -0.16em; right: -0.16em; top: 0.06em; bottom: 0; border-radius: 0.14em; z-index: -1; transform-origin: 0 50%;
+  background: linear-gradient(90deg, #5B71E6, #8597F4); box-shadow: 0 10px 30px -10px rgba(96,120,236,.8); }
+.kl .hl.mint { background: linear-gradient(90deg, #22A585, #4FD3AE); box-shadow: 0 10px 30px -10px rgba(43,181,148,.8); }
+.kl .sel { position: absolute; left: -0.2em; right: -0.2em; top: 0.02em; bottom: -0.06em; pointer-events: none; }
+.kl .sel .e { position: absolute; background: var(--sel, #B9C4FF); }
+.kl .sel .e.t { left: 0; top: 0; width: 100%; height: 2px; transform-origin: 0 0; }
+.kl .sel .e.r { right: 0; top: 0; width: 2px; height: 100%; transform-origin: 0 0; }
+.kl .sel .e.bt { left: 0; bottom: 0; width: 100%; height: 2px; transform-origin: 100% 0; }
+.kl .sel .e.l { left: 0; top: 0; width: 2px; height: 100%; transform-origin: 0 100%; }
+.kl .sel .h { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; background: var(--hbg, #050817); border: 2px solid var(--sel, #B9C4FF); border-radius: 2px; }
+
+/* ---------- pills, cursor, spark ---------- */
+.pill { position: absolute; display: flex; align-items: center; gap: 14px; height: 92px; padding: 0 38px 0 28px; border-radius: 46px; white-space: nowrap;
+  font: 600 48px/1 "DM Sans"; letter-spacing: -0.015em; }
+.pill.ghost { background: rgba(143,160,245,.08); color: rgba(185,196,255,.42); box-shadow: inset 0 0 0 1.5px rgba(143,160,245,.24); }
+.pill.on { background: linear-gradient(180deg, #8597F6, #5A70E6); color: #fff; box-shadow: 0 16px 40px -12px rgba(96,120,236,.85), inset 0 1.5px 0 rgba(255,255,255,.45), inset 0 0 0 1px rgba(255,255,255,.14); }
+.pill.on .ico { color: #fff; }
+.cursor { position: absolute; left: 0; top: 0; width: 46px; height: 46px; transform-origin: 10% 8%; filter: drop-shadow(0 6px 10px rgba(0,0,0,.35)); }
+.ripple { position: absolute; left: 0; top: 0; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; border: 3px solid rgba(185,196,255,.9); }
+.spark { position: absolute; left: 0; top: 0; width: 72px; height: 96px; margin: -48px 0 0 -36px; transform-origin: 50% 50%; }
+.spark svg { width: 100%; height: 100%; overflow: visible; }
+.spark-trail { position: absolute; left: 0; top: 0; height: 26px; margin-top: -13px; border-radius: 13px; transform-origin: 100% 50%;
+  background: linear-gradient(90deg, rgba(143,160,245,0), rgba(143,160,245,.55) 60%, rgba(220,226,255,.95)); filter: blur(3px); }
+
+/* ---------- tiles, outline stacks, line art ---------- */
+.tile { position: absolute; left: 0; top: 0; width: 290px; height: 290px; border-radius: 60px; corner-shape: squircle; display: flex; flex-direction: column; justify-content: space-between;
+  padding: 32px 34px; font: 700 46px/1 "DM Sans"; letter-spacing: -0.02em; color: #fff;
+  /* glassy while they stand in a row; --solid (0..1) fills them in as they pile up, so each card hides the ones beneath it */
+  background: linear-gradient(160deg, rgba(96,120,236,calc(.14 + .26 * var(--e, 0))), rgba(96,120,236,.03)),
+    linear-gradient(160deg, rgba(40,52,146,var(--solid, 0)), rgba(17,23,66,var(--solid, 0)));
+  box-shadow: inset 0 0 0 2px rgba(185,196,255,calc(.38 + .5 * var(--e, 0))), 0 0 calc(20px + 40px * var(--e, 0)) rgba(96,120,236,calc(.25 + .5 * var(--e, 0))), inset 0 0 44px rgba(143,160,245,.16),
+    0 calc(24px * var(--solid, 0)) calc(48px * var(--solid, 0)) rgba(2,4,16,calc(.55 * var(--solid, 0))); }
+.tile .ico { color: var(--peri-light); }
+.ow { position: absolute; left: 0; top: 0; font: 800 172px/0.9 "Schibsted Grotesk"; letter-spacing: -0.035em; text-transform: uppercase; white-space: nowrap;
+  color: transparent; -webkit-text-stroke: 2px rgba(74,91,208,.34); }
+.ow.solid { color: var(--peri); -webkit-text-stroke: 0; }
+.ow.dark { -webkit-text-stroke: 2px rgba(185,196,255,.22); }
+.lineart { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+
+/* ---------- doodle avatars ---------- */
+.doodle { position: absolute; left: 0; top: 0; border-radius: 50%; overflow: hidden; }
+.doodle svg { width: 100%; height: 100%; display: block; }
+
+/* ---------- photos ---------- */
+.photo { position: absolute; overflow: hidden; }
+.photo img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 50%; }
+.dots { position: absolute; background-image: radial-gradient(circle, rgba(185,196,255,.55) 1.6px, rgba(185,196,255,0) 2.4px); background-size: 34px 34px; }
+
+/* ---------- dark UI cards ---------- */
+.card { position: absolute; left: 0; top: 0; border-radius: 28px; corner-shape: squircle; overflow: hidden; color: #E9ECFF; font-family: "Inter";
+  background: linear-gradient(180deg, rgba(30,39,88,.96), rgba(15,20,50,.96)); box-shadow: inset 0 0 0 1px rgba(143,160,245,.18), 0 40px 70px -34px rgba(0,0,0,.85); }
+.card .ttl { position: absolute; left: 28px; top: 26px; font: 600 21px/1 "Inter"; color: rgba(233,236,255,.66); display: flex; align-items: center; gap: 10px; }
+.card .ttl .ico { color: var(--peri-light); }
+.card .big { font: 700 44px/1 "Inter"; letter-spacing: -0.03em; }
+.card .row { display: flex; align-items: center; justify-content: space-between; font: 500 19px/1 "Inter"; color: rgba(233,236,255,.9); }
+.card .row .v { font-weight: 600; font-variant-numeric: tabular-nums; }
+.chipx { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 16px; border-radius: 19px; font: 600 17px/1 "Inter"; background: rgba(143,160,245,.14); color: #DDE3FF; }
+.card .btn { display: flex; align-items: center; justify-content: center; gap: 10px; height: 56px; border-radius: 28px; font: 600 20px/1 "Inter"; color: #fff;
+  background: linear-gradient(180deg, #8597F6, #5A70E6); box-shadow: inset 0 1.5px 0 rgba(255,255,255,.45), 0 14px 30px -12px rgba(96,120,236,.9); }
+.tg { width: 52px; height: 30px; border-radius: 15px; background: rgba(143,160,245,.25); position: relative; }
+.tg::after { content: ""; position: absolute; left: 3px; top: 3px; width: 24px; height: 24px; border-radius: 50%; background: #fff; }
+.tg.on { background: var(--mint); }
+.tg.on::after { left: 25px; }
+.device { position: absolute; left: 0; top: 0; border-radius: 40px; corner-shape: squircle; overflow: hidden;
+  background: linear-gradient(180deg, rgba(14,19,46,.92), rgba(9,12,32,.95));
+  box-shadow: inset 0 0 0 2px rgba(185,196,255,.75), 0 0 40px rgba(96,120,236,.55), 0 0 120px rgba(96,120,236,.25); }
+.gridlines { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px;
+  background-image: linear-gradient(rgba(143,160,245,.09) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(143,160,245,.09) 1.5px, transparent 1.5px);
+  background-size: 480px 360px; background-position: 0 0; }
+.ftile { position: absolute; left: 0; top: 0; border-radius: 26px; corner-shape: squircle; display: flex; align-items: center; justify-content: center; gap: 12px;
+  font: 600 30px/1 "DM Sans"; letter-spacing: -0.01em; color: rgba(233,236,255,.85); }
+.ftile.o { box-shadow: inset 0 0 0 2px rgba(185,196,255,.32); }
+.ftile.f { background: linear-gradient(180deg, rgba(96,120,236,.32), rgba(96,120,236,.12)); box-shadow: inset 0 0 0 1.5px rgba(185,196,255,.28); }
+.ftile .ico { color: var(--peri-light); }
+
+/* ---------- end card ---------- */
+.cta { position: absolute; left: 0; top: 0; display: flex; align-items: center; justify-content: center; gap: 16px; height: 100px; padding: 0 52px; border-radius: 50px;
+  font: 700 40px/1 "DM Sans"; letter-spacing: -0.015em; color: #fff; white-space: nowrap;
+  background: linear-gradient(180deg, #8597F6, #5A70E6); box-shadow: 0 24px 50px -18px rgba(76,96,230,.75), inset 0 2px 0 rgba(255,255,255,.4), inset 0 0 0 1px rgba(255,255,255,.12); }

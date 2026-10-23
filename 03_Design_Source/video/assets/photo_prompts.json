@@ -1,0 +1,97 @@
+{
+  "_readme": "AI-generated industry photos for the 30s promo (03_Design_Source/video). Generated with Figma AI, model gpt-image-2.5-sunburst, in Figma file lUJhonGIKABZ6TxI8nt2Hi. Each prompt = scene + the shared style. The story_* images (brand-story film, 03_Design_Source/video/story) use story_style instead of style.",
+  "style": "Cinematic photorealistic photograph at blue hour just after sunset: deep navy and indigo sky, cool periwinkle-blue ambient light, a few soft warm practical lights, moody but clean and premium, high dynamic range, shallow depth of field, full-frame camera, authentic people with natural skin texture, anatomically correct hands. Physically coherent scene; no person overlaps or merges with objects. No text, no lettering, no numbers, no signage, no logos, no brand names, no watermarks. Composition: 4:3 frame, the main subject centred and fully in frame; the bottom 30% of the frame darker and calm.",
+  "images": {
+    "Mortgage": {
+      "file": "photos/Mortgage.jpg",
+      "size": "1536x1152",
+      "figma_node": "15:2",
+      "scene": "A loan officer in a navy suit handing a set of house keys to a smiling young couple on the front steps of a modern suburban home, warm light glowing from the windows and porch behind them."
+    },
+    "Solar": {
+      "file": "photos/Solar.jpg",
+      "size": "1536x1152",
+      "figma_node": "13:2",
+      "scene": "A solar installer in a white hard hat, safety harness and work gloves kneeling beside neat rows of black solar panels on a residential roof, checking a tablet, distant city lights and a deep indigo sky behind."
+    },
+    "Roofing": {
+      "file": "photos/Roofing.jpg",
+      "size": "1536x1152",
+      "figma_node": "12:2",
+      "scene": "Two roofers in white hard hats and safety harnesses working on a pitched residential roof with brand-new dark architectural shingles, a ladder leaning at the gutter, warm porch light below."
+    },
+    "Fiber": {
+      "file": "photos/Fiber.jpg",
+      "size": "1536x1152",
+      "figma_node": "14:2",
+      "scene": "A fiber optic technician in a hi-vis yellow vest and headlamp standing beside a large open street-side fiber cabinet, its neat bundles of bright yellow fiber patch cords lit by his headlamp, a quiet residential street behind."
+    },
+    "HVAC": {
+      "file": "photos/HVAC.jpg",
+      "size": "1536x1152",
+      "figma_node": "17:2",
+      "scene": "An HVAC technician in a navy work uniform kneeling beside an outdoor air-conditioning condenser unit at the side of a modern home, pressure gauges connected, a small work light illuminating the unit."
+    },
+    "Pest control": {
+      "file": "photos/Pest control.jpg",
+      "size": "1536x1152",
+      "figma_node": "16:2",
+      "scene": "A pest control technician in a navy polo and cap wearing a backpack sprayer, treating the perimeter along the foundation of a tidy suburban home, porch light on, neat lawn and shrubs."
+    },
+    "Turf": {
+      "file": "photos/Turf.jpg",
+      "size": "1536x1152",
+      "figma_node": "19:2",
+      "scene": "A lawn care technician in a navy polo and cap pushing a professional fertilizer spreader across a lush, perfectly striped green front lawn of a suburban home, porch lights glowing, neat flower beds."
+    },
+    "Plumbing": {
+      "file": "photos/Plumbing.jpg",
+      "size": "1536x1152",
+      "figma_node": "20:2",
+      "scene": "A plumber in a navy work uniform kneeling beside a brand-new tank water heater in a clean, softly lit home utility room, tightening a copper pipe fitting with a wrench, a small work light illuminating the scene."
+    },
+    "Windows": {
+      "file": "photos/Windows.jpg",
+      "size": "1536x1152",
+      "figma_node": "22:2",
+      "scene": "Two window installers in navy work shirts carefully fitting a large new black-framed window into the facade of a modern suburban home, warm interior light glowing through the glass."
+    },
+    "Garage doors": {
+      "file": "photos/Garage doors.jpg",
+      "size": "1536x1152",
+      "figma_node": "18:2",
+      "scene": "A garage door technician in a navy uniform adjusting the track of a brand-new modern charcoal garage door half raised on a suburban home, warm light spilling out from inside the garage onto the driveway."
+    },
+    "Remodeling": {
+      "file": "photos/Remodeling.jpg",
+      "size": "1536x1152",
+      "figma_node": "21:2",
+      "scene": "A newly remodeled modern bathroom with a freestanding white bathtub, large-format stone tiles, warm under-cabinet lighting and a window showing the deep blue evening sky; a design consultant in a navy blazer reviewing a tablet in the doorway."
+    },
+    "Insurance": {
+      "file": "photos/Insurance.jpg",
+      "size": "1536x1152",
+      "figma_node": "23:2",
+      "scene": "An insurance agent in a navy suit sitting with a smiling homeowner couple at a warmly lit dining table in a modern home, reviewing a policy on a tablet, large windows showing the deep blue evening sky behind them."
+    },
+    "story_night_office": {
+      "file": "photos/story_night_office.jpg",
+      "scene": "Late at night in a dim, quiet office, a payroll and operations manager in her thirties sits at a desk, elbow on the desk and fingertips pressed to her temple, tired and frustrated, staring at two large computer monitors that show dense, blurred, abstract spreadsheet grids. Stacks of printed paper, a cold coffee mug and a pen on the desk, a small warm desk lamp on the far right. Cool navy-blue monitor glow on her face, deep indigo shadows everywhere else. She sits on the right third of the frame, seen in three-quarter profile; the left half of the frame is dark, soft and empty.",
+      "size": "1536x864",
+      "figma_node": "24:2"
+    },
+    "story_rep_daylight": {
+      "file": "photos/story_rep_daylight.jpg",
+      "scene": "A smiling solar sales representative in his late twenties, wearing a plain navy polo shirt, stands on the sidewalk of a sunny, tidy suburban street, looking down at the smartphone in his hand with a genuinely pleased, relieved smile. Behind him, softly out of focus, a modern home with solar panels on the roof under a clear pale lavender-blue sky. Bright, airy, optimistic daylight, soft pastel palette of white, pale blue and periwinkle, gentle sunlight on his face. He is centred and seen from the waist up.",
+      "size": "1536x1024",
+      "figma_node": "25:2"
+    },
+    "story_team_daylight": {
+      "file": "photos/story_team_daylight.jpg",
+      "scene": "In a bright, airy modern office with large windows, a sales manager and two field reps lean around a laptop on a light wooden table, smiling and pointing at the screen together, relaxed and confident. The laptop screen faces away from the camera. Soft natural window light, clean white and pale periwinkle palette with touches of green plants. Medium shot, the three people centred.",
+      "size": "1536x1024",
+      "figma_node": "26:2"
+    }
+  },
+  "story_style": "Photorealistic editorial photograph, authentic and natural, shot on a full-frame camera with a 50mm lens, shallow depth of field, real people with natural skin texture and anatomically correct hands, physically coherent scene where no person overlaps or merges with objects. Clean, premium, contemporary commercial look. No text, no lettering, no numbers, no readable screens, no signage, no logos, no brand names, no watermarks."
+}

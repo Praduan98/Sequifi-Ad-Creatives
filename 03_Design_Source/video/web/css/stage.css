@@ -1,0 +1,181 @@
+/* Sequifi 45 s promo — stage, type, Liquid Glass material and iOS 26 components (dark appearance). 1920 × 1080.
+   UI text uses Inter as the stand-in for SF Pro; inside the phone sizes are iOS points (the screen is 430 × 932 pt). */
+@font-face { font-family: "Schibsted Grotesk"; src: url("/02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("/02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("/02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-800-normal.ttf"); font-weight: 800; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("/02_Brand_Assets/fonts/website_Inter/Inter-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Instrument Serif"; src: url("/02_Brand_Assets/fonts/creatives_InstrumentSerif/InstrumentSerif-400-italic.ttf"); font-style: italic; font-weight: 400; }
+
+:root {
+  /* brand */
+  --peri: #6078EC; --soft: #8FA0F5; --deep: #4A5BD0; --tint-peri: #A9B6FF; --accent: #8597F4;
+  --night: #02040C; --ink: #0D1020; --green: #2BB594; --teal: #40BC9E; --mint: #8FE3C8;
+  /* iOS dark appearance — semantic colours */
+  --label: #FFFFFF; --label2: rgba(235, 235, 245, .62); --label3: rgba(235, 235, 245, .34);
+  --sep: rgba(84, 84, 88, .62); --fill: rgba(120, 120, 128, .26); --fill2: rgba(120, 120, 128, .18);
+  --grouped2: #1C1C1E; --grouped3: #2C2C2E; --ios-green: #30D158; --ios-red: #FF6961;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--night); }
+body { font-family: "Inter", sans-serif; color: #fff; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+#stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--night); }
+#bg { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+#pback, #pfront { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; }
+#photos, #world { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 50% 50%; }
+.abs { position: absolute; left: 0; top: 0; transform-origin: 50% 50%; }
+svg.ico { flex: none; }
+
+/* ---------- display type ---------- */
+.disp { font-family: "Schibsted Grotesk", sans-serif; font-weight: 800; letter-spacing: -0.045em; line-height: 0.92; white-space: nowrap; }
+.serif { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; letter-spacing: -0.015em; }
+.wd, .ch, .sp { display: inline-block; }
+.ch { transform-origin: 50% 70%; }
+.eyebrow { font: 600 24px/1 "Inter"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--soft); white-space: nowrap; }
+.num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
+
+/* ---------- Liquid Glass ---------- */
+.glass { position: absolute; left: 0; top: 0; overflow: hidden; transform-origin: 50% 50%;
+  --tint: rgba(255, 255, 255, .04);
+  background: var(--tint);
+  box-shadow: 0 26px 64px -26px rgba(0, 0, 0, .7), 0 6px 18px -8px rgba(0, 0, 0, .42); }
+.glass > .g-sheen { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .075) 0%, rgba(255, 255, 255, .018) 40%, rgba(255, 255, 255, 0) 62%); }
+.glass > .g-content { position: absolute; inset: 0; }
+.glass > .g-rim { position: absolute; inset: 0; pointer-events: none; background-size: 100% 100%; background-repeat: no-repeat; }
+.glass > .g-illum { position: absolute; inset: 0; pointer-events: none; opacity: 0; mix-blend-mode: screen;
+  background: radial-gradient(circle at var(--ix, 50%) var(--iy, 50%), rgba(255, 255, 255, .34) 0, rgba(200, 212, 255, .10) 34%, rgba(255, 255, 255, 0) 68%); }
+.glass.clear { --tint: rgba(255, 255, 255, .035); }
+.glass.regular { --tint: rgba(20, 22, 36, .5); }
+.glass.regular > .g-sheen { background: linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, 0) 46%); }
+.glass.lens { --tint: rgba(255, 255, 255, .12); box-shadow: 0 10px 26px -12px rgba(0, 0, 0, .7); }
+.glass.prominent { --tint: linear-gradient(180deg, rgba(133, 151, 247, .94), rgba(86, 106, 232, .94));
+  box-shadow: 0 22px 54px -18px rgba(76, 96, 230, .85), 0 6px 16px -8px rgba(0, 0, 0, .5); }
+.glass.prominent > .g-sheen { background: linear-gradient(180deg, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0) 55%); }
+
+/* capsule chip on glass */
+.chip { display: flex; align-items: center; justify-content: center; gap: 12px; height: 100%; padding: 0 26px; font: 600 26px/1 "Inter"; color: #fff; white-space: nowrap; letter-spacing: -.005em; }
+.chip .ico { color: var(--accent); }
+
+/* ---------- app icons ---------- */
+.appicon { flex: none; display: grid; place-items: center; color: #fff; border-radius: 23%; corner-shape: squircle; overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .14), inset 0 1.5px 0 rgba(255, 255, 255, .32); }
+.appicon.seq { background: linear-gradient(160deg, #98A9FA 0%, #6078EC 50%, #4A5BD0 100%); }
+.appicon.seq svg { width: 100%; height: 100%; }
+
+/* ---------- notification platter (canvas scale --k = px per pt) ---------- */
+.notif .n-in { position: absolute; inset: 0; display: flex; align-items: center; gap: calc(var(--k) * 11px); padding: 0 calc(var(--k) * 14px); }
+.notif .n-txt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: calc(var(--k) * 2px); }
+.notif .n-head { display: flex; justify-content: space-between; align-items: baseline; gap: calc(var(--k) * 8px); }
+.notif .n-title { font: 600 calc(var(--k) * 15px)/1.2 "Inter"; color: var(--label); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: calc(var(--k) * 5px); }
+.notif .n-title .ico { color: var(--ios-green); }
+.notif .n-time { flex: none; font: 400 calc(var(--k) * 13px)/1 "Inter"; color: var(--label2); }
+.notif .n-body { font: 400 calc(var(--k) * 15px)/1.25 "Inter"; color: rgba(255, 255, 255, .88); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.notif .n-body b { font-weight: 600; color: #fff; }
+
+/* ---------- iPhone ---------- */
+.phone { position: absolute; left: 0; top: 0; width: 430px; height: 932px; transform-origin: 50% 50%; }
+.phone .frame { position: absolute; inset: -15px; border-radius: 80px; corner-shape: squircle;
+  background: linear-gradient(150deg, #737a8c 0%, #2b2e37 15%, #101116 45%, #191b22 75%, #5b6172 100%);
+  box-shadow: 0 80px 160px -50px rgba(0, 0, 0, .95), 0 30px 60px -24px rgba(0, 0, 0, .7),
+    inset 0 0 0 1.5px rgba(255, 255, 255, .22), inset 0 0 0 4.5px rgba(0, 0, 0, .7), inset 0 0 0 6px rgba(255, 255, 255, .05); }
+.phone .btn { position: absolute; width: 5px; border-radius: 3px; background: linear-gradient(90deg, #2a2d36, #626879); }
+.phone .screen { position: absolute; inset: 0; border-radius: 66px; corner-shape: squircle; overflow: hidden; background: #000; }
+.phone .status { position: absolute; left: 0; right: 0; top: 0; height: 56px; z-index: 19; font: 600 17px/1 "Inter"; }
+.phone .status .clock { position: absolute; left: 52px; top: 21px; letter-spacing: -.01em; }
+.phone .status svg { position: absolute; right: 32px; top: 22px; }
+.phone .island { position: absolute; left: 152px; top: 11px; width: 126px; height: 37px; border-radius: 18.5px; background: #000; z-index: 20; overflow: hidden; }
+.phone .home { position: absolute; left: 145px; top: 918px; width: 140px; height: 5px; border-radius: 3px; background: rgba(255, 255, 255, .86); z-index: 21; }
+.phone .glare { position: absolute; inset: 0; border-radius: 66px; corner-shape: squircle; pointer-events: none; z-index: 30;
+  background: linear-gradient(118deg, rgba(255, 255, 255, .09) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 72%, rgba(255, 255, 255, .04) 100%); }
+
+/* Live Activity (expanded Dynamic Island) */
+.la { position: absolute; left: 0; top: 0; width: 404px; height: 118px; opacity: 0; }
+.la .la-icon { position: absolute; left: 16px; top: 16px; }
+.la .la-t { position: absolute; left: 70px; top: 17px; font: 600 17px/22px "Inter"; }
+.la .la-s { position: absolute; left: 70px; top: 40px; font: 400 14px/18px "Inter"; color: var(--label2); white-space: nowrap; }
+.la .la-v { position: absolute; right: 18px; top: 14px; font: 700 26px/30px "Inter"; letter-spacing: -.02em; color: var(--ios-green); display: flex; align-items: center; gap: 6px; font-variant-numeric: tabular-nums; }
+.la .la-bar { position: absolute; left: 16px; right: 16px; top: 86px; height: 6px; border-radius: 3px; background: rgba(255, 255, 255, .16); overflow: hidden; }
+.la .la-bar i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; border-radius: 3px; background: linear-gradient(90deg, #2BB594, #30D158); }
+
+/* app screens (iOS points) */
+.app { position: absolute; left: 0; top: 0; width: 430px; height: 932px; overflow: hidden;
+  background: radial-gradient(120% 38% at 50% -6%, rgba(96, 120, 236, .55), rgba(96, 120, 236, 0) 72%), #000; }
+.app .nav { position: absolute; left: 20px; right: 20px; top: 58px; height: 44px; display: flex; justify-content: space-between; }
+.app .navbtn { width: 44px; height: 44px; border-radius: 22px; display: grid; place-items: center; color: #fff;
+  background: rgba(120, 120, 128, .26); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .26), inset 0 0 0 .75px rgba(255, 255, 255, .12); }
+.app .lt { position: absolute; left: 20px; top: 112px; font: 700 34px/41px "Inter"; letter-spacing: -.022em; white-space: nowrap; }
+.app .subt { position: absolute; left: 20px; top: 155px; font: 400 15px/20px "Inter"; color: var(--label2); display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.app .subt .ico { color: var(--accent); }
+.app .sec { position: absolute; left: 36px; font: 400 13px/18px "Inter"; color: var(--label2); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; }
+.app .list { position: absolute; left: 20px; width: 390px; border-radius: 26px; corner-shape: squircle; background: var(--grouped2); overflow: hidden; }
+.app .row { position: relative; display: flex; align-items: center; justify-content: space-between; height: 52px; padding: 0 16px; font: 400 17px/22px "Inter"; white-space: nowrap; }
+.app .row + .row::before { content: ""; position: absolute; left: 16px; right: 0; top: 0; height: 1px; background: var(--sep); transform: scaleY(.6); transform-origin: 0 0; }
+.app .row .k { color: #fff; display: flex; align-items: center; gap: 12px; }
+.app .row .k small { display: block; font: 400 13px/17px "Inter"; color: var(--label2); }
+.app .row .v { font-weight: 600; font-variant-numeric: tabular-nums; }
+.app .row .v.neg { color: var(--ios-red); }
+.app .row .v.pos { color: var(--mint); }
+.app .row .chev { color: var(--label3); }
+.app .row .gl { width: 30px; height: 30px; border-radius: 8px; corner-shape: squircle; display: grid; place-items: center; color: #fff; }
+.app .av { width: 36px; height: 36px; border-radius: 18px; display: grid; place-items: center; font: 600 13px "Inter"; color: #fff; flex: none; }
+.app .total { position: absolute; left: 20px; right: 20px; display: flex; justify-content: space-between; align-items: baseline; padding: 0 16px; }
+.app .total .k { font: 600 15px "Inter"; color: var(--label2); }
+.app .total .v { font: 700 40px/1 "Inter"; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.app .cta { position: absolute; left: 20px; width: 390px; height: 56px; border-radius: 28px; display: flex; align-items: center; justify-content: center; gap: 8px;
+  font: 600 17px/1 "Inter"; color: #fff; background: linear-gradient(180deg, #8597F6, #5C73E8);
+  box-shadow: inset 0 1.5px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(255, 255, 255, .14), inset 0 0 0 .75px rgba(255, 255, 255, .2), 0 14px 30px -12px rgba(96, 120, 236, .9); }
+.app .seg { position: absolute; left: 20px; width: 390px; height: 36px; border-radius: 18px; background: var(--fill2); display: flex; align-items: center; padding: 2px; }
+.app .seg span { flex: 1; text-align: center; font: 500 14px/32px "Inter"; color: rgba(255, 255, 255, .85); position: relative; z-index: 1; }
+.app .seg .thumb { position: absolute; top: 2px; height: 32px; border-radius: 16px; background: rgba(255, 255, 255, .2); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 3px 8px rgba(0, 0, 0, .25); }
+.app .foot { position: absolute; left: 36px; right: 36px; font: 400 13px/18px "Inter"; color: var(--label2); display: flex; align-items: center; gap: 6px; }
+.app .foot .ico { color: var(--ios-green); }
+.app .hero { position: absolute; left: 20px; width: 390px; border-radius: 26px; corner-shape: squircle; background: var(--grouped2); padding: 16px; display: flex; align-items: center; gap: 14px; }
+
+/* glass tab bar inside the phone */
+.tabbar .tabs { position: absolute; inset: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 6px; }
+.tabbar .tab { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; font: 600 10px/1 "Inter"; color: rgba(255, 255, 255, .9); width: 74px; }
+.tabbar .tab.on { color: var(--accent); }
+.tabbar .sel { position: absolute; left: 6px; top: 5px; width: 74px; height: 54px; border-radius: 27px; background: rgba(255, 255, 255, .14);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), inset 0 0 0 .75px rgba(255, 255, 255, .1); }
+
+/* ---------- canvas-scale cards and widgets ---------- */
+.deal .d-in { position: absolute; inset: 0; padding: 0 34px; }
+.deal .d-row { position: absolute; left: 34px; right: 34px; height: 92px; }
+.deal .d-cap { font: 600 17px/1 "Inter"; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); display: flex; align-items: center; gap: 10px; }
+.deal .d-line { display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; }
+.deal .d-k { font: 600 30px/1 "Inter"; letter-spacing: -.01em; white-space: nowrap; }
+.deal .d-v { font: 700 40px/1 "Inter"; letter-spacing: -.025em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.deal .d-sep { position: absolute; left: 34px; right: 34px; height: 1px; background: rgba(255, 255, 255, .12); }
+.deal .d-arrow { position: absolute; width: 40px; height: 40px; border-radius: 20px; display: grid; place-items: center; color: #fff;
+  background: rgba(120, 120, 128, .3); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .26); }
+
+.widget .w-in { position: absolute; inset: 0; padding: 32px 34px; display: flex; flex-direction: column; justify-content: space-between; }
+.widget .w-top { display: flex; align-items: center; gap: 10px; font: 600 22px/1 "Inter"; color: var(--accent); }
+.widget .w-big { font: 800 100px/0.9 "Schibsted Grotesk"; letter-spacing: -.05em; }
+.widget .w-cap { font: 500 22px/1.28 "Inter"; color: var(--label2); }
+
+.tile .t-photo { position: absolute; inset: 9px; border-radius: 38px; corner-shape: squircle; overflow: hidden; }
+.tile .t-photo img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.7) saturate(.95); }
+.tile .t-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(2, 4, 12, 0) 34%, rgba(2, 4, 12, .88)); }
+.tile .t-meta { position: absolute; left: 32px; right: 26px; bottom: 28px; }
+.tile .t-name { display: flex; align-items: center; gap: 12px; font: 700 31px/1 "Inter"; letter-spacing: -.015em; }
+.tile .t-name .ico { color: var(--tint-peri); }
+.tile .t-line { font: 500 18px/1.3 "Inter"; color: rgba(255, 255, 255, .74); margin-top: 10px; }
+
+/* rail of industries (glass tab bar) */
+.rail-track { position: absolute; top: 0; height: 100%; display: flex; align-items: center; gap: 6px; }
+.rail-pill { display: flex; align-items: center; gap: 10px; height: 62px; padding: 0 24px; font: 600 24px/1 "Inter"; color: rgba(255, 255, 255, .62); white-space: nowrap; }
+.rail-pill .ico { color: rgba(169, 182, 255, .75); }
+.rail-pill.on { color: #fff; }
+.rail-pill.on .ico { color: var(--accent); }
+
+/* photo layer */
+.photo { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; }
+.photo img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; transform-origin: 70% 50%;
+  filter: brightness(.74) saturate(.95) contrast(1.06); }
+.photo .shade { position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(2, 4, 12, .95) 0%, rgba(2, 4, 12, .8) 32%, rgba(2, 4, 12, .3) 62%, rgba(2, 4, 12, .45) 100%),
+              linear-gradient(180deg, rgba(2, 4, 12, .6) 0%, rgba(2, 4, 12, 0) 24%, rgba(2, 4, 12, 0) 70%, rgba(2, 4, 12, .75) 100%); }

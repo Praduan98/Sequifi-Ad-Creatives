@@ -10,3 +10,10 @@ Thumbs.db
 
 # Node
 node_modules/
+
+# After Effects build scratch (03_Design_Source/video)
+03_Design_Source/video/build_log.txt
+03_Design_Source/video/ae/frames_job.txt
+Adobe After Effects Auto-Save/
+*.aep Logs/
+__pycache__/
