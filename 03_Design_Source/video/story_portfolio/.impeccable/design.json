@@ -1,0 +1,610 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T06:24:57.332Z",
+  "title": "Design System: Brand Story, Portfolio Cut",
+  "extensions": {
+    "colorMeta": {
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "oklch(14.0% 0.034 270.7)",
+        "tonalRamp": [
+          "#060A19",
+          "#1E2335",
+          "#393F52",
+          "#565D71",
+          "#788095",
+          "#9CA4BA",
+          "#C2CAE1",
+          "#E6EEFF"
+        ]
+      },
+      "night-blue": {
+        "role": "neutral",
+        "displayName": "Night Blue",
+        "canonical": "oklch(16.2% 0.048 271.9)",
+        "tonalRamp": [
+          "#05081F",
+          "#1C223B",
+          "#373E5A",
+          "#545C79",
+          "#767F9E",
+          "#9AA3C4",
+          "#BFC9EB",
+          "#E7EEFF"
+        ]
+      },
+      "navy-lift": {
+        "role": "neutral",
+        "displayName": "Navy Lift",
+        "canonical": "oklch(19.4% 0.062 271.2)",
+        "tonalRamp": [
+          "#040725",
+          "#192142",
+          "#343E61",
+          "#515C81",
+          "#727FA6",
+          "#96A3CC",
+          "#BBC9F4",
+          "#E6EEFF"
+        ]
+      },
+      "stage-glow": {
+        "role": "neutral",
+        "displayName": "Stage Glow",
+        "canonical": "oklch(43.8% 0.159 270.9)",
+        "tonalRamp": [
+          "#05003A",
+          "#11076F",
+          "#253092",
+          "#3E52B6",
+          "#5E77DE",
+          "#839EFF",
+          "#B5C8FF",
+          "#E6EEFF"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(17.9% 0.033 274.5)",
+        "tonalRamp": [
+          "#070A19",
+          "#1F2334",
+          "#3A3F52",
+          "#585D71",
+          "#7A7F95",
+          "#9EA3BA",
+          "#C4C9E1",
+          "#E7EDFF"
+        ]
+      },
+      "periwinkle": {
+        "role": "primary",
+        "displayName": "Stage Periwinkle",
+        "canonical": "oklch(61.3% 0.176 271.5)",
+        "tonalRamp": [
+          "#05003B",
+          "#130076",
+          "#252B9A",
+          "#3D4EBF",
+          "#5C74E7",
+          "#849DFF",
+          "#B7C8FF",
+          "#E6EEFF"
+        ]
+      },
+      "periwinkle-soft": {
+        "role": "primary",
+        "displayName": "Soft Periwinkle",
+        "canonical": "oklch(72.7% 0.125 274.3)",
+        "tonalRamp": [
+          "#060036",
+          "#17155F",
+          "#2E3580",
+          "#4955A3",
+          "#6A79CA",
+          "#8D9EF3",
+          "#B8C7FF",
+          "#E7EDFF"
+        ]
+      },
+      "periwinkle-deep": {
+        "role": "primary",
+        "displayName": "Deep Periwinkle",
+        "canonical": "oklch(52.5% 0.180 272.4)",
+        "tonalRamp": [
+          "#050038",
+          "#150078",
+          "#27299C",
+          "#3F4DC1",
+          "#5E73EA",
+          "#859CFF",
+          "#B7C8FF",
+          "#E6EEFF"
+        ]
+      },
+      "periwinkle-light": {
+        "role": "primary",
+        "displayName": "Selection Lavender",
+        "canonical": "oklch(83.2% 0.084 276.2)",
+        "tonalRamp": [
+          "#06022D",
+          "#1B1D4B",
+          "#343A6B",
+          "#51598D",
+          "#737CB2",
+          "#96A0D9",
+          "#BBC6FF",
+          "#E8EDFF"
+        ]
+      },
+      "periwinkle-pale": {
+        "role": "primary",
+        "displayName": "Pale Periwinkle",
+        "canonical": "oklch(92.0% 0.039 276.0)",
+        "tonalRamp": [
+          "#07091B",
+          "#1F2237",
+          "#3A3E54",
+          "#575C74",
+          "#7A7F98",
+          "#9EA3BD",
+          "#C3C9E4",
+          "#E8EDFF"
+        ]
+      },
+      "mint": {
+        "role": "secondary",
+        "displayName": "Paid Mint",
+        "canonical": "oklch(69.4% 0.124 172.2)",
+        "tonalRamp": [
+          "#001009",
+          "#002D21",
+          "#004D3B",
+          "#007057",
+          "#009778",
+          "#38BD9C",
+          "#67E5C2",
+          "#A1FFE7"
+        ]
+      },
+      "mint-light": {
+        "role": "secondary",
+        "displayName": "Mint Light",
+        "canonical": "oklch(86.6% 0.098 169.1)",
+        "tonalRamp": [
+          "#001008",
+          "#002D1F",
+          "#004D38",
+          "#006F54",
+          "#379376",
+          "#60B89A",
+          "#87DFC0",
+          "#ABFFE3"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "oklch(96.0% 0.019 276.3)",
+        "tonalRamp": [
+          "#090A13",
+          "#21232D",
+          "#3D3F4A",
+          "#5A5D69",
+          "#7D7F8C",
+          "#A1A4B1",
+          "#C7CAD7",
+          "#EBEEFC"
+        ]
+      },
+      "ice": {
+        "role": "neutral",
+        "displayName": "Ice",
+        "canonical": "oklch(97.7% 0.011 274.9)",
+        "tonalRamp": [
+          "#0A0B10",
+          "#222429",
+          "#3E3F46",
+          "#5C5D64",
+          "#7E8087",
+          "#A2A4AC",
+          "#C8CAD2",
+          "#ECEEF6"
+        ]
+      },
+      "toy-hero": {
+        "role": "tertiary",
+        "displayName": "Hero Periwinkle",
+        "canonical": "oklch(67.8% 0.170 275.0)",
+        "tonalRamp": [
+          "#070039",
+          "#190073",
+          "#2C2A97",
+          "#464DBB",
+          "#6572E4",
+          "#899AFF",
+          "#B9C7FF",
+          "#E7EDFF"
+        ]
+      },
+      "toy-mint": {
+        "role": "tertiary",
+        "displayName": "Field Mint",
+        "canonical": "oklch(78.5% 0.146 165.4)",
+        "tonalRamp": [
+          "#001107",
+          "#002D1C",
+          "#004E34",
+          "#00714E",
+          "#00996C",
+          "#19C18E",
+          "#57E8B3",
+          "#A8FFDE"
+        ]
+      },
+      "toy-coral": {
+        "role": "tertiary",
+        "displayName": "Manager Coral",
+        "canonical": "oklch(73.4% 0.164 31.2)",
+        "tonalRamp": [
+          "#210000",
+          "#4F0000",
+          "#810000",
+          "#A62918",
+          "#D0513E",
+          "#FA7862",
+          "#FFB2A3",
+          "#FFE5DE"
+        ]
+      },
+      "toy-yellow": {
+        "role": "tertiary",
+        "displayName": "Operator Yellow",
+        "canonical": "oklch(85.9% 0.158 85.8)",
+        "tonalRamp": [
+          "#130900",
+          "#322100",
+          "#533C00",
+          "#785800",
+          "#A17900",
+          "#CD9C0B",
+          "#F8C234",
+          "#FFE661"
+        ]
+      },
+      "toy-hat-orange": {
+        "role": "tertiary",
+        "displayName": "Hard-Hat Orange",
+        "canonical": "oklch(77.6% 0.159 59.0)",
+        "tonalRamp": [
+          "#1D0200",
+          "#3F1700",
+          "#662E00",
+          "#8F4800",
+          "#C36300",
+          "#EC8825",
+          "#FFB46C",
+          "#FFE7CB"
+        ]
+      },
+      "toy-bead": {
+        "role": "tertiary",
+        "displayName": "Glow Bead",
+        "canonical": "oklch(88.2% 0.154 90.3)",
+        "tonalRamp": [
+          "#120A00",
+          "#2F2200",
+          "#513D00",
+          "#745A00",
+          "#9E7B00",
+          "#CA9F00",
+          "#F1C53C",
+          "#FFEA67"
+        ]
+      },
+      "toy-cheek": {
+        "role": "tertiary",
+        "displayName": "Blush",
+        "canonical": "oklch(80.8% 0.123 355.2)",
+        "tonalRamp": [
+          "#1E000C",
+          "#490027",
+          "#6E1A43",
+          "#913B61",
+          "#B85E84",
+          "#E183A8",
+          "#FFABCE",
+          "#FFE4F0"
+        ]
+      },
+      "toy-ink": {
+        "role": "tertiary",
+        "displayName": "Toy Ink",
+        "canonical": "oklch(20.9% 0.040 278.1)",
+        "tonalRamp": [
+          "#08091B",
+          "#1F2237",
+          "#3B3E55",
+          "#585C74",
+          "#7A7E98",
+          "#9EA3BE",
+          "#C4C9E5",
+          "#E9EDFF"
+        ]
+      },
+      "toy-headset": {
+        "role": "tertiary",
+        "displayName": "Headset Navy",
+        "canonical": "oklch(31.9% 0.062 277.3)",
+        "tonalRamp": [
+          "#070624",
+          "#1D2042",
+          "#383C60",
+          "#555A81",
+          "#777DA6",
+          "#9AA2CC",
+          "#C0C7F4",
+          "#E8EDFF"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Still-frame headlines, two or three lines, top left; the Regular voice."
+      },
+      "display-strong": {
+        "displayName": "Display Strong",
+        "purpose": "The one selected word in a still-frame headline, bold cream, inside the selection box."
+      },
+      "headline": {
+        "displayName": "Kinetic Headline",
+        "purpose": "The film's kinetic lines (56 to 188px, most often 104px)."
+      },
+      "headline-strong": {
+        "displayName": "Kinetic Strong",
+        "purpose": "The one or two bold words in a kinetic line."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Pills, tiles and the CTA."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Supporting line under a display headline, in periwinkle-light."
+      },
+      "measure": {
+        "displayName": "Measure",
+        "purpose": "Time stamps in tabular figures beside what they measure."
+      },
+      "outline": {
+        "displayName": "Outline Stack",
+        "purpose": "Uppercase outline word stacks with one solid periwinkle copy (film only)."
+      },
+      "ui-body": {
+        "displayName": "Product UI",
+        "purpose": "Inside in-film dashboard cards and the device only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "periwinkle-lift",
+        "value": "0 16px 40px -12px rgba(96,120,236,.85), inset 0 1.5px 0 rgba(255,255,255,.45)",
+        "purpose": "Active pills, buttons and the CTA."
+      },
+      {
+        "name": "highlight-glow",
+        "value": "0 10px 30px -10px rgba(96,120,236,.8)",
+        "purpose": "Under the highlight bar behind a word (mint: rgba(43,181,148,.8))."
+      },
+      {
+        "name": "card-float",
+        "value": "inset 0 0 0 1px rgba(143,160,245,.18), 0 40px 70px -34px rgba(0,0,0,.85)",
+        "purpose": "Dark UI cards."
+      },
+      {
+        "name": "device-halo",
+        "value": "inset 0 0 0 2px rgba(185,196,255,.75), 0 0 40px rgba(96,120,236,.55), 0 0 120px rgba(96,120,236,.25)",
+        "purpose": "The device that fills with the app."
+      },
+      {
+        "name": "toy-glow",
+        "value": "drop-shadow(0 0 26px rgba(143,160,245,.55)) drop-shadow(0 28px 34px rgba(2,3,14,.55))",
+        "purpose": "The solid hero on dark (CSS filter)."
+      },
+      {
+        "name": "cursor-lift",
+        "value": "drop-shadow(0 6px 10px rgba(0,0,0,.35))",
+        "purpose": "The cursor (CSS filter)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "spring",
+        "value": "1 - e^(-d*w0*t) * (cos(wd*t) + (d*w0/wd) * sin(wd*t)), w0 = 2pi/response",
+        "purpose": "iOS-style overshooting spring for every pop; word pops use response 0.42, damping 0.55."
+      },
+      {
+        "name": "edge-draw",
+        "value": "0.09s per edge, stagger 0.07s, inOutCubic",
+        "purpose": "Selection-box edges drawing on in turn."
+      },
+      {
+        "name": "handle-pop",
+        "value": "spring response 0.3, damping 0.5, stagger 0.03s",
+        "purpose": "Selection-box handles after the edges."
+      },
+      {
+        "name": "hop",
+        "value": "x,y eased inOutSine; y -= h*4u(1-u)",
+        "purpose": "Parabolic hops of the hero."
+      },
+      {
+        "name": "landing-squash",
+        "value": "k * e^(-8t) * cos(26t), k ~ 0.3",
+        "purpose": "Damped squash on landing; stretch along velocity up to 20%."
+      },
+      {
+        "name": "type-on",
+        "value": "0.032s per character",
+        "purpose": "Typed words; a typed word never starts before the previous one finishes."
+      },
+      {
+        "name": "highlight-grow",
+        "value": "0.26s outCubic, scaleX from the left",
+        "purpose": "Highlight bar behind a word."
+      },
+      {
+        "name": "wipe",
+        "value": "circular, 0 to 2300px radius, 30px soft edge, inOutCubic",
+        "purpose": "The only way to change between the night and ice palettes."
+      },
+      {
+        "name": "click-ripple",
+        "value": "120px ring, outCubic over 0.6s, fading",
+        "purpose": "Cursor clicks in the film."
+      },
+      {
+        "name": "blink",
+        "value": "period 2.9s + 0.37s per character seed, 0.16s long",
+        "purpose": "Toy blinks, never in unison."
+      },
+      {
+        "name": "onion-skin",
+        "value": "5 ghosts at equal time steps, tint #9AA9FA at 82%, opacity 0.22 to 0.5",
+        "purpose": "Motion shown in a still; no drawn path."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "frame",
+        "value": "1920px"
+      },
+      {
+        "name": "feed-phone",
+        "value": "390px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Pill, on",
+      "kind": "chip",
+      "refersTo": "pill-on",
+      "description": "Active choice pill pressed by the cursor.",
+      "html": "<div class=\"ds-pill-on\">Automated</div>",
+      "css": ".ds-pill-on{display:inline-flex;align-items:center;gap:14px;height:92px;padding:0 38px 0 28px;border-radius:46px;font:600 48px/1 'DM Sans',sans-serif;letter-spacing:-0.015em;color:#fff;background:linear-gradient(180deg,#8597F6,#5A70E6);box-shadow:0 16px 40px -12px rgba(96,120,236,.85),inset 0 1.5px 0 rgba(255,255,255,.45),inset 0 0 0 1px rgba(255,255,255,.14);transition:transform .2s cubic-bezier(.34,1.56,.64,1)}.ds-pill-on:hover{transform:scale(1.03)}.ds-pill-on:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Pill, ghost",
+      "kind": "chip",
+      "refersTo": "pill-ghost",
+      "description": "An unchosen option beside an active pill.",
+      "html": "<div class=\"ds-pill-ghost\">Manual</div>",
+      "css": ".ds-pill-ghost{display:inline-flex;align-items:center;height:92px;padding:0 38px 0 28px;border-radius:46px;font:600 48px/1 'DM Sans',sans-serif;letter-spacing:-0.015em;background:rgba(143,160,245,.08);color:rgba(185,196,255,.42);box-shadow:inset 0 0 0 1.5px rgba(143,160,245,.24);transition:color .2s,box-shadow .2s}.ds-pill-ghost:hover{color:rgba(185,196,255,.8);box-shadow:inset 0 0 0 1.5px rgba(143,160,245,.5)}"
+    },
+    {
+      "name": "End-card CTA",
+      "kind": "button",
+      "refersTo": "cta",
+      "description": "The film's closing call to action.",
+      "html": "<button class=\"ds-cta\">Watch the film</button>",
+      "css": ".ds-cta{display:inline-flex;align-items:center;justify-content:center;gap:16px;height:100px;padding:0 52px;border:0;border-radius:50px;font:700 40px/1 'DM Sans',sans-serif;letter-spacing:-0.015em;color:#fff;background:linear-gradient(180deg,#8597F6,#5A70E6);box-shadow:0 24px 50px -18px rgba(76,96,230,.75),inset 0 2px 0 rgba(255,255,255,.4),inset 0 0 0 1px rgba(255,255,255,.12);cursor:pointer;transition:transform .2s}.ds-cta:hover{transform:translateY(-2px)}.ds-cta:focus-visible{outline:3px solid #B9C4FF;outline-offset:4px}.ds-cta:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Selection box",
+      "kind": "custom",
+      "description": "The editor's selection round the one bold word: hairline edges and four square handles.",
+      "html": "<div class=\"ds-selstage\">in <span class=\"ds-sel\">code.<i class=\"tl\"></i><i class=\"tr\"></i><i class=\"bl\"></i><i class=\"br\"></i></span></div>",
+      "css": ".ds-selstage{background:#070B22;padding:40px;font:400 96px/1 'DM Sans',sans-serif;letter-spacing:-0.035em;color:#EEF1FF}.ds-sel{position:relative;display:inline-block;padding:0 14px 4px 10px;border:2px solid #B9C4FF;font-weight:700;color:#fff}.ds-sel i{position:absolute;width:14px;height:14px;background:#070B22;border:2px solid #B9C4FF;border-radius:2px}.ds-sel .tl{left:-9px;top:-9px}.ds-sel .tr{right:-9px;top:-9px}.ds-sel .bl{left:-9px;bottom:-9px}.ds-sel .br{right:-9px;bottom:-9px}"
+    },
+    {
+      "name": "Cursor",
+      "kind": "custom",
+      "description": "Pointer arrow: cream with an ink outline on dark, inverted on ice.",
+      "html": "<div class=\"ds-cur\"><svg viewBox=\"0 0 24 24\" width=\"46\" height=\"46\"><path d=\"M4.2 2.4v17.9l4.6-4.3 3.1 6.9 3.2-1.4-3-6.8h6.5z\"/></svg><svg class=\"lt\" viewBox=\"0 0 24 24\" width=\"46\" height=\"46\"><path d=\"M4.2 2.4v17.9l4.6-4.3 3.1 6.9 3.2-1.4-3-6.8h6.5z\"/></svg></div>",
+      "css": ".ds-cur{display:flex;justify-content:space-around;padding:24px 40px;background:linear-gradient(90deg,#050817 50%,#F5F7FF 50%)}.ds-cur svg{filter:drop-shadow(0 6px 10px rgba(0,0,0,.35));transition:transform .15s}.ds-cur svg:hover{transform:scale(.84)}.ds-cur path{fill:#F2F4FF;stroke:#0D1020;stroke-width:1.3;stroke-linejoin:round}.ds-cur .lt path{fill:#0D1020;stroke:#fff}"
+    },
+    {
+      "name": "Dark UI card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Floating product-UI card inside the film.",
+      "html": "<div class=\"ds-card\"><div class=\"ttl\">Pay mix</div><div class=\"big\">72%</div><div class=\"row\"><span>Base</span><span class=\"v\">+4,200</span></div></div>",
+      "css": ".ds-card{position:relative;width:400px;padding:28px;border-radius:28px;color:#E9ECFF;font-family:Inter,sans-serif;background:linear-gradient(180deg,rgba(30,39,88,.96),rgba(15,20,50,.96));box-shadow:inset 0 0 0 1px rgba(143,160,245,.18),0 40px 70px -34px rgba(0,0,0,.85)}.ds-card .ttl{font:600 21px/1 Inter,sans-serif;color:rgba(233,236,255,.66)}.ds-card .big{margin:24px 0;font:700 44px/1 Inter,sans-serif;letter-spacing:-0.03em}.ds-card .row{display:flex;justify-content:space-between;font:500 19px/1 Inter,sans-serif;color:rgba(233,236,255,.9)}.ds-card .v{font-weight:600;color:#8FE8C8;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Chip and toggle",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Status chip and the mint on-toggle inside cards.",
+      "html": "<div class=\"ds-ct\"><span class=\"ds-chip\">Paid</span><span class=\"ds-tg on\"></span><span class=\"ds-tg\"></span></div>",
+      "css": ".ds-ct{display:flex;gap:20px;align-items:center;padding:24px;background:#0F1432}.ds-chip{display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:19px;font:600 17px/1 Inter,sans-serif;background:rgba(43,181,148,.22);color:#8FE8C8}.ds-tg{position:relative;width:52px;height:30px;border-radius:15px;background:rgba(143,160,245,.25)}.ds-tg::after{content:'';position:absolute;left:3px;top:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:left .25s cubic-bezier(.34,1.56,.64,1)}.ds-tg.on{background:#2BB594}.ds-tg.on::after{left:25px}"
+    },
+    {
+      "name": "Open-source tag",
+      "kind": "custom",
+      "refersTo": "oss-tag",
+      "description": "GitHub mark with project name and handle; the credit on promo stills.",
+      "html": "<p class=\"ds-oss\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z\"/></svg><span><span class=\"os\">Open source</span><b>motion-film</b><br><span class=\"h\">github.com/Praduan-1510</span></span></p>",
+      "css": ".ds-oss{display:inline-flex;align-items:center;gap:24px;margin:0;padding:20px 44px 22px 26px;border-radius:36px;font:400 46px/1.15 'DM Sans',sans-serif;letter-spacing:-0.01em;color:#EEF1FF;background:#0B1130;box-shadow:inset 0 0 0 2px rgba(185,196,255,.28),0 18px 34px -16px rgba(2,3,14,.9)}.ds-oss svg{width:76px;height:76px;fill:#EEF1FF;flex:none}.ds-oss .os{font-weight:500;color:#B9C4FF}.ds-oss .os::after{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:#8FA0F5;margin:0 16px 8px;vertical-align:middle}.ds-oss b{font-weight:700}.ds-oss .h{font-size:40px;font-weight:500;color:#8FA0F5}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Studio Toy Box",
+    "overview": "A navy night lit by periwinkle stage light, where a cast of glossy 3D toys and big, quiet DM Sans type act out an idea. The system is made for the 1920 × 1080 frame, not a scrolling page: one statement at a time, set large on an open field, with a character doing something next to it. Every visual is a pure function of time. Stills such as the thumbnail are frames of the same world, so they borrow its motion language (arcs, squash, onion skins, time stamps) instead of freezing a title over a paused frame.\n\nThe world has two palettes: the dark navy night, and a light ice day. It switches between them only through a circular wipe that opens from a point, usually where the hero lands. Depth comes from light, not from boxes: drifting blurred glows, glows that bleed off periwinkle elements, and the gloss on the toys. The editor's tools carry the craft story: a thin selection box with square handles and a pointer cursor turn a word into something that has just been made.\n\nThe cut is unbranded by design. Nothing in the visual system identifies a client: no logo, wordmark, URL or trust badge. The cast is the face of the work.",
+    "keyCharacteristics": [
+      "Navy night (#050817 to #070B22) with periwinkle glows; light ice (#F5F7FF) as the second palette, reached only by a circular wipe.",
+      "DM Sans throughout, carried by weight contrast: Regular 400 for the line, Bold 700 for the one word that matters.",
+      "The selection box with square handles and the pointer cursor as the signature devices.",
+      "A cast of four glossy toy blobs (periwinkle hero with antenna, mint in a hard hat, coral in glasses, yellow in a headset).",
+      "Motion by springs, parabolic hops and damped landing squash; never linear."
+    ],
+    "rules": [
+      {
+        "name": "The Two Nights Rule",
+        "body": "The world has exactly two grounds, the navy night and the ice day. A scene changes ground only through a circular wipe that grows from a point (soft edge 30 px, inOutCubic, to 2300 px radius); never a cut or a crossfade between palettes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warmth Lives in the Toys Rule",
+        "body": "Coral, yellow, orange and blush belong to the cast's materials. Type, UI and background stay in the periwinkle and mint family.",
+        "section": "colors"
+      },
+      {
+        "name": "The Weight Contrast Rule",
+        "body": "A line is Regular 400; one word, at most two, is Bold 700. Never a full line in Bold, never a size jump inside a line.",
+        "section": "typography"
+      },
+      {
+        "name": "The Measurement Rule",
+        "body": "Small type in the frame is a measurement (time stamps) or a credit, set in tabular figures beside what it measures. It never sits above a headline as a category label.",
+        "section": "typography"
+      },
+      {
+        "name": "The Glow Not Slab Rule",
+        "body": "Every shadow is blurred and pulled in with negative spread, or is a coloured glow; edges are drawn with inset hairlines (1 to 2px), not outer borders.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep every headline line in DM Sans 400 and set the one word that matters in 700 white, inside the selection box when it is the hero word.",
+      "**Do** change ground only by a circular wipe between the navy night and the ice day.",
+      "**Do** flip editor devices for the light palette: cursor ink with a white outline, accents in periwinkle-deep (#4A5BD0), text in ink (#0D1020).",
+      "**Do** build depth from glows and the toys' gloss; draw edges as 1 to 2px inset hairlines.",
+      "**Do** move everything on springs, hops and damped squash, with toys looking where they are going.",
+      "**Do** set time stamps in 500 tabular figures in periwinkle-light, next to what they measure."
+    ],
+    "donts": [
+      "**Don't** put any client name, logo, wordmark, URL, trust badge or client figure on the portfolio cut or its promo surfaces.",
+      "**Don't** use hard, offset, unblurred shadows; every shadow is a soft lift or a coloured glow.",
+      "**Don't** set a small label or kicker above a headline; supporting lines go below it.",
+      "**Don't** give type, UI or backgrounds the toys' warm colours (coral, yellow, orange).",
+      "**Don't** use Inter or Schibsted Grotesk for the film's voice; they are scoped to in-film product UI and outline stacks.",
+      "**Don't** round the selection box's corners or handles beyond 2px.",
+      "**Don't** draw motion paths, tick marks, dotted trails, stage-light rings or scattered dust dots on stills; the ghosts carry the motion."
+    ]
+  }
+}

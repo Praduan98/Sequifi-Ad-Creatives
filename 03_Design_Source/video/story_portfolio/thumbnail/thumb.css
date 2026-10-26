@@ -1,0 +1,60 @@
+/* Thumbnail for the portfolio cut, 1920 × 1080: the film's night, its type and selection box, and the toy cast. */
+@font-face { font-family: "DM Sans"; src: url("/02_Brand_Assets/fonts/creatives_DMSans/DMSans-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("/02_Brand_Assets/fonts/creatives_DMSans/DMSans-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "DM Sans"; src: url("/02_Brand_Assets/fonts/creatives_DMSans/DMSans-700-normal.ttf"); font-weight: 700; }
+
+:root {
+  --night: #070B22; --night-deep: #04061A; --navy-lift: #0B1130; --glow: #3445A8;
+  --cream: #EEF1FF; --peri: #6078EC; --peri-soft: #8FA0F5; --peri-light: #B9C4FF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--night); }
+::selection { background: var(--peri); color: var(--cream); }
+
+#stage {
+  position: relative; width: 1920px; height: 1080px; overflow: hidden; color: var(--cream);
+  font-family: "DM Sans", sans-serif; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision;
+  background:
+    radial-gradient(900px 620px at 74% 20%, rgba(52, 69, 168, .78), rgba(52, 69, 168, 0) 70%),
+    radial-gradient(1200px 700px at 82% 112%, rgba(96, 120, 236, .34), rgba(96, 120, 236, 0) 70%),
+    linear-gradient(162deg, #0B1130 0%, var(--night) 48%, var(--night-deep) 100%);
+}
+
+#chart { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+#cast { position: absolute; inset: 0; }
+#cast canvas { position: absolute; left: 0; top: 0; display: block; transform-origin: 50% 50%; }
+#cast .shadow { position: absolute; border-radius: 50%; background: radial-gradient(closest-side, rgba(2, 3, 14, .7), rgba(2, 3, 14, 0)); }
+
+#head {
+  position: absolute; left: 104px; top: 74px; font-weight: 400; font-size: 172px; line-height: 0.98;
+  letter-spacing: -0.035em; color: var(--cream);
+}
+#head span { white-space: nowrap; }
+#head .l1, #head .l2 { display: block; }
+#head .l2 { margin-top: 18px; }   /* the "y" of "entirely" clears the selection box */
+#head .sel { position: relative; display: inline-block; font-weight: 700; color: var(--cream); padding: 0 22px 6px 18px; margin-left: 4px; }
+#head .sel::before { content: ""; position: absolute; inset: 14px 0 0 0; border: 3px solid var(--peri-light); }
+#head .h { position: absolute; width: 20px; height: 20px; background: var(--night); border: 3px solid var(--peri-light); }
+#head .h.tl { left: -9px; top: 5px; } #head .h.tr { right: -9px; top: 5px; }
+#head .h.bl { left: -9px; bottom: -9px; } #head .h.br { right: -9px; bottom: -9px; }
+
+#sub { position: absolute; left: 118px; font-size: 44px; font-weight: 500; letter-spacing: -0.01em; color: var(--peri-light); }
+
+#cursor { position: absolute; width: 64px; height: 64px; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .35)); }
+#cursor path { fill: var(--cream); stroke: var(--night); stroke-width: 1.3; stroke-linejoin: round; }
+
+#oss { position: absolute; left: 112px; bottom: 92px; }
+#oss .tag {
+  display: inline-flex; align-items: center; gap: 24px; padding: 20px 44px 22px 26px; border-radius: 36px; line-height: 1.15;
+  background: var(--navy-lift); box-shadow: inset 0 0 0 2px rgba(185, 196, 255, .28), 0 18px 34px -16px rgba(2, 3, 14, .9);
+  font-size: 46px; letter-spacing: -0.01em;
+}
+#oss .gh { width: 76px; height: 76px; fill: var(--cream); flex: none; }
+#oss .lines { display: flex; flex-direction: column; gap: 6px; }
+#oss .tag .os { font-weight: 500; color: var(--peri-light); }
+#oss .tag b { font-weight: 700; color: var(--cream); }
+#oss .tag .os::after { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--peri-soft); margin: 0 16px 8px 16px; vertical-align: middle; }
+#oss .handle { font-size: 40px; font-weight: 500; letter-spacing: -0.005em; color: var(--peri-soft); }
+
+#chart .t { fill: var(--peri-light); font: 500 24px "DM Sans"; font-variant-numeric: tabular-nums; letter-spacing: .01em; }
