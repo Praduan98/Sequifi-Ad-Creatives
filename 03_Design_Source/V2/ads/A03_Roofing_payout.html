@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A03 Roofing payout</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* A thermal-paper payout receipt on copper: every line shows its own math.
+     Line 1 carries a highlighter swipe; "Every line explained" is an inked rubber stamp. */
+  .ad { background: radial-gradient(900px 700px at 30% 0%, #D9763E 0%, rgba(217,118,62,0) 70%), linear-gradient(170deg, #B9572A 0%, #93401E 60%, #6F2E15 100%); color: #fff; }
+  .hl { position: absolute; left: var(--m); top: 80px; width: 940px; font-size: 90px; color: #fff; z-index: 2; }
+  .shingles { position: absolute; inset: 0; opacity: .08;
+    background: radial-gradient(60px 40px at 50% 0, transparent 58px, #FFE0C2 59px, transparent 61px) 0 0 / 120px 52px,
+                radial-gradient(60px 40px at 50% 0, transparent 58px, #FFE0C2 59px, transparent 61px) 60px 26px / 120px 52px;
+    -webkit-mask-image: linear-gradient(180deg, transparent 10%, #000 70%); }
+  .hl em { color: #FFE0C2; }
+
+  .rwrap { position: absolute; left: 112px; top: 350px; width: 852px; transform: rotate(-2.2deg); filter: drop-shadow(0 34px 40px rgba(50,15,0,.45)) drop-shadow(0 6px 10px rgba(50,15,0,.25)); }
+  .receipt { position: relative; padding: 50px 58px 40px; background: linear-gradient(180deg, #FDFCF8, #F5F2EA); color: #22201C; font-family: "Space Mono", monospace;
+    -webkit-mask:
+      linear-gradient(#000 0 0) center / 100% calc(100% - 32px) no-repeat,
+      conic-gradient(from 135deg at top, #000 90deg, #0000 0) top / 30px 16px repeat-x,
+      conic-gradient(from -45deg at bottom, #000 90deg, #0000 0) bottom / 30px 16px repeat-x; }
+  .hdr { display: flex; align-items: center; justify-content: center; gap: 18px; }
+  .mark { display: block; width: 50px; height: 50px; margin: 0; filter: grayscale(1) brightness(.42) contrast(1.4); opacity: .92; }
+  .t1 { text-align: center; font: 700 44px/1.1 "Space Mono"; letter-spacing: -0.01em; }
+  .t2 { text-align: center; font: 400 27px/1.3 "Space Mono"; color: #5d5850; margin-top: 12px; white-space: pre; }
+  .rule { border-top: 3px dashed #BDB6A8; margin: 26px 0 12px; }
+  .line { position: relative; padding: 12px 0 10px; }
+  .line .k { font: 400 30px/1.2 "Space Mono"; letter-spacing: -0.03em; }
+  .line .v { text-align: right; font: 700 38px/1.05 "Space Mono"; margin-top: 2px; letter-spacing: -0.02em; }
+  .line.hot::before { content: ""; position: absolute; left: -22px; right: -18px; top: 4px; bottom: 0; border-radius: 6px 14px 8px 12px;
+    background: linear-gradient(100deg, rgba(255,205,60,.0) 0%, rgba(255,205,60,.62) 3%, rgba(255,214,80,.55) 92%, rgba(255,205,60,0) 100%); transform: rotate(-.6deg); z-index: -1; }
+  .line.hot { isolation: isolate; }
+  .tot { display: flex; justify-content: space-between; align-items: baseline; border-top: 3px solid #22201C; padding-top: 16px; margin-top: 14px; }
+  .tot span { font: 700 34px/1 "Space Mono"; }
+  .tot b { font: 700 76px/1 "Space Mono"; letter-spacing: -0.05em; }
+  .stampzone { height: 104px; } .bars { height: 62px; margin-top: 28px; background: repeating-linear-gradient(90deg, #22201C 0 3px, transparent 3px 7px, #22201C 7px 12px, transparent 12px 14px, #22201C 14px 15px, transparent 15px 21px); opacity: .85; }
+
+  .stamp { position: absolute; left: 318px; top: 972px; z-index: 10; transform: rotate(-6deg); color: #12795A; mix-blend-mode: multiply;
+    display: flex; align-items: center; gap: 14px; padding: 18px 28px 18px 20px; border: 6px solid currentColor; border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #F7F4EC, inset 0 0 0 8px currentColor; font: 800 42px/1 "Schibsted Grotesk"; letter-spacing: -0.01em; white-space: nowrap;
+    -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -2.6 0 0 0 2.15'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    -webkit-mask-size: 400px 200px; }
+  .stamp svg { width: 52px; height: 52px; }
+  .chip .g { background: #fff; color: #A9471F; }
+</style></head>
+<body><div class="ad grain on-dark">
+  <div class="shingles"></div>
+  <h1 class="hl">Let your reps see <em>exactly how they got paid.</em></h1>
+
+  <div class="rwrap"><div class="receipt">
+    <div class="hdr"><img class="mark" src="../../../02_Brand_Assets/logo/sequifi-app-icon.svg" alt=""><div class="t1">Payout statement</div></div>
+    <div class="t2">Rep: M. Ortiz  |  Period: October</div>
+    <div class="rule"></div>
+    <div class="line hot"><div class="k">Smith roof, closer 6% of $18,400</div><div class="v">=  $1,104</div></div>
+    <div class="line"><div class="k">Lopez roof, closer 6% of $12,500</div><div class="v">=  $750</div></div>
+    <div class="line"><div class="k">Lead set bonus x2</div><div class="v">=  $200</div></div>
+    <div class="tot"><span>Total</span><b>$2,054</b></div>
+    <div class="stampzone"></div>
+  </div></div>
+
+  <div class="stamp"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="currentColor" stroke-width="5"/><path d="M13 23.5l6.5 6.5L33 16.5" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Every line explained</div>
+
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><path d="M2 12.5 12 4l10 8.5"/><path d="M5 10.2V20h14v-9.8"/><path d="M16.5 7V4.5h2.5v4.6"/><path d="M8 20v-5h8v5"/></svg></span>ROOFING OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

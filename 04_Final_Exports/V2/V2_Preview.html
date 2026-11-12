@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sequifi V2 Static Ads</title>
+<style>
+  @font-face { font-family: "Schibsted Grotesk"; src: url("../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-800-normal.ttf"); font-weight: 800; }
+  @font-face { font-family: "DM Sans"; src: url("../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-400-normal.ttf"); font-weight: 400; }
+  @font-face { font-family: "DM Sans"; src: url("../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-600-normal.ttf"); font-weight: 600; }
+  @font-face { font-family: "Space Mono"; src: url("../../02_Brand_Assets/fonts/creatives_SpaceMono/SpaceMono-700-normal.ttf"); font-weight: 700; }
+  :root { --bg: #F4F2EC; --card: #fff; --ink: #0D1020; --muted: #6A6D80; --line: #E3E1DA; --peri: #6078EC; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0C0E18; --card: #151827; --ink: #EEF0F8; --muted: #9A9EB5; --line: #262A3D; } }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font: 400 15px/1.45 "DM Sans", system-ui, sans-serif; padding: 48px 16px 80px; }
+  header { max-width: 1320px; margin: 0 auto 36px; }
+  h1 { font: 800 clamp(32px, 5vw, 56px)/1 "Schibsted Grotesk", sans-serif; letter-spacing: -0.04em; }
+  header p { color: var(--muted); max-width: 720px; margin-top: 12px; font-size: 17px; }
+  section { max-width: 1320px; margin: 0 auto 56px; }
+  h2 { font: 800 clamp(22px, 3vw, 30px)/1.1 "Schibsted Grotesk", sans-serif; letter-spacing: -0.03em; margin-bottom: 18px; padding-top: 22px; border-top: 1px solid var(--line); }
+  h2 span { display: block; margin-top: 6px; font: 700 12px/1 "Space Mono", monospace; letter-spacing: .1em; color: var(--muted); }
+  .grid { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px 22px; }
+  figure { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+  figure a { display: block; }
+  figure img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  figcaption { padding: 14px 16px 16px; }
+  .id { font: 700 12px/1 "Space Mono", monospace; letter-spacing: .12em; color: var(--peri); }
+  .t { font-weight: 600; margin-top: 6px; }
+  .d { color: var(--muted); font-size: 14px; margin-top: 4px; }
+</style></head>
+<body>
+<header>
+  <h1>Sequifi Static Ads V2</h1>
+  <p>20 Instagram Feed ads, 1080 × 1350, grouped by funnel stage (BOFU, Brand Awareness, MOFU, TOFU). Each ad uses only the brief’s exact copy. Reading order everywhere: headline, then focal point, then industry chip and logo. Click any ad for full size.</p>
+</header>
+<main class="grid" id="grid"></main>
+<script>
+  const ADS = [
+    ["A01","Mortgage_chat","Mortgage · Chat","Night text at 9:41 PM; the “Third time this quarter” bubble breaks out of the phone."],
+    ["A02","Fiber-Telco_sheet","Fiber & Telco · Sheet","The lower two-thirds is the spreadsheet; “One spreadsheet.” is highlighted as a selected range."],
+    ["A03","Roofing_payout","Roofing · Statement","Thermal payout receipt that shows its own math; line 1 highlighted, inked stamp."],
+    ["A04","Remodeling_notes","Remodeling · Notes","Notes app on warm plaster; line 3 circled, sticky note, carpenter’s pencil."],
+    ["A05","Trades_poll","Trades · Poll","Poll sticker taped up, hi-vis yellow; “Most of a day” selected."],
+    ["A06","Roofing_chat","Roofing · Chat","Storm night through rain on glass; no phone, the thread floats."],
+    ["A09","Roofing_poll","Roofing · Poll","“Me, at 10pm” cold under a moon; “My office manager” warm and checked."],
+    ["A07","Roofing_sheet","Roofing · Sheet","Contained sheet with a zoom callout on #VALUE!, so every cell stays readable."],
+    ["A11","Solar_chat","Solar · Chat","Afternoon sun through blinds onto a desk; the solar feel comes from the light."],
+    ["A14","Mortgage_payout","Mortgage · Statement","Calm per-loan view; the pending loan is lit."],
+    ["A08","Roofing_whiteboard","Roofing · Whiteboard","Full-bleed office whiteboard in three marker colours; last line circled."],
+    ["A16","Mortgage_bigtype","Mortgage · Big type","Warm paper, giant serif $, “Until payday.” as the punchline."],
+    ["A17","Fiber-Telco_chat","Fiber & Telco · Chat","Daylight with fiber light strands; phone turned in 3D, newest message nearest."],
+    ["A18","Fiber-Telco_notes","Fiber & Telco · Notes","Dark-mode notes; “by hand.” is written by hand; line 4 circled."],
+    ["A10","Roofing_bigtype","Roofing · Big type","A single copper line draws the roof; words sit low with room to breathe."],
+    ["A15","Mortgage_poll","Mortgage · Poll","Periwinkle field; voted poll where “and some hope” wins by a mile."],
+    ["A12","Solar_notes","Solar · Notes","Full sun, a cracked phone; line 7 circled, “one lost phone = chaos”."],
+    ["A13","Solar_sheet","Solar · Sheet","The closer’s cropped screenshot, marked up in red pen."],
+    ["A20","Allverticals_bigtype","Any team · Big type","Deep ink, giant serif question mark, centred and calm."],
+    ["A19","Allverticals_email","Any team · Email","Soft inbox follow-up; the button is the focal point."],
+  ];
+  // Exports live in one folder per funnel stage (matches the shared Drive).
+  const CAMPAIGNS = [
+    ["Brand Awareness", "Brand Awareness · big-type statements", ["A10", "A16", "A20"]],
+    ["TOFU", "TOFU · problem hooks", ["A04", "A05", "A08", "A09", "A12", "A15", "A18"]],
+    ["MOFU", "MOFU · pain proof", ["A06", "A07", "A11", "A13", "A17"]],
+    ["BOFU", "BOFU · web-visit retargeting, product proof + re-engage", ["A01", "A02", "A03", "A14", "A19"]],
+  ];
+  const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const byId = Object.fromEntries(ADS.map((a) => [a[0], a]));
+  // File names = the brief's "Ad set name" + ad ID ("|" becomes " - " for Windows).
+  const ADSET = {
+    A01: "BOFU - Mortgage", A02: "BOFU - Fiber", A03: "BOFU - Roofing",
+    A04: "Remodeling | Adv+", A05: "Trades | Adv+",
+    A06: "Roofing | Core ICP Adv+", A07: "Roofing | Core ICP Adv+", A08: "Roofing | Core ICP Adv+", A09: "Roofing | Core ICP Adv+",
+    A11: "Solar | March Revival", A14: "Mortgage | March Revival", A16: "Mortgage | March Revival",
+    A17: "Fiber | Core ICP Adv+", A18: "Fiber | Core ICP Adv+",
+    A10: "Test | Roofing", A15: "Test | Mortgage", A12: "Test | Solar", A13: "Test | Solar",
+    A20: "Video Only | LAL 1-3%", A19: "Win-back | Intent + stalled",
+  };
+  // Each funnel folder holds one subfolder per industry: "<FUNNEL> - <Industry> - v2".
+  const INDUSTRY = {
+    A01: "Mortgage", A14: "Mortgage", A15: "Mortgage", A16: "Mortgage",
+    A03: "Roofing", A06: "Roofing", A07: "Roofing", A08: "Roofing", A09: "Roofing", A10: "Roofing",
+    A11: "Solar", A12: "Solar", A13: "Solar",
+    A02: "Fiber & Telecom", A17: "Fiber & Telecom", A18: "Fiber & Telecom",
+    A04: "Remodeling", A05: "Trades",
+    A19: "All Verticals", A20: "All Verticals",
+  };
+  const safe = (s) => s.replace(/\s*\|\s*/g, " - ").replace(/[<>:"/\\?*]/g, "").replace(/\s+/g, " ").trim();
+  const card = ([id, slug, t, d], dir) => {
+    const name = `${safe(ADSET[id])} - ${id}.png`;
+    const sub = `${dir} - ${INDUSTRY[id]} - v2`;
+    const f = `${encodeURIComponent(dir)}/${encodeURIComponent(sub)}/${encodeURIComponent(name)}`;
+    return `<figure><a href="${f}" target="_blank" rel="noopener"><img src="${f}" alt="${id} ${esc(t)}" loading="lazy"></a>
+      <figcaption><div class="id">${id} · ${esc(ADSET[id])}</div><div class="t">${esc(t)}</div><div class="d">${esc(d)}</div></figcaption></figure>`;
+  };
+  document.getElementById("grid").outerHTML = CAMPAIGNS.map(([dir, name, ids]) =>
+    `<section><h2>${esc(name)} <span>${dir}/ · ${ids.length} ad${ids.length > 1 ? "s" : ""}</span></h2>
+      <div class="grid">${ids.map((id) => card(byId[id], dir)).join("")}</div></section>`).join("");
+</script>
+</body></html>

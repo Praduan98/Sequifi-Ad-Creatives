@@ -1,0 +1,181 @@
+/* =====================================================================
+   Sequifi Static Ads V2: shared system
+   ---------------------------------------------------------------------
+   One idea per ad. The artifact (thread, sheet, note, poll...) is the hero
+   and is cropped big enough that its focal point reads on a phone.
+   Constant across all 20: headline type, highlight logic, sign-off.
+   Reading order everywhere: headline -> focal point -> sign-off (chip + logo).
+   ===================================================================== */
+
+/* ---------- fonts (all local, from 02_Brand_Assets) ---------- */
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../../../02_Brand_Assets/fonts/website_SchibstedGrotesk/SchibstedGrotesk-800-normal.ttf"); font-weight: 800; }
+@font-face { font-family: "Inter"; src: url("../../../02_Brand_Assets/fonts/website_Inter/Inter-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("../../../02_Brand_Assets/fonts/website_Inter/Inter-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("../../../02_Brand_Assets/fonts/website_Inter/Inter-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("../../../02_Brand_Assets/fonts/website_Inter/Inter-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "DM Sans"; src: url("../../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "DM Sans"; src: url("../../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "DM Sans"; src: url("../../../02_Brand_Assets/fonts/creatives_DMSans/DMSans-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Instrument Serif"; src: url("../../../02_Brand_Assets/fonts/creatives_InstrumentSerif/InstrumentSerif-400-italic.ttf"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Instrument Serif"; src: url("../../../02_Brand_Assets/fonts/creatives_InstrumentSerif/InstrumentSerif-400-normal.ttf"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Caveat"; src: url("../../../02_Brand_Assets/fonts/creatives_Caveat/Caveat-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Caveat"; src: url("../../../02_Brand_Assets/fonts/creatives_Caveat/Caveat-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Space Mono"; src: url("../../../02_Brand_Assets/fonts/creatives_SpaceMono/SpaceMono-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Space Mono"; src: url("../../../02_Brand_Assets/fonts/creatives_SpaceMono/SpaceMono-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Permanent Marker"; src: url("../../../02_Brand_Assets/fonts/creatives_PermanentMarker/PermanentMarker-Regular.ttf"); font-weight: 400; }
+
+/* ---------- tokens ---------- */
+:root {
+  /* brand (sequifi.com) */
+  --peri: #6078EC;
+  --peri-soft: #8FA0F5;
+  --peri-deep: #4A5BD0;
+  --peri-tint: #EEF1FE;
+  --ink: #0D1020;
+  --ink-2: #1C1C2C;
+  --body: #4C4C64;
+  --muted: #8C8CA4;
+  --green: #2BB594;
+  --red: #D4183D;
+  --paper: #F4F1EA;
+
+  /* industry worlds: one accent each, used sparingly (chip glyph, glow, one detail) */
+  --mortgage: #6078EC;
+  --roofing: #E07A3F;       /* flashing copper */
+  --roofing-night: #161D27; /* storm slate */
+  --solar: #F6A52A;
+  --solar-dusk: #2B1740;
+  --fiber: #1CC6D9;
+  --fiber-night: #061321;
+  --remodel: #6E8F72;
+  --trades: #FFC21A;
+
+  --m: 72px; /* safe margin */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: #000; }
+.ad {
+  position: relative; width: 1080px; height: 1350px; overflow: hidden;
+  font-family: "DM Sans", sans-serif; color: var(--ink);
+  -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision;
+}
+.abs { position: absolute; }
+
+/* ---------- headline ---------- */
+.hl {
+  font-family: "Schibsted Grotesk", sans-serif; font-weight: 800;
+  letter-spacing: -0.038em; line-height: 0.99; font-size: 92px;
+  text-wrap: balance;
+}
+/* default highlight: the "turn" of the sentence in the brand serif italic */
+.hl em {
+  font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400;
+  letter-spacing: -0.012em; font-size: 1.16em; line-height: 0.82;
+  padding-right: 0.04em;
+}
+.sub {
+  font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 40px;
+  line-height: 1.22; letter-spacing: -0.015em;
+}
+
+/* ---------- sign-off: industry chip (left) + logo (right) ---------- */
+.signoff {
+  position: absolute; left: var(--m); right: var(--m); bottom: 54px; height: 70px;
+  display: flex; align-items: center; justify-content: space-between; z-index: 50;
+}
+/* Industry chip: the audience callout. Sized to read at real feed size (~360px wide on a phone). */
+.chip {
+  display: inline-flex; align-items: center; gap: 14px; height: 70px;
+  padding: 0 32px 0 12px; border-radius: 999px;
+  font: 800 25px/1 "Schibsted Grotesk", sans-serif; letter-spacing: 0.06em; text-transform: uppercase;
+  white-space: nowrap;
+}
+.chip .g {
+  width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; flex: none;
+}
+.chip .g svg { width: 27px; height: 27px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.chip.light { background: #fff; color: var(--ink); box-shadow: 0 1px 0 rgba(13,16,32,.06), 0 6px 18px -8px rgba(13,16,32,.25); }
+.chip.ink   { background: var(--ink); color: #fff; }
+.chip.glass { background: rgba(255,255,255,.08); color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.22); backdrop-filter: blur(8px); }
+.logo { height: 56px; display: block; }
+
+/* ---------- texture ---------- */
+.grain::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 60;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity: .07; mix-blend-mode: multiply;
+}
+.grain.on-dark::after { mix-blend-mode: screen; opacity: .05; filter: invert(1); }
+
+/* ---------- handwriting ---------- */
+.hand { font-family: "Caveat", cursive; font-weight: 700; }
+.marker { font-family: "Permanent Marker", cursive; font-weight: 400; }
+.emoji { display: inline-block; height: 1.05em; width: 1.05em; vertical-align: -0.17em; }
+
+/* ---------- phone shell (shared by chat / notes ads) ---------- */
+.phone {
+  position: absolute; border-radius: 104px; padding: 15px;
+  background: linear-gradient(145deg, #3a3e48 0%, #15171c 28%, #0b0c10 70%, #2b2e36 100%);
+  box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,.14),
+    inset 0 0 0 5px #08090c,
+    0 2px 2px rgba(0,0,0,.2),
+    0 40px 80px -24px rgba(0,0,0,.55),
+    0 90px 160px -60px rgba(0,0,0,.6);
+}
+.phone::before { /* side buttons */
+  content: ""; position: absolute; left: -5px; top: 250px; width: 6px; height: 110px; border-radius: 4px 0 0 4px;
+  background: linear-gradient(90deg, #4a4e58, #1b1d22); box-shadow: 0 150px 0 #2a2d34;
+}
+.screen { position: relative; width: 100%; height: 100%; border-radius: 90px; overflow: hidden; background: #fff; }
+.island { position: absolute; top: 24px; left: 50%; width: 196px; height: 58px; margin-left: -98px; border-radius: 30px; background: #000; z-index: 5; }
+.statusbar {
+  height: 108px; padding: 38px 60px 0 70px; display: flex; justify-content: space-between; align-items: flex-start;
+  font: 600 32px/1 "Inter", sans-serif; letter-spacing: -0.01em;
+}
+.statusbar .icons { display: flex; gap: 10px; align-items: center; padding-top: 2px; }
+.statusbar .bars { display: flex; gap: 4px; align-items: flex-end; height: 24px; }
+.statusbar .bars i { display: block; width: 6px; border-radius: 2px; background: currentColor; }
+.statusbar .batt { width: 50px; height: 24px; border-radius: 8px; border: 2.5px solid currentColor; opacity: .95; position: relative; padding: 2.5px; }
+.statusbar .batt b { display: block; height: 100%; width: 74%; border-radius: 3.5px; background: currentColor; }
+.statusbar .batt::after { content: ""; position: absolute; right: -7px; top: 6px; width: 3.5px; height: 8px; border-radius: 0 2px 2px 0; background: currentColor; opacity: .5; }
+
+/* ---------- chat bubbles (iMessage-like, generic, no Apple marks) ---------- */
+.thread { display: flex; flex-direction: column; gap: 14px; }
+.bub {
+  position: relative; max-width: 80%; padding: 22px 32px 24px; border-radius: 44px;
+  font: 400 37px/1.24 "Inter", sans-serif; letter-spacing: -0.012em;
+}
+.bub.in  { align-self: flex-start; background: var(--bub-in, #E9E9EB); color: var(--bub-in-ink, #0b0b0f); }
+.bub.out { align-self: flex-end;   background: var(--bub-out, #1B84FF); color: #fff; }
+/* tails */
+.bub.tail.in::before, .bub.tail.out::before {
+  content: ""; position: absolute; bottom: 0; width: 34px; height: 36px; background: inherit;
+}
+.bub.tail.in::before  { left: -12px;  border-bottom-right-radius: 28px 24px; }
+.bub.tail.out::before { right: -12px; border-bottom-left-radius: 28px 24px; }
+.bub.tail.in::after, .bub.tail.out::after {
+  content: ""; position: absolute; bottom: 0; width: 24px; height: 38px; background: var(--screen-bg, #fff);
+}
+.bub.tail.in::after  { left: -24px;  border-bottom-right-radius: 20px; }
+.bub.tail.out::after { right: -24px; border-bottom-left-radius: 20px; }
+.receipt { font: 500 25px/1 "Inter", sans-serif; color: #8a8a8f; letter-spacing: -0.005em; }
+.receipt b { font-weight: 600; }
+
+/* SVG tails: work on any background (photo, rain, gradient) */
+.bub.in  { --bf: var(--bub-in, #E9E9EB); }
+.bub.out { --bf: var(--bub-out, #1B84FF); }
+.bub > .tl, .bub > .tr { position: absolute; bottom: 0; width: 46px; height: 46px; fill: var(--bf); }
+.bub > .tl { left: -17px; }
+.bub > .tr { right: -17px; transform: scaleX(-1); }
+.bub.st.in  { border-bottom-left-radius: 22px; }
+.bub.st.out { border-bottom-right-radius: 22px; }
+
+/* Poll label ("TAP TO VOTE" + eyes): shared so all three polls match */
+.vote { display: inline-flex; align-items: center; gap: 12px; font: 800 29px/1 "Schibsted Grotesk", sans-serif; letter-spacing: .1em; }
+.vote .emoji { width: 48px; height: 48px; vertical-align: middle; }

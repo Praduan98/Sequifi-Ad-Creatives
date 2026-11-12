@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A09 Roofing poll</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Evening. Three answers as wide rows: "Me, at 10pm" is cold and dim under a moon,
+     "My office manager" is warm, lifted and checked. The owner smiles, then winces. */
+  .ad { background: radial-gradient(700px 520px at 50% 64%, rgba(224,122,63,.26), rgba(224,122,63,0) 70%), linear-gradient(180deg, #111827 0%, #1A2331 60%, #141B26 100%); color: #fff; }
+  .moonglow { position: absolute; right: -140px; top: -160px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(closest-side, rgba(170,190,240,.18), rgba(170,190,240,0)); }
+  .hl { position: absolute; left: var(--m); top: 84px; width: 940px; font-size: 96px; color: #fff; }
+  .hl em { color: #F29A5E; }
+
+  .label { position: absolute; left: var(--m); top: 452px; display: flex; align-items: center; gap: 12px; font: 800 29px/1 "Schibsted Grotesk"; letter-spacing: .1em; color: rgba(255,255,255,.85); }
+  .label .emoji { width: 48px; height: 48px; }
+  .rows { position: absolute; left: var(--m); right: var(--m); top: 526px; display: flex; flex-direction: column; gap: 24px; }
+  .opt { position: relative; display: flex; align-items: center; gap: 28px; height: 152px; padding: 0 42px; border-radius: 40px; font: 600 52px/1 "DM Sans"; letter-spacing: -0.02em; }
+  .opt .r { width: 48px; height: 48px; border-radius: 50%; flex: none; box-shadow: inset 0 0 0 4px currentColor; opacity: .55; }
+  .opt.night { background: linear-gradient(90deg, #1E2A44, #18213A); color: #8796B8; box-shadow: inset 0 0 0 2px rgba(135,150,184,.18); }
+  .opt.night .moon { margin-left: auto; width: 58px; height: 58px; opacity: .9; }
+  .opt.on { background: linear-gradient(90deg, #F08A4B, #E07A3F); color: #fff; transform: scale(1.04); box-shadow: 0 24px 50px -16px rgba(224,122,63,.7), inset 0 2px 0 rgba(255,255,255,.25); }
+  .opt.on .r { opacity: 1; background: #fff; box-shadow: inset 0 0 0 10px #fff, inset 0 0 0 30px #E07A3F; }
+  .opt.on .ck { margin-left: auto; width: 62px; height: 62px; border-radius: 50%; background: #fff; display: grid; place-items: center; }
+  .opt.on .ck svg { width: 34px; height: 34px; }
+  .opt.plain { background: rgba(255,255,255,.06); color: #E9ECF2; box-shadow: inset 0 0 0 2px rgba(255,255,255,.16); }
+  .sub { position: absolute; left: var(--m); top: 1098px; color: rgba(255,255,255,.76); }
+  .chip .g { background: rgba(224,122,63,.22); color: #F5A577; }
+</style></head>
+<body><div class="ad grain on-dark">
+  <div class="moonglow"></div>
+  <h1 class="hl">Who calculates your <em>reps’ commissions?</em></h1>
+
+  <div class="label">TAP TO VOTE <img class="emoji" src="../assets/emoji/1f440.svg" alt="👀"></div>
+  <div class="rows">
+    <div class="opt night"><span class="r"></span>Me, at 10pm<svg class="moon" viewBox="0 0 58 58"><path d="M40 40A20 20 0 0 1 22 9a20 20 0 1 0 27 27 20 20 0 0 1-9 4Z" fill="#8796B8"/><circle cx="46" cy="14" r="2.4" fill="#8796B8"/><circle cx="38" cy="6" r="1.6" fill="#8796B8"/></svg></div>
+    <div class="opt on"><span class="r"></span>My office manager<span class="ck"><svg viewBox="0 0 34 34"><path d="M8.5 17.5l6 6L26 11" fill="none" stroke="#E07A3F" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    <div class="opt plain"><span class="r"></span>Software</div>
+  </div>
+
+  <p class="sub">No wrong answers. Some very tired ones.</p>
+
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><path d="M2 12.5 12 4l10 8.5"/><path d="M5 10.2V20h14v-9.8"/><path d="M16.5 7V4.5h2.5v4.6"/><path d="M8 20v-5h8v5"/></svg></span>ROOFING OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

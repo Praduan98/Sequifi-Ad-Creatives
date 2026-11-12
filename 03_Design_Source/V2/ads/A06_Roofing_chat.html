@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A06 Roofing chat</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Storm night, seen through a rain-streaked window. No phone: the thread floats on the glass.
+     The owner's "Let me get back to you." hangs there; the setter's "Ok. Waiting." is the last word. */
+  .ad { background: linear-gradient(180deg, #0B1017 0%, #121B26 55%, #0A0F15 100%); color: #fff; }
+  .bokeh { position: absolute; inset: -60px; filter: blur(34px); opacity: .9; }
+  .bokeh i { position: absolute; border-radius: 50%; }
+  .flash { position: absolute; right: -180px; top: -220px; width: 760px; height: 620px; border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(190,210,255,.20), rgba(190,210,255,0)); }
+  .bolt { position: absolute; right: 86px; top: 0; width: 140px; height: 330px; opacity: .22; filter: blur(.6px) drop-shadow(0 0 10px rgba(200,220,255,.9)); }
+  #glass { position: absolute; inset: 0; }
+  #glass i { position: absolute; border-radius: 50%; }
+  #glass b { position: absolute; width: 2px; border-radius: 2px; transform: rotate(9deg); }
+  .roofs { position: absolute; left: 0; right: 0; bottom: 0; height: 260px; }
+
+  .hl { position: absolute; left: var(--m); top: 84px; width: 940px; font-size: 84px; color: #fff; z-index: 10; }
+  .hl em { color: #F29A5E; }
+
+  .thread { position: absolute; left: var(--m); right: var(--m); top: 480px; gap: 18px; z-index: 10; --bub-in: #2B2E35; --bub-out: #1B84FF; }
+  .who { align-self: flex-start; display: flex; align-items: center; gap: 16px; padding: 10px 26px 10px 10px; border-radius: 999px;
+    background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.16); backdrop-filter: blur(10px); margin-bottom: 10px; }
+  .who .av { width: 58px; height: 58px; border-radius: 50%; background: linear-gradient(180deg, #8d93a3, #646a7a); display: grid; place-items: center; font: 600 28px/1 "Inter"; }
+  .who b { font: 600 31px/1.05 "Inter"; display: block; }
+  .who span { font: 500 23px/1 "Inter"; color: rgba(255,255,255,.62); }
+  .bub { font-size: 40px; color: #fff !important; box-shadow: 0 18px 40px -16px rgba(0,0,0,.6); }
+  .bub.in { color: #F2F3F5 !important; }
+  .bub.out { max-width: 70%; }
+  .bub.last { font-size: 66px; font-weight: 500; padding: 26px 46px 30px; border-radius: 64px 64px 64px 24px; margin-top: 12px;
+    box-shadow: 0 0 0 3px rgba(242,154,94,.6), 0 0 70px -6px rgba(242,154,94,.5), 0 30px 60px -18px rgba(0,0,0,.75); }
+  .bub.last > .tl { width: 58px; height: 58px; left: -21px; }
+  .receipt { color: rgba(255,255,255,.72); margin: 8px 0 0 8px; font-size: 29px; }
+
+  .chip .g { background: rgba(224,122,63,.22); color: #F5A577; }
+</style></head>
+<body><div class="ad grain on-dark">
+  <div class="bokeh">
+    <i style="left:6%;top:58%;width:220px;height:220px;background:rgba(224,122,63,.55)"></i>
+    <i style="left:22%;top:74%;width:120px;height:120px;background:rgba(242,180,90,.45)"></i>
+    <i style="left:62%;top:66%;width:280px;height:280px;background:rgba(93,123,168,.35)"></i>
+    <i style="left:84%;top:50%;width:150px;height:150px;background:rgba(224,122,63,.40)"></i>
+    <i style="left:40%;top:86%;width:200px;height:200px;background:rgba(242,180,90,.30)"></i>
+    <i style="left:-4%;top:30%;width:180px;height:180px;background:rgba(93,123,168,.30)"></i>
+  </div>
+  <div class="flash"></div>
+  <svg class="bolt" viewBox="0 0 140 330"><path d="M96 0 60 120l34 6-50 120 30 4-40 80" fill="none" stroke="#E6EEFF" stroke-width="4" stroke-linejoin="round"/></svg>
+  <svg class="roofs" viewBox="0 0 1080 260" preserveAspectRatio="none">
+    <path d="M0 260V170l120-70 120 70v-20l40 0V128l150-88 150 88v40h30l110-62 110 62v-30l90-52 100 58V260Z" fill="#070B10" opacity=".9"/>
+  </svg>
+  <div id="glass"></div>
+
+  <h1 class="hl">Storm season is busy enough. Payouts shouldn’t be <em>another fire.</em></h1>
+
+  <div class="thread">
+    <div class="who"><span class="av">S</span><span><b>Setter</b><span>iMessage</span></span></div>
+    <div class="bub in st"><svg class="tl" viewBox="0 0 46 46"><path d="M46 0V46H6C1 46-1 42 3 39 13 31 17 19 17 0Z"/></svg>I set the lead, he closed it. Do I get paid on that?</div>
+    <div class="bub out st"><svg class="tr" viewBox="0 0 46 46"><path d="M46 0V46H6C1 46-1 42 3 39 13 31 17 19 17 0Z"/></svg>Let me get back to you.</div>
+    <div class="bub in st last"><svg class="tl" viewBox="0 0 46 46"><path d="M46 0V46H6C1 46-1 42 3 39 13 31 17 19 17 0Z"/></svg>Ok. Waiting.</div>
+    <div class="receipt"><b>Read</b> 9:41 PM</div>
+  </div>
+
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><path d="M2 12.5 12 4l10 8.5"/><path d="M5 10.2V20h14v-9.8"/><path d="M16.5 7V4.5h2.5v4.6"/><path d="M8 20v-5h8v5"/></svg></span>ROOFING OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div>
+<script>
+  // Raindrops and streaks on the glass. Seeded, so every export is identical.
+  let s = 7; const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+  const g = document.getElementById("glass"); let h = "";
+  for (let k = 0; k < 260; k++) {
+    const d = 3 + Math.pow(r(), 3) * 22, x = r() * 1080, y = r() * 1350, o = .25 + r() * .5;
+    h += `<i style="left:${x}px;top:${y}px;width:${d}px;height:${d * (1 + r() * .25)}px;background:radial-gradient(circle at 38% 34%, rgba(255,255,255,${o}) 0 12%, rgba(255,255,255,0) 30%), radial-gradient(circle at 55% 60%, rgba(10,14,20,.0) 40%, rgba(220,230,255,${o * .5}) 62%, rgba(10,14,20,0) 72%)"></i>`;
+  }
+  for (let k = 0; k < 90; k++) {
+    const x = r() * 1080, y = r() * 1350, l = 40 + r() * 160;
+    h += `<b style="left:${x}px;top:${y}px;height:${l}px;background:linear-gradient(180deg, rgba(220,230,255,0), rgba(220,230,255,${.10 + r() * .18}))"></b>`;
+  }
+  g.innerHTML = h;
+</script>
+</body></html>

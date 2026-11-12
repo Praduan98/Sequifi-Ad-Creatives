@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A11 Solar chat</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Late-afternoon sun through the blinds onto a desk. The solar feel comes from the light itself,
+     not clip art. The phone lies face-up; the closer's "Somewhere??" is the last word. */
+  .ad { background:
+      radial-gradient(1100px 900px at 96% 4%, rgba(255,196,110,.75), rgba(255,196,110,0) 62%),
+      linear-gradient(165deg, #F6EAD6 0%, #EBD6B6 58%, #DCC09A 100%); }
+  .blinds { position: absolute; inset: -200px; z-index: 15; pointer-events: none; mix-blend-mode: multiply; filter: blur(7px);
+    background: repeating-linear-gradient(-31deg, rgba(120,62,18,0) 0 74px, rgba(120,62,18,.15) 74px 122px);
+    -webkit-mask-image: radial-gradient(1300px 1100px at 78% 30%, #000 30%, rgba(0,0,0,.35) 75%); }
+  .frame { position: absolute; z-index: 15; left: 610px; top: -100px; width: 54px; height: 1700px; transform: rotate(-31deg); transform-origin: top;
+    background: rgba(120,62,18,.12); filter: blur(10px); mix-blend-mode: multiply; }
+
+  .hl { position: absolute; left: var(--m); top: 82px; width: 950px; font-size: 80px; color: var(--ink); z-index: 20; }
+  .hl em { color: #C25A0E; }
+
+  .phone { left: 250px; top: 372px; width: 650px; height: 1250px; transform: rotate(-4deg); transform-origin: 50% 0; z-index: 5;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,.14), inset 0 0 0 5px #08090c,
+      -46px 56px 60px -10px rgba(92,48,12,.42), -10px 14px 18px rgba(92,48,12,.25); }
+  .screen { --screen-bg: #fff; color: #0b0b0f; }
+  .chathead { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0 0 18px; margin-top: -12px; border-bottom: 1.5px solid #ececf0; position: relative; }
+  .chathead .back { position: absolute; left: 38px; top: 26px; width: 22px; height: 38px; }
+  .chathead .av { width: 66px; height: 66px; border-radius: 50%; background: linear-gradient(180deg, #FFC15A, #E98B16); display: grid; place-items: center; font: 600 32px/1 "Inter"; color: #fff; }
+  .chathead .name { font: 600 30px/1 "Inter"; letter-spacing: -0.01em; }
+  .chathead .svc { font: 500 22px/1 "Inter"; color: #8a8a8f; }
+  .thread { padding: 26px 28px 0; gap: 12px; }
+  .bub { font-size: 34px; max-width: 86%; }
+  .bub.last { font-size: 64px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.1; max-width: none; white-space: nowrap; padding: 28px 54px 32px 50px; border-radius: 60px 60px 60px 22px; margin-top: 8px; }
+  .bub.last > .tl { width: 58px; height: 58px; left: -21px; }
+  .receipt { margin: 4px 0 0 12px; font-size: 25px; }
+  .scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 175px; z-index: 18;
+    background: linear-gradient(180deg, rgba(220,192,154,0) 0%, rgba(220,192,154,.92) 45%, #DCC09A 75%); }
+  .chip .g { background: #F6A52A; color: #3A1E00; }
+</style></head>
+<body><div class="ad grain">
+  <div class="blinds"></div><div class="frame"></div>
+
+  <h1 class="hl">Milestone payouts, clawbacks, and a closer asking <em>where his money is.</em></h1>
+
+  <div class="phone"><div class="screen">
+    <div class="island"></div>
+    <div class="statusbar"><span>9:41</span><span class="icons"><span class="bars"><i style="height:8px"></i><i style="height:12px"></i><i style="height:17px"></i><i style="height:22px"></i></span><span class="batt"><b></b></span></span></div>
+    <div class="chathead">
+      <svg class="back" viewBox="0 0 22 38"><path d="M19 3 4 19l15 16" fill="none" stroke="#1B84FF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="av">C</div>
+      <div class="name">Closer</div>
+      <div class="svc">iMessage</div>
+    </div>
+    <div class="thread">
+      <div class="bub in st"><svg class="tl" viewBox="0 0 46 46"><path d="M46 0V46H6C1 46-1 42 3 39 13 31 17 19 17 0Z"/></svg>M2 funded last week. Where’s my payout?</div>
+      <div class="bub out st"><svg class="tr" viewBox="0 0 46 46"><path d="M46 0V46H6C1 46-1 42 3 39 13 31 17 19 17 0Z"/></svg>It’s in the sheet somewhere.</div>
+      <div class="bub in st last"><svg class="tl" viewBox="0 0 46 46"><path d="M46 0V46H6C1 46-1 42 3 39 13 31 17 19 17 0Z"/></svg>Somewhere??</div>
+      <div class="receipt"><b>Read</b> 9:41 PM</div>
+    </div>
+  </div></div>
+
+  <div class="scrim"></div>
+  <div class="signoff">
+    <span class="chip light"><span class="g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>SOLAR OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-dark-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A08 Roofing whiteboard</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* The canvas IS the office whiteboard: aluminium frame, ghosted old writing, a marker tray.
+     The plan stacks up in three marker colours until the last line gets circled in red. */
+  .ad { background: #1B2430; }
+  .board { position: absolute; left: 34px; top: 34px; width: 1012px; height: 1040px; border-radius: 10px;
+    background: linear-gradient(135deg, #8F96A0 0%, #E3E6EA 18%, #A9AFB8 40%, #EEF0F2 62%, #9BA2AB 100%); padding: 18px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,.6); }
+  .surface { position: relative; width: 100%; height: 100%; border-radius: 4px; overflow: hidden;
+    background: linear-gradient(118deg, #FBFCFC 0%, #F2F4F5 45%, #FAFBFB 60%, #EDF0F1 100%); box-shadow: inset 0 0 0 2px rgba(0,0,0,.06), inset 0 10px 30px rgba(0,0,0,.05); }
+  .surface::before { /* glare */ content: ""; position: absolute; left: -10%; top: -30%; width: 60%; height: 160%; transform: rotate(18deg);
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.75) 50%, rgba(255,255,255,0)); opacity: .55; }
+  .ghost { position: absolute; font: 400 64px/1 "Permanent Marker"; color: rgba(60,70,80,.055); filter: blur(1.5px); white-space: nowrap; }
+  .smear { position: absolute; border-radius: 50%; background: rgba(90,100,110,.06); filter: blur(14px); }
+
+  .wb { position: absolute; left: 66px; top: 74px; font-family: "Permanent Marker", cursive; z-index: 2; }
+  .wb h1 { font: 400 76px/1.08 "Permanent Marker"; color: #1B2550; letter-spacing: 0; transform: rotate(-1.5deg); width: 860px; }
+  .wb .rule0 { width: 640px; height: 18px; margin: 8px 0 22px 4px; }
+  .ln { font-size: 78px; line-height: 1; white-space: nowrap; margin: 0 0 16px; }
+  .ln.l1 { color: #1E4FD8; transform: rotate(-1deg); margin-left: 26px; }
+  .ln.l2 { color: #148A5C; transform: rotate(.8deg); margin-left: 4px; }
+  .ln.l3 { color: #1B2550; transform: rotate(-1.6deg); margin-left: 10px; }
+  .ln.l4 { color: #1E4FD8; transform: rotate(1deg); margin-left: 2px; }
+  .sum { width: 700px; height: 20px; margin: 6px 0 14px 0; }
+  .res { position: relative; display: inline-block; white-space: nowrap; font-size: 68px; color: #D3122F; transform: rotate(-2deg); margin-left: 6px; padding: 18px 34px 22px; }
+  .res svg { position: absolute; left: -16px; top: -12px; width: calc(100% + 40px); height: calc(100% + 28px); overflow: visible; }
+
+  .tray { position: absolute; left: 20px; top: 1060px; width: 1040px; height: 40px; border-radius: 4px 4px 10px 10px; z-index: 4;
+    background: linear-gradient(180deg, #F1F3F5 0%, #B9BFC7 45%, #8C939C 100%); box-shadow: 0 18px 30px -8px rgba(0,0,0,.55); }
+  .mk { position: absolute; top: 1036px; height: 30px; border-radius: 8px; z-index: 5; box-shadow: 0 6px 8px rgba(0,0,0,.25); }
+  .mk::after { content: ""; position: absolute; right: -26px; top: 6px; width: 30px; height: 18px; border-radius: 0 9px 9px 0; background: inherit; filter: brightness(.8); }
+  .eraser { position: absolute; left: 700px; top: 1018px; width: 190px; height: 48px; border-radius: 10px; z-index: 5;
+    background: linear-gradient(180deg, #2D3440 0 55%, #E9E4DA 55% 100%); box-shadow: 0 8px 12px rgba(0,0,0,.3); }
+  .sub { position: absolute; left: var(--m); top: 1124px; font: 600 40px/1.2 "DM Sans"; color: #fff; letter-spacing: -0.015em; }
+  .chip .g { background: rgba(224,122,63,.22); color: #F5A577; }
+</style></head>
+<body><div class="ad grain on-dark">
+  <div class="board"><div class="surface">
+    <div class="smear" style="left:560px;top:80px;width:360px;height:120px"></div>
+    <div class="smear" style="left:520px;top:520px;width:420px;height:160px"></div>
+    <div class="ghost" style="left:600px;top:120px;transform:rotate(-3deg)" aria-hidden="true">~~~ ~~</div>
+    <div class="ghost" style="left:560px;top:560px;transform:rotate(2deg)" aria-hidden="true">~~ ~~~~</div>
+
+    <div class="wb">
+      <h1>Your roofing comp plan, drawn out.</h1>
+      <svg class="rule0" viewBox="0 0 640 18"><path d="M4 10C160 4 420 14 636 6" fill="none" stroke="#1B2550" stroke-width="5" stroke-linecap="round"/></svg>
+      <div class="ln l1">Setter %</div>
+      <div class="ln l2">+ Closer %</div>
+      <div class="ln l3">+ Manager override</div>
+      <div class="ln l4">+ Supplements</div>
+      <svg class="sum" viewBox="0 0 700 20"><path d="M6 12C200 6 480 16 694 8" fill="none" stroke="#1B2550" stroke-width="6" stroke-linecap="round"/></svg>
+      <div class="res">= who’s tracking this?
+        <svg viewBox="0 0 760 140" preserveAspectRatio="none"><path d="M60 22C220 0 600 2 712 26 770 40 764 110 690 124 520 146 200 142 64 120 0 108 6 52 70 32 140 12 260 8 330 10" fill="none" stroke="#D3122F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="tray"></div>
+  <div class="mk" style="left:120px;width:200px;background:#1B2550"></div>
+  <div class="mk" style="left:360px;width:200px;background:#1E4FD8"></div>
+  <div class="mk" style="left:600px;width:84px;background:#D3122F;transform:rotate(-4deg)"></div>
+  <div class="eraser"></div>
+
+  <p class="sub">Sequifi runs this for you.</p>
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><path d="M2 12.5 12 4l10 8.5"/><path d="M5 10.2V20h14v-9.8"/><path d="M16.5 7V4.5h2.5v4.6"/><path d="M8 20v-5h8v5"/></svg></span>ROOFING OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

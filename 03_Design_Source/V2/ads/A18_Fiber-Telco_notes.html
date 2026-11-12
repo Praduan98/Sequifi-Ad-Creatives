@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A18 Fiber notes</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Night shift, dark-mode Notes, fiber light behind. "by hand." is literally written by hand.
+     Line 4 (the mid-month team change) is circled; the sticky says how often this happens. */
+  .ad { background: radial-gradient(800px 700px at 20% 80%, rgba(28,198,217,.22), rgba(28,198,217,0) 70%), linear-gradient(180deg, #071526 0%, #04101C 100%); color: #fff; }
+  .strands { position: absolute; inset: 0; opacity: .9; }
+  .hl { position: absolute; left: var(--m); top: 84px; width: 940px; font-size: 92px; color: #fff; z-index: 10; }
+  .hl .hand { font-size: 1.32em; line-height: .7; color: #45E3F2; letter-spacing: 0; display: inline-block; transform: rotate(-4deg) translateY(4px); margin-left: 6px; }
+
+  .phone { left: 104px; top: 410px; width: 650px; height: 1240px; transform: rotate(-5deg); transform-origin: 50% 0; }
+  .screen { background: #0B0B0C; color: #F2F2F4; font-family: "Inter"; }
+  .statusbar { color: #fff; }
+  .top { display: flex; align-items: center; gap: 8px; padding: 0 40px; height: 64px; font: 500 32px/1 "Inter"; color: #F5C400; }
+  .top svg { width: 20px; height: 34px; }
+  .top .r { margin-left: auto; display: flex; gap: 22px; } .top .r i { width: 36px; height: 36px; border-radius: 50%; border: 3px solid #F5C400; }
+  .body { padding: 18px 42px; }
+  .body h3 { font: 700 44px/1.1 "Inter"; letter-spacing: -0.02em; margin: 6px 0 16px; }
+  .body li { list-style: none; position: relative; font: 400 34px/1.08 "Inter"; padding: 19px 0; white-space: nowrap; letter-spacing: -0.012em; }
+  .loop { position: absolute; left: -22px; top: -8px; width: 590px; height: 96px; overflow: visible; }
+
+  .sticky { position: absolute; left: 742px; top: 432px; width: 290px; height: 280px; z-index: 12; transform: rotate(8deg);
+    background: linear-gradient(165deg, #FF9EBB 0%, #FF85A8 75%, #F2709A 100%); padding: 56px 28px 0 34px;
+    box-shadow: 0 34px 50px -18px rgba(0,0,0,.65), 0 4px 10px rgba(0,0,0,.2); }
+  .sticky p { font: 700 64px/0.95 "Caveat"; color: #3a0a1c; }
+  .tape { position: absolute; left: 812px; top: 414px; width: 150px; height: 46px; z-index: 13; transform: rotate(-4deg); background: rgba(255,255,255,.42); }
+
+  .scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 250px; z-index: 11;
+    background: linear-gradient(180deg, rgba(4,16,28,0) 0%, rgba(4,16,28,.9) 50%, #04101C 80%); }
+  .chip .g { background: #1CC6D9; color: #04202A; }
+</style></head>
+<body><div class="ad grain on-dark">
+  <svg class="strands" viewBox="0 0 1080 1350" fill="none">
+    <defs><linearGradient id="f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1CC6D9" stop-opacity="0"/><stop offset=".6" stop-color="#1CC6D9" stop-opacity=".5"/><stop offset="1" stop-color="#6078EC" stop-opacity=".25"/></linearGradient></defs>
+    <g stroke="url(#f)" stroke-width="2.4">
+      <path d="M-20 520C300 470 520 640 760 600S1020 420 1120 380"/><path d="M-20 560C300 510 520 680 760 640S1020 470 1120 430"/>
+      <path d="M-20 600C300 560 520 720 760 690S1020 520 1120 480"/><path d="M-20 480C300 430 520 600 760 560S1020 370 1120 330"/>
+    </g>
+  </svg>
+
+  <h1 class="hl">Fiber comp rules we track <span class="hand">by hand.</span></h1>
+
+  <div class="phone"><div class="screen">
+    <div class="island"></div>
+    <div class="statusbar"><span>9:41</span><span class="icons"><span class="bars"><i style="height:8px"></i><i style="height:12px"></i><i style="height:17px"></i><i style="height:22px"></i></span><span class="batt"><b></b></span></span></div>
+    <div class="top"><svg viewBox="0 0 20 34"><path d="M17 3 4 17l13 14" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Notes<span class="r"><i></i><i></i></span></div>
+    <div class="body">
+      <h3>Comp rules (by hand)</h3>
+      <ul>
+        <li>Tiers reset on the 1st</li>
+        <li>SPIFF for weekend installs</li>
+        <li>Clawback if they cancel</li>
+        <li>Jordan moved teams on the 12th
+          <svg class="loop" viewBox="0 0 590 96"><path d="M34 12C140-2 440-4 540 14 590 24 592 72 536 84 410 102 140 98 46 80-4 70 4 32 56 20 110 8 200 6 252 8" fill="none" stroke="#FF4D7A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+        <li>Ask payroll</li>
+        <li>Does this one count?</li>
+      </ul>
+    </div>
+  </div></div>
+
+  <div class="sticky"><p>every. single. month.</p></div>
+  <div class="tape"></div>
+
+  <div class="scrim"></div>
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg></span>FIBER &amp; TELCO LEADERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

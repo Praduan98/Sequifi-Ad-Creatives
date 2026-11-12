@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A13 Solar sheet</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* The closer's screenshot: a phone sheet, cropped, marked up in red pen, about to be sent.
+     Crop handles and a markup toolbar make it read as "your rep found this", not "your sheet". */
+  .ad { background: radial-gradient(1000px 700px at 50% 112%, #F59A2E 0%, rgba(245,154,46,0) 60%), linear-gradient(180deg, #24123A 0%, #4A1E44 52%, #8A3A34 100%); color: #fff; }
+  .sun { position: absolute; left: 50%; bottom: -360px; width: 900px; height: 900px; margin-left: -450px; border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(255,214,140,.55), rgba(255,170,70,.18) 60%, rgba(255,170,70,0)); }
+  .hl { position: absolute; left: var(--m); top: 84px; width: 940px; font-size: 88px; color: #fff; }
+  .hl em { color: #FFC46B; }
+
+  .shot { position: absolute; left: 104px; top: 400px; width: 820px; transform: rotate(2.5deg); z-index: 5; }
+  .card { border-radius: 34px; overflow: hidden; background: #fff; color: #1f2328; font-family: "Inter";
+    box-shadow: 0 0 0 8px rgba(255,255,255,.95), 0 50px 90px -30px rgba(10,0,20,.75), 0 18px 40px -16px rgba(10,0,20,.5); }
+  .appbar { height: 84px; display: flex; align-items: center; gap: 18px; padding: 0 28px; background: #F4F7F5; border-bottom: 1.5px solid #DDE3DF; }
+  .appbar .back { width: 18px; height: 32px; }
+  .appbar .ic { width: 40px; height: 40px; border-radius: 9px; background: #188038; display: grid; place-items: center; }
+  .appbar .ic svg { width: 24px; height: 24px; }
+  .appbar b { font: 600 29px/1 "Inter"; }
+  .fx { height: 62px; display: flex; align-items: center; gap: 4px; padding: 0 22px; border-bottom: 1.5px solid #DDE3DF; }
+  .fx .f { width: 46px; font: italic 400 32px/1 "Instrument Serif", serif; color: #6b7280; }
+  .fx .v { font: 400 25px/1 "Space Mono", monospace; letter-spacing: -0.03em; }
+  table { border-collapse: collapse; table-layout: fixed; width: 820px; }
+  th { height: 38px; background: #F6F7F9; border: 1.5px solid #DFE2E6; font: 500 19px/1 "Inter"; color: #6b7280; }
+  td { height: 78px; border: 1.5px solid #E5E8EB; padding: 0 18px; font: 400 33px/1 "Inter"; white-space: nowrap; }
+  td.rn { background: #F6F7F9; color: #6b7280; text-align: center; padding: 0; font-size: 19px; font-weight: 500; }
+  td.n { text-align: right; }
+  tr.h td { font-weight: 700; background: #FAFBFC; }
+  td.q { text-align: right; font-weight: 800; font-size: 42px; color: #B42318; background: #FFF4E5; }
+  .pad { height: 104px; position: relative; }
+
+  /* markup, drawn over the screenshot */
+  .ink { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+  .note { position: absolute; left: 110px; top: 590px; font: 700 74px/1 "Caveat"; color: #FF3B30; transform: rotate(-3deg); }
+
+  .crop i { position: absolute; width: 58px; height: 58px; border: 0 solid #fff; }
+  .crop i:nth-child(1) { left: -20px; top: -20px; border-width: 9px 0 0 9px; border-top-left-radius: 14px; }
+  .crop i:nth-child(2) { right: -20px; top: -20px; border-width: 9px 9px 0 0; border-top-right-radius: 14px; }
+  .crop i:nth-child(3) { left: -20px; bottom: -20px; border-width: 0 0 9px 9px; border-bottom-left-radius: 14px; }
+  .crop i:nth-child(4) { right: -20px; bottom: -20px; border-width: 0 9px 9px 0; border-bottom-right-radius: 14px; }
+
+  .tools { position: absolute; left: 50%; top: 1148px; transform: translateX(-50%); z-index: 6; display: flex; align-items: center; gap: 26px; padding: 14px 30px;
+    border-radius: 999px; background: rgba(20,10,28,.55); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.14); backdrop-filter: blur(10px); }
+  .tools svg { width: 34px; height: 46px; }
+  .tools .sep { width: 2px; height: 36px; background: rgba(255,255,255,.2); }
+  .tools .c { width: 32px; height: 32px; border-radius: 50%; }
+  .tools .c.on { box-shadow: 0 0 0 4px rgba(20,10,28,.9), 0 0 0 7px #fff; }
+  .chip .g { background: #F6A52A; color: #3A1E00; }
+</style></head>
+<body><div class="ad grain on-dark">
+  <div class="sun"></div>
+  <h1 class="hl">Your best closer found the mistake <em>before you did.</em></h1>
+
+  <div class="shot">
+    <div class="card">
+      <div class="appbar">
+        <svg class="back" viewBox="0 0 18 32"><path d="M15 3 3 16l12 13" fill="none" stroke="#188038" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></span>
+        <b>Solar_Payouts_Q4.xlsx</b>
+      </div>
+      <div class="fx"><span class="f">fx</span><span class="v">=SUMIFS(Deals!E:E,Deals!B:B,B5)</span></div>
+      <table>
+        <colgroup><col style="width:52px"><col style="width:190px"><col style="width:206px"><col style="width:186px"><col style="width:186px"></colgroup>
+        <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        <tr class="h"><td class="rn">1</td><td>Rep</td><td>Deal</td><td>Milestone</td><td>Payout</td></tr>
+        <tr><td class="rn">2</td><td>Reyes</td><td>Hall</td><td>M1</td><td class="n">$1,800</td></tr>
+        <tr><td class="rn">3</td><td>Tran</td><td>Boyd</td><td>M1</td><td class="n">$1,650</td></tr>
+        <tr><td class="rn">4</td><td>Tran</td><td>Lee</td><td>M2</td><td class="n">$2,200</td></tr>
+        <tr><td class="rn">5</td><td>Reyes</td><td>Okafor</td><td>M2</td><td class="q">$ ??</td></tr>
+      </table>
+      <div class="pad"></div>
+    </div>
+    <div class="crop"><i></i><i></i><i></i><i></i></div>
+    <svg class="ink" viewBox="0 0 820 678">
+      <path d="M640 488C694 468 802 472 834 502 860 528 832 572 760 584 690 594 618 582 604 552 592 524 620 498 672 488 704 482 744 482 770 488" fill="none" stroke="#FF3B30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+      <path d="M588 640C628 636 652 620 664 594" fill="none" stroke="#FF3B30" stroke-width="6.5" stroke-linecap="round"/>
+      <path d="M640 604 665 592 676 618" fill="none" stroke="#FF3B30" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="note">who checks this??</div>
+  </div>
+
+  <div class="tools">
+    <svg viewBox="0 0 34 46"><path d="M10 44V18l7-14 7 14v26Z" fill="#fff"/><path d="M13 18h8" stroke="#2a1a33" stroke-width="2"/></svg>
+    <svg viewBox="0 0 34 46" style="transform:translateY(-8px)"><path d="M8 44V16h18v28Z" fill="#FF3B30"/><path d="M8 16l4-12h10l4 12Z" fill="#fff"/></svg>
+    <svg viewBox="0 0 34 46"><path d="M11 44V14l6-10 6 10v30Z" fill="#fff" opacity=".85"/></svg>
+    <svg viewBox="0 0 34 46"><rect x="7" y="16" width="20" height="28" rx="3" fill="#fff" opacity=".85"/><rect x="7" y="16" width="20" height="9" rx="3" fill="#F6A6C1"/></svg>
+    <span class="sep"></span>
+    <span class="c" style="background:#111"></span><span class="c" style="background:#2F7BF6"></span><span class="c on" style="background:#FF3B30"></span><span class="c" style="background:#FFC92E"></span>
+  </div>
+
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>SOLAR OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

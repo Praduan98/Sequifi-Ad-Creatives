@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A12 Solar notes</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Full sun. The whole solar comp plan lives on one phone, and the screen is already cracked.
+     Not the A04 layout: phone tilted the other way on the right, sticky bottom-left, headline underlined in red pen. */
+  .ad { background: radial-gradient(760px 760px at 92% 6%, #FFE3A6 0%, rgba(255,227,166,0) 60%), linear-gradient(160deg, #FFC35C 0%, #F9A532 50%, #EE8A1F 100%); }
+  .rays { position: absolute; right: -300px; top: -300px; width: 900px; height: 900px; border-radius: 50%; opacity: .22;
+    background: repeating-conic-gradient(from 0deg, rgba(255,255,255,.9) 0deg 4deg, rgba(255,255,255,0) 4deg 14deg);
+    -webkit-mask-image: radial-gradient(closest-side, #000 30%, transparent 100%); }
+  .hl { position: absolute; left: var(--m); top: 84px; width: 960px; font-size: 80px; color: #2A1600; }
+  .ul { position: relative; white-space: nowrap; }
+  .ul svg { position: absolute; left: -6px; bottom: -22px; width: calc(100% + 16px); height: 30px; overflow: visible; }
+
+  .phone { left: 410px; top: 318px; width: 620px; height: 1240px; transform: rotate(6deg); transform-origin: 50% 0; }
+  .screen { background: #FFFEFB; font-family: "Inter"; color: #1c1c1e; }
+  .top { display: flex; align-items: center; gap: 8px; padding: 0 38px; height: 60px; font: 500 30px/1 "Inter"; color: #D79A00; }
+  .top svg { width: 19px; height: 32px; }
+  .top .r { margin-left: auto; display: flex; gap: 22px; } .top .r i { width: 34px; height: 34px; border-radius: 50%; border: 3px solid #D79A00; }
+  .body { padding: 10px 40px; }
+  .body h3 { font: 700 42px/1.1 "Inter"; letter-spacing: -0.02em; margin: 4px 0 10px; }
+  .body li { list-style: none; position: relative; font: 400 34px/1.06 "Inter"; padding: 14px 0; white-space: nowrap; letter-spacing: -0.012em; }
+  .loop { position: absolute; left: -22px; top: -8px; width: 548px; height: 88px; overflow: visible; }
+  .crack { position: absolute; inset: 0; z-index: 4; pointer-events: none; }
+
+  .sticky { position: absolute; left: 56px; top: 700px; width: 290px; height: 280px; z-index: 12; transform: rotate(-6deg);
+    background: linear-gradient(170deg, #FFF3A6 0%, #FFE97A 75%, #F7DB55 100%); padding: 58px 30px 0 34px;
+    box-shadow: 0 30px 44px -18px rgba(110,50,0,.5), 0 4px 8px rgba(110,50,0,.14); }
+  .sticky p { font: 700 62px/0.96 "Caveat"; color: #2a1b00; }
+  .tape { position: absolute; left: 130px; top: 684px; width: 150px; height: 46px; z-index: 13; transform: rotate(-10deg); background: rgba(255,255,255,.5); }
+
+  .scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 200px; z-index: 11;
+    background: linear-gradient(180deg, rgba(238,138,31,0) 0%, rgba(238,138,31,.92) 55%, #EE8A1F 85%); }
+  .chip .g { background: #2A1600; color: #FFC35C; }
+</style></head>
+<body><div class="ad grain">
+  <div class="rays"></div>
+  <h1 class="hl">Solar commission rules.<br><span class="ul">Do not lose this note.<svg viewBox="0 0 600 30" preserveAspectRatio="none"><path d="M4 12C150 4 420 2 596 10" fill="none" stroke="#D3122F" stroke-width="6" stroke-linecap="round"/><path d="M30 24C200 16 400 16 560 22" fill="none" stroke="#D3122F" stroke-width="5" stroke-linecap="round"/></svg></span></h1>
+
+  <div class="phone"><div class="screen">
+    <div class="island"></div>
+    <div class="statusbar"><span>9:41</span><span class="icons"><span class="bars"><i style="height:8px"></i><i style="height:12px"></i><i style="height:17px"></i><i style="height:22px"></i></span><span class="batt"><b></b></span></span></div>
+    <div class="top"><svg viewBox="0 0 19 32"><path d="M16 3 4 16l12 13" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>Notes<span class="r"><i></i><i></i></span></div>
+    <div class="body">
+      <h3>Solar comp rules</h3>
+      <ul>
+        <li>Setter split</li>
+        <li>Closer split</li>
+        <li>Adders change the number</li>
+        <li>Pay at M1</li>
+        <li>Pay the rest at M2</li>
+        <li>Clawback if it cancels</li>
+        <li>Ask finance about exceptions
+          <svg class="loop" viewBox="0 0 548 88"><path d="M30 12C130-2 410-4 500 14 548 24 550 66 498 78 380 96 130 92 42 74-4 64 4 30 52 18 100 8 190 6 236 8" fill="none" stroke="#E0243F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+      </ul>
+    </div>
+    <svg class="crack" viewBox="0 0 590 1210" fill="none" stroke-linecap="round">
+      <g stroke="rgba(255,255,255,.95)" stroke-width="2.2"><path d="M590 120 470 210 420 330 310 380"/><path d="M470 210 560 300 590 330"/><path d="M420 330 470 470"/><path d="M470 210 380 170 300 60 260 0"/><path d="M310 380 210 360"/><path d="M380 170 330 260"/></g>
+      <g stroke="rgba(40,40,40,.28)" stroke-width="1.2"><path d="M592 122 472 212 422 332 312 382"/><path d="M472 212 562 302"/><path d="M422 332 472 472"/><path d="M472 212 382 172 302 62"/></g>
+      <circle cx="560" cy="160" r="20" fill="rgba(255,255,255,.35)"/>
+    </svg>
+  </div></div>
+
+  <div class="sticky"><p>one lost phone = chaos</p></div>
+  <div class="tape"></div>
+
+  <div class="scrim"></div>
+  <div class="signoff">
+    <span class="chip ink"><span class="g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>SOLAR OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-dark-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

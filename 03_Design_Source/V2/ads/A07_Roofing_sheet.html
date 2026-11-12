@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A07 Roofing sheet</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Roofing slate. The sheet looks fine at a glance; a loupe shows the one cell that isn't.
+     Not the A02 layout: a contained window, tilted, with a magnifier as the focal device. */
+  .ad { background: radial-gradient(760px 620px at 84% 70%, rgba(224,122,63,.30), rgba(224,122,63,0) 70%), linear-gradient(180deg, #1B2430 0%, #121922 100%); color: #fff; }
+  .shingles { position: absolute; inset: 0; opacity: .07;
+    background: radial-gradient(60px 40px at 50% 0, transparent 58px, #fff 59px, transparent 61px) 0 0 / 120px 52px,
+                radial-gradient(60px 40px at 50% 0, transparent 58px, #fff 59px, transparent 61px) 60px 26px / 120px 52px;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 60%); }
+  .hl { position: absolute; left: var(--m); top: 84px; width: 930px; font-size: 94px; color: #fff; }
+  .hl em { color: #F29A5E; }
+
+  .win { position: absolute; left: 64px; top: 396px; width: 900px; border-radius: 22px; overflow: hidden; background: #fff; color: #1f2328;
+    transform: rotate(-2deg); font-family: "Inter"; box-shadow: 0 40px 90px -30px rgba(0,0,0,.7), 0 12px 30px -12px rgba(0,0,0,.5); }
+  .title { height: 66px; display: flex; align-items: center; gap: 14px; padding: 0 26px; background: #EEF0F2; border-bottom: 1.5px solid #D9DCE0; font: 600 26px/1 "Inter"; }
+  .title .ic { width: 34px; height: 34px; border-radius: 7px; background: #1E7B45; display: grid; place-items: center; }
+  .title .ic svg { width: 22px; height: 22px; }
+  .fx { height: 60px; display: flex; align-items: center; border-bottom: 1.5px solid #D9DCE0; }
+  .fx .nb { width: 96px; height: 100%; display: grid; place-items: center; border-right: 1.5px solid #D9DCE0; font: 600 24px/1 "Inter"; }
+  .fx .f { width: 62px; text-align: center; font: italic 400 32px/1 "Instrument Serif", serif; color: #6b7280; }
+  .fx .v { font: 400 27px/1 "Space Mono", monospace; letter-spacing: -0.02em; }
+  table { border-collapse: collapse; table-layout: fixed; width: 900px; }
+  th { height: 40px; background: #F6F7F9; border: 1.5px solid #DADDE1; font: 500 20px/1 "Inter"; color: #6b7280; }
+  td { height: 72px; border: 1.5px solid #E3E6EA; padding: 0 20px; font: 400 33px/1 "Inter"; white-space: nowrap; }
+  td.rn { background: #F6F7F9; color: #6b7280; text-align: center; padding: 0; font-size: 20px; font-weight: 500; }
+  td.n { text-align: right; }
+  tr.h td { font-weight: 700; background: #FAFBFC; }
+  td.err { text-align: center; font-weight: 700; color: #C8102E; background: #FFECEE; box-shadow: inset 0 0 0 4px #E0243F; }
+
+  /* zoom callout: magnifies D5 without hiding any other cell */
+  .zoom { position: absolute; left: 0; top: 0; width: 1080px; height: 1350px; z-index: 9; overflow: visible; pointer-events: none; }
+  .loupe { position: absolute; left: 640px; top: 936px; width: 280px; height: 280px; border-radius: 50%; z-index: 10; }
+  .lens { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; background: #fff;
+    box-shadow: inset 0 0 0 14px #2A2F38, inset 0 0 0 17px #6B717C, inset 0 0 0 19px #1A1D23, 0 30px 60px -16px rgba(0,0,0,.7), 0 0 0 6px rgba(255,106,85,.35); }
+  .lens .row { position: absolute; left: -20px; right: -20px; height: 122px; top: 84px; background: #FFE3E7; border-top: 3px solid #E0243F; border-bottom: 3px solid #E0243F; }
+  .lens .err { position: absolute; left: 0; right: 0; top: 116px; text-align: center; font: 800 58px/1 "Inter"; letter-spacing: -0.02em; color: #C8102E; }
+  .lens::after { content: ""; position: absolute; inset: 19px; border-radius: 50%;
+    background: radial-gradient(120px 80px at 30% 22%, rgba(255,255,255,.6), rgba(255,255,255,0) 70%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(0,0,0,.12) 100%); }
+  .note { position: absolute; left: 70px; top: 1060px; z-index: 12; font: 700 76px/1 "Caveat"; color: #FF6A55; transform: rotate(-5deg); }
+  .arrow { position: absolute; left: 520px; top: 1000px; width: 150px; height: 140px; z-index: 12; overflow: visible; }
+  .chip .g { background: rgba(224,122,63,.22); color: #F5A577; }
+</style></head>
+<body><div class="ad grain on-dark">
+  <div class="shingles"></div>
+  <h1 class="hl">One broken formula. <em>One unhappy closer.</em></h1>
+
+  <div class="win">
+    <div class="title"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></span>Roofing_Commissions_OCT.xlsx</div>
+    <div class="fx"><span class="nb">D5</span><span class="f">fx</span><span class="v">=B5*C5*rate</span></div>
+    <table>
+      <colgroup><col style="width:56px"><col style="width:236px"><col style="width:244px"><col style="width:150px"><col style="width:214px"></colgroup>
+      <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+      <tr class="h"><td class="rn">1</td><td>Rep</td><td>Jobs closed</td><td>Rate</td><td>Payout</td></tr>
+      <tr><td class="rn">2</td><td>Ortiz</td><td class="n">6</td><td class="n">6%</td><td class="n">$5,420</td></tr>
+      <tr><td class="rn">3</td><td>Reed</td><td class="n">5</td><td class="n">5%</td><td class="n">$3,870</td></tr>
+      <tr><td class="rn">4</td><td>Cole</td><td class="n">3</td><td class="n">5%</td><td class="n">$2,140</td></tr>
+      <tr><td class="rn">5</td><td>Lopez</td><td class="n">4</td><td class="n">6%</td><td class="err">#VALUE!</td></tr>
+    </table>
+  </div>
+
+  <svg class="zoom" viewBox="0 0 1080 1350"><path d="M766 902 664 990M982 894 906 990" stroke="#FF6A55" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" fill="none"/></svg>
+  <div class="loupe"><div class="lens"><div class="row"></div><div class="err" aria-hidden="true">#VALUE!</div></div></div>
+  </div>
+
+  <div class="note">who checks this??</div>
+  <svg class="arrow" viewBox="0 0 150 140"><path d="M14 128C60 120 100 90 126 30" fill="none" stroke="#FF6A55" stroke-width="6" stroke-linecap="round"/><path d="M102 40 128 22l10 30" fill="none" stroke="#FF6A55" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><path d="M2 12.5 12 4l10 8.5"/><path d="M5 10.2V20h14v-9.8"/><path d="M16.5 7V4.5h2.5v4.6"/><path d="M8 20v-5h8v5"/></svg></span>ROOFING OWNERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

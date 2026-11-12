@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A15 Mortgage poll</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Brand periwinkle field, a poll card already voted on. The middle answer wins by a mile
+     (bars only, no numbers), which is the joke. */
+  .ad { background: radial-gradient(900px 700px at 0% 0%, #7C90F2 0%, rgba(124,144,242,0) 60%), linear-gradient(160deg, #6078EC 0%, #4F63DD 55%, #3E4FC4 100%); color: #fff; }
+  .dots { position: absolute; inset: 0; opacity: .18; background-image: radial-gradient(rgba(255,255,255,.9) 1.6px, transparent 1.8px); background-size: 36px 36px;
+    -webkit-mask-image: radial-gradient(900px 700px at 100% 100%, #000, transparent 70%); }
+  .hl { position: absolute; left: var(--m); top: 84px; width: 940px; font-size: 96px; color: #fff; }
+  .hl em { color: #FFE7A0; }
+
+  .card { position: absolute; left: var(--m); top: 392px; width: 936px; padding: 40px 40px 44px; border-radius: 44px; background: #fff; color: var(--ink);
+    box-shadow: 0 50px 80px -30px rgba(16,20,70,.6), 0 12px 24px -12px rgba(16,20,70,.35); }
+  .label { display: flex; align-items: center; gap: 12px; font: 800 29px/1 "Schibsted Grotesk"; letter-spacing: .1em; margin: 0 0 22px 6px; color: #2B3170; }
+  .label .emoji { width: 48px; height: 48px; }
+  .opt { position: relative; height: 140px; border-radius: 32px; margin-top: 16px; overflow: hidden; background: #F2F4FD; display: flex; align-items: center; padding: 0 36px; gap: 22px;
+    font: 600 47px/1 "DM Sans"; letter-spacing: -0.02em; }
+  .opt .bar { position: absolute; left: 0; top: 0; bottom: 0; background: #E2E7FC; }
+  .opt > span { position: relative; }
+  .opt.on { background: #EEF1FE; box-shadow: inset 0 0 0 4px var(--peri); }
+  .opt.on .bar { background: linear-gradient(90deg, #7389F0, #5A70E6); }
+  .opt.on .t { color: #fff; }
+  .opt.on .ck { position: relative; margin-left: auto; width: 60px; height: 60px; border-radius: 50%; background: var(--peri); display: grid; place-items: center; flex: none; }
+  .opt.on .ck svg { width: 34px; height: 34px; }
+  .opt.on .t { font-weight: 700; }
+  .sub { position: absolute; left: var(--m); top: 1092px; color: rgba(255,255,255,.92); }
+  .chip .g { background: #fff; color: var(--peri); }
+</style></head>
+<body><div class="ad grain on-dark">
+  <div class="dots"></div>
+  <h1 class="hl">How do you track <em>loan officer comp?</em></h1>
+
+  <div class="card">
+    <div class="label">TAP TO VOTE <img class="emoji" src="../assets/emoji/1f440.svg" alt="👀"></div>
+    <div class="opt"><i class="bar" style="width:22%"></i><span>A spreadsheet</span></div>
+    <div class="opt on"><i class="bar" style="width:84%"></i><span class="t">A spreadsheet and some hope</span><span class="ck"><svg viewBox="0 0 34 34"><path d="M8.5 17.5l6 6L26 11" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    <div class="opt"><i class="bar" style="width:9%"></i><span>Software</span></div>
+  </div>
+
+  <p class="sub">Asking for a friend. The friend is us.</p>
+
+  <div class="signoff">
+    <span class="chip glass"><span class="g"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>MORTGAGE LEADERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-white-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>

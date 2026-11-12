@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A17 Fiber chat</title>
+<link rel="stylesheet" href="../styles/v2.css">
+<style>
+  /* Daylight, cool and clean. Strands of fiber light run behind a phone turned in 3D,
+     so the newest message sits nearest the viewer. Different from A01 (night, tilt) and A06 (rain, no phone). */
+  .ad { background: radial-gradient(900px 800px at 82% 70%, #D8F4F8 0%, rgba(216,244,248,0) 70%), linear-gradient(180deg, #F5F8FB 0%, #E7EEF4 100%); }
+  .strands { position: absolute; inset: 0; z-index: 1; }
+
+  .hl { position: absolute; left: var(--m); top: 86px; width: 900px; font-size: 88px; z-index: 20; }
+  .hl em { color: #0B93A6; }
+
+  .stage { position: absolute; left: 0; top: 0; width: 1080px; height: 1350px; perspective: 2100px; perspective-origin: 30% 40%; z-index: 5; }
+  .phone { left: 250px; top: 418px; width: 700px; height: 1240px; transform: rotateY(-17deg) rotateX(5deg) rotateZ(2.5deg); transform-origin: 50% 30%;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,.2), inset 0 0 0 5px #08090c, 40px 60px 80px -20px rgba(6,40,60,.35), 10px 20px 30px -10px rgba(6,40,60,.3); }
+  .screen { background: #FBFDFE; color: #0b0b0f; }
+  .bar { display: flex; align-items: center; gap: 18px; padding: 0 34px 20px; border-bottom: 1.5px solid #E6EDF2; }
+  .bar .back { width: 22px; height: 38px; }
+  .bar .av { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(160deg, #3DD9E8, #0B93A6); display: grid; place-items: center; font: 600 34px/1 "Inter"; color: #fff; }
+  .bar b { display: block; font: 600 32px/1.1 "Inter"; }
+  .bar span.s { font: 500 22px/1 "Inter"; color: #7f8c96; }
+  .thread { padding: 28px 32px 0; gap: 16px; }
+  .bub { font-size: 36px; max-width: 84%; border-radius: 38px; }
+  .bub.in { --bub-in: #E9EFF3; }
+  .bub.out { --bub-out: #0B93A6; }
+  .bub.st.in { border-bottom-left-radius: 10px; }
+  .bub.st.out { border-bottom-right-radius: 10px; }
+  .bub.last { font-size: 46px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.16; padding: 26px 38px 30px; margin-top: 6px;
+    box-shadow: 0 0 0 4px #FBFDFE, 0 0 0 7px rgba(28,198,217,.9), 0 0 40px 6px rgba(28,198,217,.45); }
+  .receipt { margin: 6px 0 0 10px; font-size: 25px; color: #7f8c96; }
+  .scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 170px; z-index: 18;
+    background: linear-gradient(180deg, rgba(231,238,244,0) 0%, rgba(231,238,244,.92) 45%, #E7EEF4 78%); }
+  .chip .g { background: #0E2433; color: #3FE0F0; }
+</style></head>
+<body><div class="ad grain">
+  <svg class="strands" viewBox="0 0 1080 1350" fill="none">
+    <defs>
+      <linearGradient id="f1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1CC6D9" stop-opacity="0"/><stop offset=".55" stop-color="#1CC6D9" stop-opacity=".55"/><stop offset="1" stop-color="#6078EC" stop-opacity=".2"/></linearGradient>
+      <radialGradient id="tip"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#7EF0FA"/><stop offset="1" stop-color="#1CC6D9" stop-opacity="0"/></radialGradient>
+    </defs>
+    <g stroke="url(#f1)" stroke-width="3.4" stroke-linecap="round" style="filter:drop-shadow(0 0 6px rgba(28,198,217,.55))">
+      <path d="M-40 1180C260 1100 380 820 640 700S1000 520 1140 560"/>
+      <path d="M-40 1220C280 1130 420 860 660 740S1010 590 1140 620"/>
+      <path d="M-40 1260C300 1160 450 900 690 790S1020 650 1140 690"/>
+      <path d="M-40 1140C240 1060 350 780 610 660S990 450 1140 490"/>
+      <path d="M-40 1300C320 1200 480 950 720 840S1030 720 1140 760"/>
+      <path d="M-40 1100C220 1030 330 740 590 610S980 380 1140 420"/>
+    </g>
+    <g stroke="#1CC6D9" stroke-opacity=".22" stroke-width="1.2">
+      <path d="M-40 1160C250 1080 370 800 630 680S1000 480 1140 525"/>
+      <path d="M-40 1240C290 1145 435 880 675 765S1015 620 1140 655"/>
+      <path d="M-40 1280C310 1180 465 925 705 815S1025 685 1140 725"/>
+    </g>
+    <circle cx="1046" cy="532" r="30" fill="url(#tip)"/><circle cx="182" cy="1032" r="16" fill="url(#tip)"/><circle cx="120" cy="1112" r="12" fill="url(#tip)"/><circle cx="1060" cy="604" r="20" fill="url(#tip)"/><circle cx="1038" cy="452" r="18" fill="url(#tip)"/>
+  </svg>
+
+  <h1 class="hl">Your reps keep asking. You <em>keep checking the sheet.</em></h1>
+
+  <div class="stage"><div class="phone"><div class="screen">
+    <div class="island"></div>
+    <div class="statusbar"><span>9:41</span><span class="icons"><span class="bars"><i style="height:8px"></i><i style="height:12px"></i><i style="height:17px"></i><i style="height:22px"></i></span><span class="batt"><b></b></span></span></div>
+    <div class="bar">
+      <svg class="back" viewBox="0 0 22 38"><path d="M19 3 4 19l15 16" fill="none" stroke="#0B93A6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="av">S</div>
+      <div><b>Sales Rep</b><span class="s">iMessage</span></div>
+    </div>
+    <div class="thread">
+      <div class="bub in st">Did my installs from last week count toward the tier?</div>
+      <div class="bub out st">Let me check the sheet.</div>
+      <div class="bub in st last">You said that last week too.</div>
+      <div class="receipt"><b>Read</b> 9:41 PM</div>
+    </div>
+  </div></div></div>
+
+  <div class="scrim"></div>
+  <div class="signoff">
+    <span class="chip light"><span class="g"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg></span>FIBER &amp; TELCO LEADERS</span>
+    <img class="logo" src="../../../02_Brand_Assets/logo/sequifi-logo-dark-text.svg" alt="Sequifi">
+  </div>
+</div></body></html>
